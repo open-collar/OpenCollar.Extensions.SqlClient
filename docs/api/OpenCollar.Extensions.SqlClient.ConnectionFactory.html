@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConnectionFactory
+   | API Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConnectionFactory
+   | API Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href=".././images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././images/opencollar-icon-48x96x32.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory">
+  
+  
+  <h1 id="OpenCollar_Extensions_SqlClient_ConnectionFactory" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory" class="text-break">Class ConnectionFactory
+  </h1>
+  <div class="markdown level0 summary"><p>The base class for objects defining database connection factories.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ConnectionFactory</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCollar.Extensions.SqlClient.html">OpenCollar.Extensions.SqlClient</a></h6>
+  <h6><strong>Assembly</strong>: OpenCollar.Extensions.SqlClient.dll</h6>
+  <h5 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ConnectionFactory</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_System_IServiceProvider_OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)">ConnectionFactory(IServiceProvider, IDatabaseConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenCollar.Extensions.SqlClient.ConnectionFactory.html">ConnectionFactory</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IServiceProvider</span></td>
+        <td><span class="parametername">services</span></td>
+        <td><p>The services provider from which to get resources such as loggers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.html">IDatabaseConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration for database connections as a whole.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">configuration</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_Configuration_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_Configuration" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>Gets the configuration of the database connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+public IDatabaseConnectionConfiguration Configuration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html">IDatabaseConnectionConfiguration</a></td>
+        <td><p>The configuration of the database connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_ConnectionKey_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_ConnectionKey" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey">ConnectionKey</h4>
+  <div class="markdown level1 summary"><p>Gets the key in the <a class="xref" href="OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_Connections">Connections</a> dictionary of the
+<a class="xref" href="OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html">IDatabaseConnectionConfiguration</a> that defines the connection details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+protected abstract string ConnectionKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The key in the <a class="xref" href="OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_Connections">Connections</a> dictionary of the
+<a class="xref" href="OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html">IDatabaseConnectionConfiguration</a> that defines the connection details.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_DefaultOwnerName_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_DefaultOwnerName" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName">DefaultOwnerName</h4>
+  <div class="markdown level1 summary"><p>Gets the default name of the owner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+protected virtual string DefaultOwnerName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The default name of the owner.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeAzureManagedIdentity_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeAzureManagedIdentity" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity">InitializeAzureManagedIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether
+<a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview">
+Azure Managed Identity initializion </a> should be performed before creating a connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InitializeAzureManagedIdentity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if
+<a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview">
+Azure Managed Identity initializion </a> initializion should be performed before creating a
+connection; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_AnalyzeException_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_AnalyzeException_System_Exception_OpenCollar_Extensions_SqlClient_Connection_Microsoft_Data_SqlClient_SqlCommand_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException(System.Exception,OpenCollar.Extensions.SqlClient.Connection,Microsoft.Data.SqlClient.SqlCommand)">AnalyzeException(Exception, Connection, SqlCommand)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementor with the opportunity to analyze any exception thrown by query execution before
+and throw a new exception if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Exception AnalyzeException([NotNull] Exception exception, [NotNull] Connection connection, SqlCommand command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to analyze.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCollar.Extensions.SqlClient.Connection.html">Connection</a></td>
+        <td><span class="parametername">connection</span></td>
+        <td><p>The connection on which the exception occurred.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command being executed when the exception was thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_GetConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_GetConnection_System_String_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection(System.String)">GetConnection(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a connection for the owner specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+public ConnectionProxy GetConnection([CanBeNull] string owner = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">owner</span></td>
+        <td><p>A string that identifies the owner of the connection. Use <span class="xref">null</span> to use a default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCollar.Extensions.SqlClient.ConnectionProxy.html">ConnectionProxy</a></td>
+        <td><p>A fully initialized database connections.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OpenCollar.Extensions.BadImplementationException</span></td>
+        <td><p><a class="xref" href="OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_DefaultOwnerName">DefaultOwnerName</a> returned <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeConnection_System_String_Microsoft_Data_SqlClient_SqlConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)">InitializeConnection(String, SqlConnection)</h4>
+  <div class="markdown level1 summary"><p>Perform custom initialization on the connection specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeConnection([CanBeNull] string owner, [NotNull] SqlConnection connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">owner</span></td>
+        <td><p>The owner of the connection (as defined by the caller).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Data.SqlClient.SqlConnection</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td><p>The connection to initialize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeConnection_System_String_Microsoft_Data_SqlClient_SqlConnection__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+    If implemented, this method can be used to perform custom initialization (for example, initializing
+    a security context) on new connections as they are created.
+</p>
+<p>
+    All connections are created with an &quot;owner&quot;. If nothing is explicitly specified the owner will be
+    &quot;default&quot;; otherwise it is a string that, typically, will contain a value that idenifies the unique
+    feature of the custom initialization performed (for example the calling user&apos;s email address) and
+    connections are recycled only when the owner is the same.
+</p>
+</div>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_RecycleConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_RecycleConnection_System_String_Microsoft_Data_SqlClient_SqlConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)">RecycleConnection(String, SqlConnection)</h4>
+  <div class="markdown level1 summary"><p>Recycles a connection that has previously been used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RecycleConnection([CanBeNull] string owner, [NotNull] SqlConnection connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">owner</span></td>
+        <td><p>The owner of the connection (as defined by the caller). This is the owner that was specified when
+<a class="xref" href="OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeConnection_System_String_Microsoft_Data_SqlClient_SqlConnection_">InitializeConnection(String, SqlConnection)</a> was called, and will be the owner used when
+the connection is reused.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Data.SqlClient.SqlConnection</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td><p>The connection to recycle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_RecycleConnection_System_String_Microsoft_Data_SqlClient_SqlConnection__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+    If implemented, this method can be used to perform custom teardown on a connection that has been
+    freed by its current user. All connections are recycled for the see value of
+<code data-dev-comment-type="paramref" class="paramref">owner</code> and should not normally require any custom actions when recycling.
+</p>
+<p>
+    All connections are created with an &quot;owner&quot;. If nothing is explicitly specified the owner will be
+    &quot;default&quot;; otherwise it is a string that, typically, will contain a value that idenifies the unique
+    feature of the custom initialization performed (for example the calling user&apos;s email address) and
+    connections are recycled only when the owner is the same.
+</p>
+</div>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_SetCommandTimemout_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_SetCommandTimemout_System_Data_IDbCommand_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout(System.Data.IDbCommand)">SetCommandTimemout(IDbCommand)</h4>
+  <div class="markdown level1 summary"><p>Called before the command is executed, providing an opportunity for the command's timeout to be
+configured immediately before it is executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetCommandTimemout([NotNull] IDbCommand command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.IDbCommand</span></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command to be configured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_SetCommandTimemout_System_Data_IDbCommand__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The command as a whole is provided allowing for any of its properties to be used to determine the
+correct timeout value.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div style='box-sizing: border-box;'><div style='float: left; width: calc(100% - 200px);'>Copyright &copy; 2020 <a href='mailto:jevans@open-collar.org.uk'>Jonathan Evans</a></div><div style='float: left; width: 200px;'><span style='font-style: italic;'>Version: BUILD_VERSION</span></div></div>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

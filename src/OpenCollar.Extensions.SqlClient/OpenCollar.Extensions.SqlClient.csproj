@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>8.0</LangVersion>
+        <Nullable>enable</Nullable>
+        <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+        <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <Authors>Jonathan David Evans (jevans@open-collar.org.uk)</Authors>
+        <Description>A framework that allows database queries to be executed quickly and cleanly, with logging, retries and concurrency.</Description>
+        <Copyright>Copyright © 2020 Jonathan Evans (jevans@open-collar.org.uk).</Copyright>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageProjectUrl>https://open-collar.github.io/OpenCollar.Extensions.SqlClient/index.html</PackageProjectUrl>
+        <PackageIcon>opencollar-icon-320x320x32.png</PackageIcon>
+        <PackageIconUrl />
+        <RepositoryUrl>https://github.com/open-collar/OpenCollar.Extensions.SqlClient.git</RepositoryUrl>
+        <RepositoryType>GitHub</RepositoryType>
+        <PackageTags>.net collections</PackageTags>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" />
+        <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.6.0" />
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Data.SqlClient" Version="2.0.1" />
+        <PackageReference Include="OpenCollar.Extensions.Configuration" Version="0.2.223" />
+        <PackageReference Include="OpenCollar.Extensions.Environment" Version="0.6.8" />
+        <PackageReference Include="OpenCollar.Extensions.Logging" Version="0.4.8" />
+        <PackageReference Include="OpenCollar.Extensions.Validation" Version="0.5.12" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+        <None Include="..\..\media\opencollar-icon-320x320x32.png">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+    </ItemGroup>
+</Project>

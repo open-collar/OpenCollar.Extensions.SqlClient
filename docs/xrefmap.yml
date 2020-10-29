@@ -1,0 +1,2139 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer
+  name: SqlClientTelemeteryInitializer
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html
+  commentId: T:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer
+  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer
+  nameWithType: SqlClientTelemeteryInitializer
+- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.#ctor
+  name: SqlClientTelemeteryInitializer()
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_SqlClientTelemeteryInitializer__ctor
+  commentId: M:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.#ctor
+  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.SqlClientTelemeteryInitializer()
+  nameWithType: SqlClientTelemeteryInitializer.SqlClientTelemeteryInitializer()
+- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.#ctor*
+  name: SqlClientTelemeteryInitializer
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_SqlClientTelemeteryInitializer__ctor_
+  commentId: Overload:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.SqlClientTelemeteryInitializer
+  nameWithType: SqlClientTelemeteryInitializer.SqlClientTelemeteryInitializer
+- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize(Microsoft.SqlClient.Channel.ITelemetry)
+  name: Initialize(ITelemetry)
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_SqlClientTelemeteryInitializer_Initialize_Microsoft_SqlClient_Channel_ITelemetry_
+  commentId: M:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize(Microsoft.SqlClient.Channel.ITelemetry)
+  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize(Microsoft.SqlClient.Channel.ITelemetry)
+  nameWithType: SqlClientTelemeteryInitializer.Initialize(ITelemetry)
+- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize*
+  name: Initialize
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_SqlClientTelemeteryInitializer_Initialize_
+  commentId: Overload:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize
+  nameWithType: SqlClientTelemeteryInitializer.Initialize
+- uid: OpenCollar.Extensions.SqlClient
+  name: OpenCollar.Extensions.SqlClient
+  href: api/OpenCollar.Extensions.SqlClient.html
+  commentId: N:OpenCollar.Extensions.SqlClient
+  fullName: OpenCollar.Extensions.SqlClient
+  nameWithType: OpenCollar.Extensions.SqlClient
+- uid: OpenCollar.Extensions.SqlClient.CallingContext
+  name: CallingContext
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html
+  commentId: T:OpenCollar.Extensions.SqlClient.CallingContext
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext
+  nameWithType: CallingContext
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Builder
+  name: Builder
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Builder
+  commentId: P:OpenCollar.Extensions.SqlClient.CallingContext.Builder
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Builder
+  nameWithType: CallingContext.Builder
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Builder*
+  name: Builder
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Builder_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.Builder
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Builder
+  nameWithType: CallingContext.Builder
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.CompareTo(OpenCollar.Extensions.SqlClient.CallingContext)
+  name: CompareTo(CallingContext)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_CompareTo_OpenCollar_Extensions_SqlClient_CallingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.CompareTo(OpenCollar.Extensions.SqlClient.CallingContext)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.CompareTo(OpenCollar.Extensions.SqlClient.CallingContext)
+  nameWithType: CallingContext.CompareTo(CallingContext)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.CompareTo(System.Object)
+  name: CompareTo(Object)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_CompareTo_System_Object_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.CompareTo(System.Object)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.CompareTo(System.Object)
+  nameWithType: CallingContext.CompareTo(Object)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.CompareTo*
+  name: CompareTo
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_CompareTo_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.CompareTo
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.CompareTo
+  nameWithType: CallingContext.CompareTo
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Current
+  name: Current()
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Current
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.Current
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Current()
+  nameWithType: CallingContext.Current()
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Current*
+  name: Current
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Current_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.Current
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Current
+  nameWithType: CallingContext.Current
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Equals(OpenCollar.Extensions.SqlClient.CallingContext)
+  name: Equals(CallingContext)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Equals_OpenCollar_Extensions_SqlClient_CallingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.Equals(OpenCollar.Extensions.SqlClient.CallingContext)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Equals(OpenCollar.Extensions.SqlClient.CallingContext)
+  nameWithType: CallingContext.Equals(CallingContext)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Equals(System.Object)
+  name: Equals(Object)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Equals_System_Object_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.Equals(System.Object)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Equals(System.Object)
+  nameWithType: CallingContext.Equals(Object)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Equals*
+  name: Equals
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Equals_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.Equals
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Equals
+  nameWithType: CallingContext.Equals
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.GetHashCode
+  name: GetHashCode()
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_GetHashCode
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.GetHashCode
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.GetHashCode()
+  nameWithType: CallingContext.GetHashCode()
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.GetHashCode*
+  name: GetHashCode
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_GetHashCode_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.GetHashCode
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.GetHashCode
+  nameWithType: CallingContext.GetHashCode
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_Equality(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  name: Equality(CallingContext, CallingContext)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_Equality_OpenCollar_Extensions_SqlClient_CallingContext_OpenCollar_Extensions_SqlClient_CallingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.op_Equality(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Equality(OpenCollar.Extensions.SqlClient.CallingContext, OpenCollar.Extensions.SqlClient.CallingContext)
+  nameWithType: CallingContext.Equality(CallingContext, CallingContext)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_Equality*
+  name: Equality
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_Equality_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.op_Equality
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Equality
+  nameWithType: CallingContext.Equality
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_GreaterThan(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  name: GreaterThan(CallingContext, CallingContext)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_GreaterThan_OpenCollar_Extensions_SqlClient_CallingContext_OpenCollar_Extensions_SqlClient_CallingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.op_GreaterThan(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.GreaterThan(OpenCollar.Extensions.SqlClient.CallingContext, OpenCollar.Extensions.SqlClient.CallingContext)
+  nameWithType: CallingContext.GreaterThan(CallingContext, CallingContext)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_GreaterThan*
+  name: GreaterThan
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_GreaterThan_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.op_GreaterThan
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.GreaterThan
+  nameWithType: CallingContext.GreaterThan
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  name: GreaterThanOrEqual(CallingContext, CallingContext)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_GreaterThanOrEqual_OpenCollar_Extensions_SqlClient_CallingContext_OpenCollar_Extensions_SqlClient_CallingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext, OpenCollar.Extensions.SqlClient.CallingContext)
+  nameWithType: CallingContext.GreaterThanOrEqual(CallingContext, CallingContext)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_GreaterThanOrEqual_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.GreaterThanOrEqual
+  nameWithType: CallingContext.GreaterThanOrEqual
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_Inequality(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  name: Inequality(CallingContext, CallingContext)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_Inequality_OpenCollar_Extensions_SqlClient_CallingContext_OpenCollar_Extensions_SqlClient_CallingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.op_Inequality(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Inequality(OpenCollar.Extensions.SqlClient.CallingContext, OpenCollar.Extensions.SqlClient.CallingContext)
+  nameWithType: CallingContext.Inequality(CallingContext, CallingContext)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_Inequality*
+  name: Inequality
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_Inequality_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.op_Inequality
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Inequality
+  nameWithType: CallingContext.Inequality
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_LessThan(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  name: LessThan(CallingContext, CallingContext)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_LessThan_OpenCollar_Extensions_SqlClient_CallingContext_OpenCollar_Extensions_SqlClient_CallingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.op_LessThan(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.LessThan(OpenCollar.Extensions.SqlClient.CallingContext, OpenCollar.Extensions.SqlClient.CallingContext)
+  nameWithType: CallingContext.LessThan(CallingContext, CallingContext)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_LessThan*
+  name: LessThan
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_LessThan_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.op_LessThan
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.LessThan
+  nameWithType: CallingContext.LessThan
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  name: LessThanOrEqual(CallingContext, CallingContext)
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_LessThanOrEqual_OpenCollar_Extensions_SqlClient_CallingContext_OpenCollar_Extensions_SqlClient_CallingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.LessThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext, OpenCollar.Extensions.SqlClient.CallingContext)
+  nameWithType: CallingContext.LessThanOrEqual(CallingContext, CallingContext)
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_op_LessThanOrEqual_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.LessThanOrEqual
+  nameWithType: CallingContext.LessThanOrEqual
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Owner
+  name: Owner
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Owner
+  commentId: P:OpenCollar.Extensions.SqlClient.CallingContext.Owner
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Owner
+  nameWithType: CallingContext.Owner
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Owner*
+  name: Owner
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Owner_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.Owner
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Owner
+  nameWithType: CallingContext.Owner
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.ToString
+  name: ToString()
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_ToString
+  commentId: M:OpenCollar.Extensions.SqlClient.CallingContext.ToString
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.ToString()
+  nameWithType: CallingContext.ToString()
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.ToString*
+  name: ToString
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_ToString_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.ToString
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.ToString
+  nameWithType: CallingContext.ToString
+- uid: OpenCollar.Extensions.SqlClient.Configuration
+  name: OpenCollar.Extensions.SqlClient.Configuration
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.html
+  commentId: N:OpenCollar.Extensions.SqlClient.Configuration
+  fullName: OpenCollar.Extensions.SqlClient.Configuration
+  nameWithType: OpenCollar.Extensions.SqlClient.Configuration
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration
+  name: IDatabaseConfiguration
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.html
+  commentId: T:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration
+  nameWithType: IDatabaseConfiguration
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.Connections
+  name: Connections
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_Connections
+  commentId: P:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.Connections
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.Connections
+  nameWithType: IDatabaseConfiguration.Connections
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.Connections*
+  name: Connections
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_Connections_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.Connections
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.Connections
+  nameWithType: IDatabaseConfiguration.Connections
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration
+  name: IDatabaseConnectionConfiguration
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html
+  commentId: T:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration
+  nameWithType: IDatabaseConnectionConfiguration
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionCacheTimeoutSeconds
+  name: ConnectionCacheTimeoutSeconds
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_ConnectionCacheTimeoutSeconds
+  commentId: P:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionCacheTimeoutSeconds
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionCacheTimeoutSeconds
+  nameWithType: IDatabaseConnectionConfiguration.ConnectionCacheTimeoutSeconds
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionCacheTimeoutSeconds*
+  name: ConnectionCacheTimeoutSeconds
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_ConnectionCacheTimeoutSeconds_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionCacheTimeoutSeconds
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionCacheTimeoutSeconds
+  nameWithType: IDatabaseConnectionConfiguration.ConnectionCacheTimeoutSeconds
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionString
+  name: ConnectionString
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_ConnectionString
+  commentId: P:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionString
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionString
+  nameWithType: IDatabaseConnectionConfiguration.ConnectionString
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionString*
+  name: ConnectionString
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_ConnectionString_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionString
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionString
+  nameWithType: IDatabaseConnectionConfiguration.ConnectionString
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
+  name: InitializeAzureManagedIdentity
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_InitializeAzureManagedIdentity
+  commentId: P:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
+  nameWithType: IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity*
+  name: InitializeAzureManagedIdentity
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_InitializeAzureManagedIdentity_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
+  nameWithType: IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
+- uid: OpenCollar.Extensions.SqlClient.Connection
+  name: Connection
+  href: api/OpenCollar.Extensions.SqlClient.Connection.html
+  commentId: T:OpenCollar.Extensions.SqlClient.Connection
+  fullName: OpenCollar.Extensions.SqlClient.Connection
+  nameWithType: Connection
+- uid: OpenCollar.Extensions.SqlClient.Connection.CheckForUnreportedErrors(Microsoft.Data.SqlClient.SqlCommand)
+  name: CheckForUnreportedErrors(SqlCommand)
+  href: api/OpenCollar.Extensions.SqlClient.Connection.html#OpenCollar_Extensions_SqlClient_Connection_CheckForUnreportedErrors_Microsoft_Data_SqlClient_SqlCommand_
+  commentId: M:OpenCollar.Extensions.SqlClient.Connection.CheckForUnreportedErrors(Microsoft.Data.SqlClient.SqlCommand)
+  fullName: OpenCollar.Extensions.SqlClient.Connection.CheckForUnreportedErrors(Microsoft.Data.SqlClient.SqlCommand)
+  nameWithType: Connection.CheckForUnreportedErrors(SqlCommand)
+- uid: OpenCollar.Extensions.SqlClient.Connection.CheckForUnreportedErrors*
+  name: CheckForUnreportedErrors
+  href: api/OpenCollar.Extensions.SqlClient.Connection.html#OpenCollar_Extensions_SqlClient_Connection_CheckForUnreportedErrors_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Connection.CheckForUnreportedErrors
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Connection.CheckForUnreportedErrors
+  nameWithType: Connection.CheckForUnreportedErrors
+- uid: OpenCollar.Extensions.SqlClient.Connection.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/OpenCollar.Extensions.SqlClient.Connection.html#OpenCollar_Extensions_SqlClient_Connection_Dispose_System_Boolean_
+  commentId: M:OpenCollar.Extensions.SqlClient.Connection.Dispose(System.Boolean)
+  fullName: OpenCollar.Extensions.SqlClient.Connection.Dispose(System.Boolean)
+  nameWithType: Connection.Dispose(Boolean)
+- uid: OpenCollar.Extensions.SqlClient.Connection.Dispose*
+  name: Dispose
+  href: api/OpenCollar.Extensions.SqlClient.Connection.html#OpenCollar_Extensions_SqlClient_Connection_Dispose_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Connection.Dispose
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Connection.Dispose
+  nameWithType: Connection.Dispose
+- uid: OpenCollar.Extensions.SqlClient.Connection.SqlConnection
+  name: SqlConnection
+  href: api/OpenCollar.Extensions.SqlClient.Connection.html#OpenCollar_Extensions_SqlClient_Connection_SqlConnection
+  commentId: P:OpenCollar.Extensions.SqlClient.Connection.SqlConnection
+  fullName: OpenCollar.Extensions.SqlClient.Connection.SqlConnection
+  nameWithType: Connection.SqlConnection
+- uid: OpenCollar.Extensions.SqlClient.Connection.SqlConnection*
+  name: SqlConnection
+  href: api/OpenCollar.Extensions.SqlClient.Connection.html#OpenCollar_Extensions_SqlClient_Connection_SqlConnection_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Connection.SqlConnection
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Connection.SqlConnection
+  nameWithType: Connection.SqlConnection
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException
+  name: ConnectionException
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html
+  commentId: T:OpenCollar.Extensions.SqlClient.ConnectionException
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException
+  nameWithType: ConnectionException
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ConnectionException(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html#OpenCollar_Extensions_SqlClient_ConnectionException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ConnectionException.ConnectionException(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException.#ctor(System.String)
+  name: ConnectionException(String)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html#OpenCollar_Extensions_SqlClient_ConnectionException__ctor_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionException.#ctor(System.String)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionException(System.String)
+  nameWithType: ConnectionException.ConnectionException(String)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException.#ctor(System.String,System.String)
+  name: ConnectionException(String, String)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html#OpenCollar_Extensions_SqlClient_ConnectionException__ctor_System_String_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionException.#ctor(System.String,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionException(System.String, System.String)
+  nameWithType: ConnectionException.ConnectionException(String, String)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException.#ctor(System.String,System.String,System.Exception)
+  name: ConnectionException(String, String, Exception)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html#OpenCollar_Extensions_SqlClient_ConnectionException__ctor_System_String_System_String_System_Exception_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionException.#ctor(System.String,System.String,System.Exception)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionException(System.String, System.String, System.Exception)
+  nameWithType: ConnectionException.ConnectionException(String, String, Exception)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException.#ctor*
+  name: ConnectionException
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html#OpenCollar_Extensions_SqlClient_ConnectionException__ctor_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionException.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionException
+  nameWithType: ConnectionException.ConnectionException
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionString
+  name: ConnectionString
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html#OpenCollar_Extensions_SqlClient_ConnectionException_ConnectionString
+  commentId: P:OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionString
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionString
+  nameWithType: ConnectionException.ConnectionString
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionString*
+  name: ConnectionString
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html#OpenCollar_Extensions_SqlClient_ConnectionException_ConnectionString_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionString
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException.ConnectionString
+  nameWithType: ConnectionException.ConnectionString
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html#OpenCollar_Extensions_SqlClient_ConnectionException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ConnectionException.GetObjectData(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionException.GetObjectData*
+  name: GetObjectData
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionException.html#OpenCollar_Extensions_SqlClient_ConnectionException_GetObjectData_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionException.GetObjectData
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionException.GetObjectData
+  nameWithType: ConnectionException.GetObjectData
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory
+  name: ConnectionFactory
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html
+  commentId: T:OpenCollar.Extensions.SqlClient.ConnectionFactory
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory
+  nameWithType: ConnectionFactory
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)
+  name: ConnectionFactory(IServiceProvider, IDatabaseConfiguration)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_System_IServiceProvider_OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionFactory(System.IServiceProvider, OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)
+  nameWithType: ConnectionFactory.ConnectionFactory(IServiceProvider, IDatabaseConfiguration)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor*
+  name: ConnectionFactory
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionFactory
+  nameWithType: ConnectionFactory.ConnectionFactory
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException(System.Exception,OpenCollar.Extensions.SqlClient.Connection,Microsoft.Data.SqlClient.SqlCommand)
+  name: AnalyzeException(Exception, Connection, SqlCommand)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_AnalyzeException_System_Exception_OpenCollar_Extensions_SqlClient_Connection_Microsoft_Data_SqlClient_SqlCommand_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException(System.Exception,OpenCollar.Extensions.SqlClient.Connection,Microsoft.Data.SqlClient.SqlCommand)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException(System.Exception, OpenCollar.Extensions.SqlClient.Connection, Microsoft.Data.SqlClient.SqlCommand)
+  nameWithType: ConnectionFactory.AnalyzeException(Exception, Connection, SqlCommand)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException*
+  name: AnalyzeException
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_AnalyzeException_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException
+  nameWithType: ConnectionFactory.AnalyzeException
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration
+  name: Configuration
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_Configuration
+  commentId: P:OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration
+  nameWithType: ConnectionFactory.Configuration
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration*
+  name: Configuration
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_Configuration_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration
+  nameWithType: ConnectionFactory.Configuration
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey
+  name: ConnectionKey
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_ConnectionKey
+  commentId: P:OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey
+  nameWithType: ConnectionFactory.ConnectionKey
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey*
+  name: ConnectionKey
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_ConnectionKey_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey
+  nameWithType: ConnectionFactory.ConnectionKey
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName
+  name: DefaultOwnerName
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_DefaultOwnerName
+  commentId: P:OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName
+  nameWithType: ConnectionFactory.DefaultOwnerName
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName*
+  name: DefaultOwnerName
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_DefaultOwnerName_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName
+  nameWithType: ConnectionFactory.DefaultOwnerName
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection(System.String)
+  name: GetConnection(String)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_GetConnection_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection(System.String)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection(System.String)
+  nameWithType: ConnectionFactory.GetConnection(String)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection*
+  name: GetConnection
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_GetConnection_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection
+  nameWithType: ConnectionFactory.GetConnection
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity
+  name: InitializeAzureManagedIdentity
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeAzureManagedIdentity
+  commentId: P:OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity
+  nameWithType: ConnectionFactory.InitializeAzureManagedIdentity
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity*
+  name: InitializeAzureManagedIdentity
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeAzureManagedIdentity_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity
+  nameWithType: ConnectionFactory.InitializeAzureManagedIdentity
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)
+  name: InitializeConnection(String, SqlConnection)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeConnection_System_String_Microsoft_Data_SqlClient_SqlConnection_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection(System.String, Microsoft.Data.SqlClient.SqlConnection)
+  nameWithType: ConnectionFactory.InitializeConnection(String, SqlConnection)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection*
+  name: InitializeConnection
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeConnection_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection
+  nameWithType: ConnectionFactory.InitializeConnection
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)
+  name: RecycleConnection(String, SqlConnection)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_RecycleConnection_System_String_Microsoft_Data_SqlClient_SqlConnection_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection(System.String, Microsoft.Data.SqlClient.SqlConnection)
+  nameWithType: ConnectionFactory.RecycleConnection(String, SqlConnection)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection*
+  name: RecycleConnection
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_RecycleConnection_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection
+  nameWithType: ConnectionFactory.RecycleConnection
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout(System.Data.IDbCommand)
+  name: SetCommandTimemout(IDbCommand)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_SetCommandTimemout_System_Data_IDbCommand_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout(System.Data.IDbCommand)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout(System.Data.IDbCommand)
+  nameWithType: ConnectionFactory.SetCommandTimemout(IDbCommand)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout*
+  name: SetCommandTimemout
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_SetCommandTimemout_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout
+  nameWithType: ConnectionFactory.SetCommandTimemout
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy
+  name: ConnectionProxy
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html
+  commentId: T:OpenCollar.Extensions.SqlClient.ConnectionProxy
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy
+  nameWithType: ConnectionProxy
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_Dispose_System_Boolean_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionProxy.Dispose(System.Boolean)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.Dispose(System.Boolean)
+  nameWithType: ConnectionProxy.Dispose(Boolean)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.Dispose*
+  name: Dispose
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_Dispose_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionProxy.Dispose
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.Dispose
+  nameWithType: ConnectionProxy.Dispose
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteNonQueryAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteNonQueryAsync(SqlCommand, Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteNonQueryAsync_Microsoft_Data_SqlClient_SqlCommand_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteNonQueryAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteNonQueryAsync(SqlCommand, Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteNonQueryAsync(Microsoft.Data.SqlClient.SqlCommand, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteNonQueryAsync(Microsoft.Data.SqlClient.SqlCommand, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: ConnectionProxy.ExecuteNonQueryAsync(SqlCommand, Nullable<CancellationToken>)
+  nameWithType.vb: ConnectionProxy.ExecuteNonQueryAsync(SqlCommand, Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteNonQueryAsync*
+  name: ExecuteNonQueryAsync
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteNonQueryAsync_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteNonQueryAsync
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteNonQueryAsync
+  nameWithType: ConnectionProxy.ExecuteNonQueryAsync
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Data.CommandBehavior,System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteReaderAsync(SqlCommand, CommandBehavior, Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteReaderAsync_Microsoft_Data_SqlClient_SqlCommand_System_Data_CommandBehavior_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Data.CommandBehavior,System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteReaderAsync(SqlCommand, CommandBehavior, Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand, System.Data.CommandBehavior, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand, System.Data.CommandBehavior, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: ConnectionProxy.ExecuteReaderAsync(SqlCommand, CommandBehavior, Nullable<CancellationToken>)
+  nameWithType.vb: ConnectionProxy.ExecuteReaderAsync(SqlCommand, CommandBehavior, Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteReaderAsync(SqlCommand, Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteReaderAsync_Microsoft_Data_SqlClient_SqlCommand_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteReaderAsync(SqlCommand, Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: ConnectionProxy.ExecuteReaderAsync(SqlCommand, Nullable<CancellationToken>)
+  nameWithType.vb: ConnectionProxy.ExecuteReaderAsync(SqlCommand, Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync*
+  name: ExecuteReaderAsync
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteReaderAsync_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync
+  nameWithType: ConnectionProxy.ExecuteReaderAsync
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteScalarAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteScalarAsync(SqlCommand, Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteScalarAsync_Microsoft_Data_SqlClient_SqlCommand_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteScalarAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteScalarAsync(SqlCommand, Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteScalarAsync(Microsoft.Data.SqlClient.SqlCommand, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteScalarAsync(Microsoft.Data.SqlClient.SqlCommand, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: ConnectionProxy.ExecuteScalarAsync(SqlCommand, Nullable<CancellationToken>)
+  nameWithType.vb: ConnectionProxy.ExecuteScalarAsync(SqlCommand, Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteScalarAsync*
+  name: ExecuteScalarAsync
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteScalarAsync_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteScalarAsync
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteScalarAsync
+  nameWithType: ConnectionProxy.ExecuteScalarAsync
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.SqlConnection
+  name: SqlConnection
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_SqlConnection
+  commentId: P:OpenCollar.Extensions.SqlClient.ConnectionProxy.SqlConnection
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.SqlConnection
+  nameWithType: ConnectionProxy.SqlConnection
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxy.SqlConnection*
+  name: SqlConnection
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html#OpenCollar_Extensions_SqlClient_ConnectionProxy_SqlConnection_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionProxy.SqlConnection
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxy.SqlConnection
+  nameWithType: ConnectionProxy.SqlConnection
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions
+  name: ConnectionProxyExtensions
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html
+  commentId: T:OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions
+  nameWithType: ConnectionProxyExtensions
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QueryProcedure(OpenCollar.Extensions.SqlClient.ConnectionProxy,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: QueryProcedure(ConnectionProxy, Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html#OpenCollar_Extensions_SqlClient_ConnectionProxyExtensions_QueryProcedure_OpenCollar_Extensions_SqlClient_ConnectionProxy_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QueryProcedure(OpenCollar.Extensions.SqlClient.ConnectionProxy,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QueryProcedure(OpenCollar.Extensions.SqlClient.ConnectionProxy, OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: ConnectionProxyExtensions.QueryProcedure(ConnectionProxy, Identifier)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QueryProcedure*
+  name: QueryProcedure
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html#OpenCollar_Extensions_SqlClient_ConnectionProxyExtensions_QueryProcedure_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QueryProcedure
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QueryProcedure
+  nameWithType: ConnectionProxyExtensions.QueryProcedure
+- uid: OpenCollar.Extensions.SqlClient.Constants
+  name: Constants
+  href: api/OpenCollar.Extensions.SqlClient.Constants.html
+  commentId: T:OpenCollar.Extensions.SqlClient.Constants
+  fullName: OpenCollar.Extensions.SqlClient.Constants
+  nameWithType: Constants
+- uid: OpenCollar.Extensions.SqlClient.Constants.Keys
+  name: Constants.Keys
+  href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html
+  commentId: T:OpenCollar.Extensions.SqlClient.Constants.Keys
+  fullName: OpenCollar.Extensions.SqlClient.Constants.Keys
+  nameWithType: Constants.Keys
+- uid: OpenCollar.Extensions.SqlClient.Constants.Keys.CallingUserEmailAddress
+  name: CallingUserEmailAddress
+  href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_CallingUserEmailAddress
+  commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.CallingUserEmailAddress
+  fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.CallingUserEmailAddress
+  nameWithType: Constants.Keys.CallingUserEmailAddress
+- uid: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseConnection
+  name: DatabaseConnection
+  href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_DatabaseConnection
+  commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseConnection
+  fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseConnection
+  nameWithType: Constants.Keys.DatabaseConnection
+- uid: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseName
+  name: DatabaseName
+  href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_DatabaseName
+  commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseName
+  fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseName
+  nameWithType: Constants.Keys.DatabaseName
+- uid: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseSql
+  name: DatabaseSql
+  href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_DatabaseSql
+  commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseSql
+  fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseSql
+  nameWithType: Constants.Keys.DatabaseSql
+- uid: OpenCollar.Extensions.SqlClient.Constants.Keys.RequestUri
+  name: RequestUri
+  href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_RequestUri
+  commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.RequestUri
+  fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.RequestUri
+  nameWithType: Constants.Keys.RequestUri
+- uid: OpenCollar.Extensions.SqlClient.Constants.Keys.StoredProcedure
+  name: StoredProcedure
+  href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_StoredProcedure
+  commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.StoredProcedure
+  fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.StoredProcedure
+  nameWithType: Constants.Keys.StoredProcedure
+- uid: OpenCollar.Extensions.SqlClient.DatabaseException
+  name: DatabaseException
+  href: api/OpenCollar.Extensions.SqlClient.DatabaseException.html
+  commentId: T:OpenCollar.Extensions.SqlClient.DatabaseException
+  fullName: OpenCollar.Extensions.SqlClient.DatabaseException
+  nameWithType: DatabaseException
+- uid: OpenCollar.Extensions.SqlClient.DatabaseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: DatabaseException(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.DatabaseException.html#OpenCollar_Extensions_SqlClient_DatabaseException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.DatabaseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.DatabaseException.DatabaseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: DatabaseException.DatabaseException(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.DatabaseException.#ctor(System.String)
+  name: DatabaseException(String)
+  href: api/OpenCollar.Extensions.SqlClient.DatabaseException.html#OpenCollar_Extensions_SqlClient_DatabaseException__ctor_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.DatabaseException.#ctor(System.String)
+  fullName: OpenCollar.Extensions.SqlClient.DatabaseException.DatabaseException(System.String)
+  nameWithType: DatabaseException.DatabaseException(String)
+- uid: OpenCollar.Extensions.SqlClient.DatabaseException.#ctor(System.String,System.String)
+  name: DatabaseException(String, String)
+  href: api/OpenCollar.Extensions.SqlClient.DatabaseException.html#OpenCollar_Extensions_SqlClient_DatabaseException__ctor_System_String_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.DatabaseException.#ctor(System.String,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.DatabaseException.DatabaseException(System.String, System.String)
+  nameWithType: DatabaseException.DatabaseException(String, String)
+- uid: OpenCollar.Extensions.SqlClient.DatabaseException.#ctor(System.String,System.String,System.Exception)
+  name: DatabaseException(String, String, Exception)
+  href: api/OpenCollar.Extensions.SqlClient.DatabaseException.html#OpenCollar_Extensions_SqlClient_DatabaseException__ctor_System_String_System_String_System_Exception_
+  commentId: M:OpenCollar.Extensions.SqlClient.DatabaseException.#ctor(System.String,System.String,System.Exception)
+  fullName: OpenCollar.Extensions.SqlClient.DatabaseException.DatabaseException(System.String, System.String, System.Exception)
+  nameWithType: DatabaseException.DatabaseException(String, String, Exception)
+- uid: OpenCollar.Extensions.SqlClient.DatabaseException.#ctor*
+  name: DatabaseException
+  href: api/OpenCollar.Extensions.SqlClient.DatabaseException.html#OpenCollar_Extensions_SqlClient_DatabaseException__ctor_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.DatabaseException.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.DatabaseException.DatabaseException
+  nameWithType: DatabaseException.DatabaseException
+- uid: OpenCollar.Extensions.SqlClient.DatabaseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.DatabaseException.html#OpenCollar_Extensions_SqlClient_DatabaseException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.DatabaseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.DatabaseException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: DatabaseException.GetObjectData(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.DatabaseException.GetObjectData*
+  name: GetObjectData
+  href: api/OpenCollar.Extensions.SqlClient.DatabaseException.html#OpenCollar_Extensions_SqlClient_DatabaseException_GetObjectData_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.DatabaseException.GetObjectData
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.DatabaseException.GetObjectData
+  nameWithType: DatabaseException.GetObjectData
+- uid: OpenCollar.Extensions.SqlClient.DbException
+  name: DbException
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html
+  commentId: T:OpenCollar.Extensions.SqlClient.DbException
+  fullName: OpenCollar.Extensions.SqlClient.DbException
+  nameWithType: DbException
+- uid: OpenCollar.Extensions.SqlClient.DbException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: DbException(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html#OpenCollar_Extensions_SqlClient_DbException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.DbException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.DbException.DbException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: DbException.DbException(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.DbException.#ctor(System.String)
+  name: DbException(String)
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html#OpenCollar_Extensions_SqlClient_DbException__ctor_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.DbException.#ctor(System.String)
+  fullName: OpenCollar.Extensions.SqlClient.DbException.DbException(System.String)
+  nameWithType: DbException.DbException(String)
+- uid: OpenCollar.Extensions.SqlClient.DbException.#ctor(System.String,System.String)
+  name: DbException(String, String)
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html#OpenCollar_Extensions_SqlClient_DbException__ctor_System_String_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.DbException.#ctor(System.String,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.DbException.DbException(System.String, System.String)
+  nameWithType: DbException.DbException(String, String)
+- uid: OpenCollar.Extensions.SqlClient.DbException.#ctor(System.String,System.String,System.Exception)
+  name: DbException(String, String, Exception)
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html#OpenCollar_Extensions_SqlClient_DbException__ctor_System_String_System_String_System_Exception_
+  commentId: M:OpenCollar.Extensions.SqlClient.DbException.#ctor(System.String,System.String,System.Exception)
+  fullName: OpenCollar.Extensions.SqlClient.DbException.DbException(System.String, System.String, System.Exception)
+  nameWithType: DbException.DbException(String, String, Exception)
+- uid: OpenCollar.Extensions.SqlClient.DbException.#ctor*
+  name: DbException
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html#OpenCollar_Extensions_SqlClient_DbException__ctor_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.DbException.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.DbException.DbException
+  nameWithType: DbException.DbException
+- uid: OpenCollar.Extensions.SqlClient.DbException.Details
+  name: Details
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html#OpenCollar_Extensions_SqlClient_DbException_Details
+  commentId: P:OpenCollar.Extensions.SqlClient.DbException.Details
+  fullName: OpenCollar.Extensions.SqlClient.DbException.Details
+  nameWithType: DbException.Details
+- uid: OpenCollar.Extensions.SqlClient.DbException.Details*
+  name: Details
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html#OpenCollar_Extensions_SqlClient_DbException_Details_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.DbException.Details
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.DbException.Details
+  nameWithType: DbException.Details
+- uid: OpenCollar.Extensions.SqlClient.DbException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html#OpenCollar_Extensions_SqlClient_DbException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.DbException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.DbException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: DbException.GetObjectData(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.DbException.GetObjectData*
+  name: GetObjectData
+  href: api/OpenCollar.Extensions.SqlClient.DbException.html#OpenCollar_Extensions_SqlClient_DbException_GetObjectData_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.DbException.GetObjectData
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.DbException.GetObjectData
+  nameWithType: DbException.GetObjectData
+- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions
+  name: LoggingContextExtensions
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html
+  commentId: T:OpenCollar.Extensions.SqlClient.LoggingContextExtensions
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions
+  nameWithType: LoggingContextExtensions
+- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+  name: AddDatabaseConnection(LoggingContext, String)
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddDatabaseConnection_OpenCollar_Extensions_Logging_LoggingContext_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext, System.String)
+  nameWithType: LoggingContextExtensions.AddDatabaseConnection(LoggingContext, String)
+- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection*
+  name: AddDatabaseConnection
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddDatabaseConnection_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection
+  nameWithType: LoggingContextExtensions.AddDatabaseConnection
+- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest(OpenCollar.Extensions.Logging.LoggingContext,System.Uri)
+  name: AddRequest(LoggingContext, Uri)
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddRequest_OpenCollar_Extensions_Logging_LoggingContext_System_Uri_
+  commentId: M:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest(OpenCollar.Extensions.Logging.LoggingContext,System.Uri)
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest(OpenCollar.Extensions.Logging.LoggingContext, System.Uri)
+  nameWithType: LoggingContextExtensions.AddRequest(LoggingContext, Uri)
+- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest*
+  name: AddRequest
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddRequest_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest
+  nameWithType: LoggingContextExtensions.AddRequest
+- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+  name: AddStoredProcedure(LoggingContext, String)
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddStoredProcedure_OpenCollar_Extensions_Logging_LoggingContext_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext, System.String)
+  nameWithType: LoggingContextExtensions.AddStoredProcedure(LoggingContext, String)
+- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure*
+  name: AddStoredProcedure
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddStoredProcedure_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure
+  nameWithType: LoggingContextExtensions.AddStoredProcedure
+- uid: OpenCollar.Extensions.SqlClient.Model
+  name: OpenCollar.Extensions.SqlClient.Model
+  href: api/OpenCollar.Extensions.SqlClient.Model.html
+  commentId: N:OpenCollar.Extensions.SqlClient.Model
+  fullName: OpenCollar.Extensions.SqlClient.Model
+  nameWithType: OpenCollar.Extensions.SqlClient.Model
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier
+  name: Identifier
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html
+  commentId: T:OpenCollar.Extensions.SqlClient.Model.Identifier
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier
+  nameWithType: Identifier
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.#ctor(System.String)
+  name: Identifier(String)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier__ctor_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.#ctor(System.String)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Identifier(System.String)
+  nameWithType: Identifier.Identifier(String)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.#ctor*
+  name: Identifier
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier__ctor_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Identifier
+  nameWithType: Identifier.Identifier
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.CompareTo(OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: CompareTo(Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_CompareTo_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.CompareTo(OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.CompareTo(OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.CompareTo(Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.CompareTo(System.Object)
+  name: CompareTo(Object)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_CompareTo_System_Object_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.CompareTo(System.Object)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.CompareTo(System.Object)
+  nameWithType: Identifier.CompareTo(Object)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.CompareTo*
+  name: CompareTo
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_CompareTo_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.CompareTo
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.CompareTo
+  nameWithType: Identifier.CompareTo
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.Equals(OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: Equals(Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_Equals_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.Equals(OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Equals(OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.Equals(Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.Equals(System.Object)
+  name: Equals(Object)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_Equals_System_Object_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.Equals(System.Object)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Equals(System.Object)
+  nameWithType: Identifier.Equals(Object)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.Equals*
+  name: Equals
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_Equals_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.Equals
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Equals
+  nameWithType: Identifier.Equals
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.GetHashCode
+  name: GetHashCode()
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_GetHashCode
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.GetHashCode
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.GetHashCode()
+  nameWithType: Identifier.GetHashCode()
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.GetHashCode*
+  name: GetHashCode
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_GetHashCode_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.GetHashCode
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.GetHashCode
+  nameWithType: Identifier.GetHashCode
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_Equality(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: Equality(Identifier, Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_Equality_OpenCollar_Extensions_SqlClient_Model_Identifier_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.op_Equality(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Equality(OpenCollar.Extensions.SqlClient.Model.Identifier, OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.Equality(Identifier, Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_Equality*
+  name: Equality
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_Equality_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.op_Equality
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Equality
+  nameWithType: Identifier.Equality
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_GreaterThan(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: GreaterThan(Identifier, Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_GreaterThan_OpenCollar_Extensions_SqlClient_Model_Identifier_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.op_GreaterThan(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.GreaterThan(OpenCollar.Extensions.SqlClient.Model.Identifier, OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.GreaterThan(Identifier, Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_GreaterThan*
+  name: GreaterThan
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_GreaterThan_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.op_GreaterThan
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.GreaterThan
+  nameWithType: Identifier.GreaterThan
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: GreaterThanOrEqual(Identifier, Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_GreaterThanOrEqual_OpenCollar_Extensions_SqlClient_Model_Identifier_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier, OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.GreaterThanOrEqual(Identifier, Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_GreaterThanOrEqual_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.GreaterThanOrEqual
+  nameWithType: Identifier.GreaterThanOrEqual
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_Implicit(OpenCollar.Extensions.SqlClient.Model.Identifier)~System.String
+  name: Implicit(Identifier to String)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_Implicit_OpenCollar_Extensions_SqlClient_Model_Identifier__System_String
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.op_Implicit(OpenCollar.Extensions.SqlClient.Model.Identifier)~System.String
+  name.vb: Widening(Identifier to String)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Implicit(OpenCollar.Extensions.SqlClient.Model.Identifier to System.String)
+  fullName.vb: OpenCollar.Extensions.SqlClient.Model.Identifier.Widening(OpenCollar.Extensions.SqlClient.Model.Identifier to System.String)
+  nameWithType: Identifier.Implicit(Identifier to String)
+  nameWithType.vb: Identifier.Widening(Identifier to String)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_Implicit(System.String)~OpenCollar.Extensions.SqlClient.Model.Identifier
+  name: Implicit(String to Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_Implicit_System_String__OpenCollar_Extensions_SqlClient_Model_Identifier
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.op_Implicit(System.String)~OpenCollar.Extensions.SqlClient.Model.Identifier
+  name.vb: Widening(String to Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Implicit(System.String to OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName.vb: OpenCollar.Extensions.SqlClient.Model.Identifier.Widening(System.String to OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.Implicit(String to Identifier)
+  nameWithType.vb: Identifier.Widening(String to Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_Implicit*
+  name: Implicit
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_Implicit_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Implicit
+  fullName.vb: OpenCollar.Extensions.SqlClient.Model.Identifier.Widening
+  nameWithType: Identifier.Implicit
+  nameWithType.vb: Identifier.Widening
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_Inequality(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: Inequality(Identifier, Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_Inequality_OpenCollar_Extensions_SqlClient_Model_Identifier_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.op_Inequality(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Inequality(OpenCollar.Extensions.SqlClient.Model.Identifier, OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.Inequality(Identifier, Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_Inequality*
+  name: Inequality
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_Inequality_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.op_Inequality
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.Inequality
+  nameWithType: Identifier.Inequality
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_LessThan(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: LessThan(Identifier, Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_LessThan_OpenCollar_Extensions_SqlClient_Model_Identifier_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.op_LessThan(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.LessThan(OpenCollar.Extensions.SqlClient.Model.Identifier, OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.LessThan(Identifier, Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_LessThan*
+  name: LessThan
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_LessThan_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.op_LessThan
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.LessThan
+  nameWithType: Identifier.LessThan
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: LessThanOrEqual(Identifier, Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_LessThanOrEqual_OpenCollar_Extensions_SqlClient_Model_Identifier_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier, OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.LessThanOrEqual(Identifier, Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_op_LessThanOrEqual_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.LessThanOrEqual
+  nameWithType: Identifier.LessThanOrEqual
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.OriginalValue
+  name: OriginalValue
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_OriginalValue
+  commentId: P:OpenCollar.Extensions.SqlClient.Model.Identifier.OriginalValue
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.OriginalValue
+  nameWithType: Identifier.OriginalValue
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.OriginalValue*
+  name: OriginalValue
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_OriginalValue_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.OriginalValue
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.OriginalValue
+  nameWithType: Identifier.OriginalValue
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.ToString
+  name: ToString()
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_ToString
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.ToString
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.ToString()
+  nameWithType: Identifier.ToString()
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.ToString*
+  name: ToString
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_ToString_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.ToString
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.ToString
+  nameWithType: Identifier.ToString
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName
+  name: ParameterName
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html
+  commentId: T:OpenCollar.Extensions.SqlClient.Model.ParameterName
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName
+  nameWithType: ParameterName
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.#ctor(System.String)
+  name: ParameterName(String)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName__ctor_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.#ctor(System.String)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.ParameterName(System.String)
+  nameWithType: ParameterName.ParameterName(String)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.#ctor*
+  name: ParameterName
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName__ctor_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.ParameterName
+  nameWithType: ParameterName.ParameterName
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.CompareTo(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  name: CompareTo(ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_CompareTo_OpenCollar_Extensions_SqlClient_Model_ParameterName_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.CompareTo(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.CompareTo(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.CompareTo(ParameterName)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.CompareTo(System.Object)
+  name: CompareTo(Object)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_CompareTo_System_Object_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.CompareTo(System.Object)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.CompareTo(System.Object)
+  nameWithType: ParameterName.CompareTo(Object)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.CompareTo*
+  name: CompareTo
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_CompareTo_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.CompareTo
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.CompareTo
+  nameWithType: ParameterName.CompareTo
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.Equals(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  name: Equals(ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_Equals_OpenCollar_Extensions_SqlClient_Model_ParameterName_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.Equals(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Equals(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.Equals(ParameterName)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.Equals(System.Object)
+  name: Equals(Object)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_Equals_System_Object_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.Equals(System.Object)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Equals(System.Object)
+  nameWithType: ParameterName.Equals(Object)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.Equals*
+  name: Equals
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_Equals_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.Equals
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Equals
+  nameWithType: ParameterName.Equals
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.GetHashCode
+  name: GetHashCode()
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_GetHashCode
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.GetHashCode
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.GetHashCode()
+  nameWithType: ParameterName.GetHashCode()
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.GetHashCode*
+  name: GetHashCode
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_GetHashCode_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.GetHashCode
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.GetHashCode
+  nameWithType: ParameterName.GetHashCode
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Equality(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  name: Equality(ParameterName, ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_Equality_OpenCollar_Extensions_SqlClient_Model_ParameterName_OpenCollar_Extensions_SqlClient_Model_ParameterName_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Equality(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Equality(OpenCollar.Extensions.SqlClient.Model.ParameterName, OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.Equality(ParameterName, ParameterName)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Equality*
+  name: Equality
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_Equality_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Equality
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Equality
+  nameWithType: ParameterName.Equality
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_GreaterThan(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  name: GreaterThan(ParameterName, ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_GreaterThan_OpenCollar_Extensions_SqlClient_Model_ParameterName_OpenCollar_Extensions_SqlClient_Model_ParameterName_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_GreaterThan(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.GreaterThan(OpenCollar.Extensions.SqlClient.Model.ParameterName, OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.GreaterThan(ParameterName, ParameterName)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_GreaterThan*
+  name: GreaterThan
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_GreaterThan_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_GreaterThan
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.GreaterThan
+  nameWithType: ParameterName.GreaterThan
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  name: GreaterThanOrEqual(ParameterName, ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_GreaterThanOrEqual_OpenCollar_Extensions_SqlClient_Model_ParameterName_OpenCollar_Extensions_SqlClient_Model_ParameterName_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName, OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.GreaterThanOrEqual(ParameterName, ParameterName)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_GreaterThanOrEqual_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.GreaterThanOrEqual
+  nameWithType: ParameterName.GreaterThanOrEqual
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Implicit(OpenCollar.Extensions.SqlClient.Model.ParameterName)~System.String
+  name: Implicit(ParameterName to String)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_Implicit_OpenCollar_Extensions_SqlClient_Model_ParameterName__System_String
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Implicit(OpenCollar.Extensions.SqlClient.Model.ParameterName)~System.String
+  name.vb: Widening(ParameterName to String)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Implicit(OpenCollar.Extensions.SqlClient.Model.ParameterName to System.String)
+  fullName.vb: OpenCollar.Extensions.SqlClient.Model.ParameterName.Widening(OpenCollar.Extensions.SqlClient.Model.ParameterName to System.String)
+  nameWithType: ParameterName.Implicit(ParameterName to String)
+  nameWithType.vb: ParameterName.Widening(ParameterName to String)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Implicit(System.String)~OpenCollar.Extensions.SqlClient.Model.ParameterName
+  name: Implicit(String to ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_Implicit_System_String__OpenCollar_Extensions_SqlClient_Model_ParameterName
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Implicit(System.String)~OpenCollar.Extensions.SqlClient.Model.ParameterName
+  name.vb: Widening(String to ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Implicit(System.String to OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName.vb: OpenCollar.Extensions.SqlClient.Model.ParameterName.Widening(System.String to OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.Implicit(String to ParameterName)
+  nameWithType.vb: ParameterName.Widening(String to ParameterName)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Implicit*
+  name: Implicit
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_Implicit_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Implicit
+  fullName.vb: OpenCollar.Extensions.SqlClient.Model.ParameterName.Widening
+  nameWithType: ParameterName.Implicit
+  nameWithType.vb: ParameterName.Widening
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Inequality(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  name: Inequality(ParameterName, ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_Inequality_OpenCollar_Extensions_SqlClient_Model_ParameterName_OpenCollar_Extensions_SqlClient_Model_ParameterName_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Inequality(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Inequality(OpenCollar.Extensions.SqlClient.Model.ParameterName, OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.Inequality(ParameterName, ParameterName)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Inequality*
+  name: Inequality
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_Inequality_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_Inequality
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.Inequality
+  nameWithType: ParameterName.Inequality
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_LessThan(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  name: LessThan(ParameterName, ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_LessThan_OpenCollar_Extensions_SqlClient_Model_ParameterName_OpenCollar_Extensions_SqlClient_Model_ParameterName_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_LessThan(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.LessThan(OpenCollar.Extensions.SqlClient.Model.ParameterName, OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.LessThan(ParameterName, ParameterName)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_LessThan*
+  name: LessThan
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_LessThan_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_LessThan
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.LessThan
+  nameWithType: ParameterName.LessThan
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  name: LessThanOrEqual(ParameterName, ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_LessThanOrEqual_OpenCollar_Extensions_SqlClient_Model_ParameterName_OpenCollar_Extensions_SqlClient_Model_ParameterName_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName, OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.LessThanOrEqual(ParameterName, ParameterName)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_op_LessThanOrEqual_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.LessThanOrEqual
+  nameWithType: ParameterName.LessThanOrEqual
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.OriginalValue
+  name: OriginalValue
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_OriginalValue
+  commentId: P:OpenCollar.Extensions.SqlClient.Model.ParameterName.OriginalValue
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.OriginalValue
+  nameWithType: ParameterName.OriginalValue
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.OriginalValue*
+  name: OriginalValue
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_OriginalValue_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.OriginalValue
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.OriginalValue
+  nameWithType: ParameterName.OriginalValue
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString
+  name: ToString()
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_ToString
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString()
+  nameWithType: ParameterName.ToString()
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString*
+  name: ToString
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_ToString_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString
+  nameWithType: ParameterName.ToString
+- uid: OpenCollar.Extensions.SqlClient.ParseException
+  name: ParseException
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html
+  commentId: T:OpenCollar.Extensions.SqlClient.ParseException
+  fullName: OpenCollar.Extensions.SqlClient.ParseException
+  nameWithType: ParseException
+- uid: OpenCollar.Extensions.SqlClient.ParseException.#ctor(System.Int32)
+  name: ParseException(Int32)
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html#OpenCollar_Extensions_SqlClient_ParseException__ctor_System_Int32_
+  commentId: M:OpenCollar.Extensions.SqlClient.ParseException.#ctor(System.Int32)
+  fullName: OpenCollar.Extensions.SqlClient.ParseException.ParseException(System.Int32)
+  nameWithType: ParseException.ParseException(Int32)
+- uid: OpenCollar.Extensions.SqlClient.ParseException.#ctor(System.Int32,System.String)
+  name: ParseException(Int32, String)
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html#OpenCollar_Extensions_SqlClient_ParseException__ctor_System_Int32_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.ParseException.#ctor(System.Int32,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.ParseException.ParseException(System.Int32, System.String)
+  nameWithType: ParseException.ParseException(Int32, String)
+- uid: OpenCollar.Extensions.SqlClient.ParseException.#ctor(System.Int32,System.String,System.Exception)
+  name: ParseException(Int32, String, Exception)
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html#OpenCollar_Extensions_SqlClient_ParseException__ctor_System_Int32_System_String_System_Exception_
+  commentId: M:OpenCollar.Extensions.SqlClient.ParseException.#ctor(System.Int32,System.String,System.Exception)
+  fullName: OpenCollar.Extensions.SqlClient.ParseException.ParseException(System.Int32, System.String, System.Exception)
+  nameWithType: ParseException.ParseException(Int32, String, Exception)
+- uid: OpenCollar.Extensions.SqlClient.ParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ParseException(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html#OpenCollar_Extensions_SqlClient_ParseException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.ParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.ParseException.ParseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ParseException.ParseException(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.ParseException.#ctor*
+  name: ParseException
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html#OpenCollar_Extensions_SqlClient_ParseException__ctor_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ParseException.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ParseException.ParseException
+  nameWithType: ParseException.ParseException
+- uid: OpenCollar.Extensions.SqlClient.ParseException.CharacterPosition
+  name: CharacterPosition
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html#OpenCollar_Extensions_SqlClient_ParseException_CharacterPosition
+  commentId: P:OpenCollar.Extensions.SqlClient.ParseException.CharacterPosition
+  fullName: OpenCollar.Extensions.SqlClient.ParseException.CharacterPosition
+  nameWithType: ParseException.CharacterPosition
+- uid: OpenCollar.Extensions.SqlClient.ParseException.CharacterPosition*
+  name: CharacterPosition
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html#OpenCollar_Extensions_SqlClient_ParseException_CharacterPosition_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ParseException.CharacterPosition
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ParseException.CharacterPosition
+  nameWithType: ParseException.CharacterPosition
+- uid: OpenCollar.Extensions.SqlClient.ParseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html#OpenCollar_Extensions_SqlClient_ParseException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.ParseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.ParseException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ParseException.GetObjectData(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.ParseException.GetObjectData*
+  name: GetObjectData
+  href: api/OpenCollar.Extensions.SqlClient.ParseException.html#OpenCollar_Extensions_SqlClient_ParseException_GetObjectData_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ParseException.GetObjectData
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ParseException.GetObjectData
+  nameWithType: ParseException.GetObjectData
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder
+  name: QueryBuilder
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryBuilder
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder
+  nameWithType: QueryBuilder
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.CommandText
+  name: CommandText
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_CommandText
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryBuilder.CommandText
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.CommandText
+  nameWithType: QueryBuilder.CommandText
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.CommandText*
+  name: CommandText
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_CommandText_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.CommandText
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.CommandText
+  nameWithType: QueryBuilder.CommandText
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.CommandType
+  name: CommandType
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_CommandType
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryBuilder.CommandType
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.CommandType
+  nameWithType: QueryBuilder.CommandType
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.CommandType*
+  name: CommandType
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_CommandType_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.CommandType
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.CommandType
+  nameWithType: QueryBuilder.CommandType
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.Connection
+  name: Connection
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_Connection
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryBuilder.Connection
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.Connection
+  nameWithType: QueryBuilder.Connection
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.Connection*
+  name: Connection
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_Connection_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.Connection
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.Connection
+  nameWithType: QueryBuilder.Connection
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteNonQueryAsync(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteNonQueryAsync(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteNonQueryAsync_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteNonQueryAsync(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteNonQueryAsync(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteNonQueryAsync(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteNonQueryAsync(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteNonQueryAsync(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteNonQueryAsync(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteNonQueryAsync*
+  name: ExecuteNonQueryAsync
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteNonQueryAsync_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteNonQueryAsync
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteNonQueryAsync
+  nameWithType: QueryBuilder.ExecuteNonQueryAsync
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync*
+  name: ExecuteQueryAsync
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync
+  nameWithType: QueryBuilder.ExecuteQueryAsync
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``1(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__1_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``1(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``10(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__10_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``10(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``2(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1, T2>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__2_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``2(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1, T2)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1, T2>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1, T2)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1, T2>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1, T2)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``3(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1, T2, T3>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__3_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``3(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1, T2, T3)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1, T2, T3>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1, T2, T3>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``4(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1, T2, T3, T4>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__4_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``4(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1, T2, T3, T4)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``5(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1, T2, T3, T4, T5>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__5_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``5(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1, T2, T3, T4, T5)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``6(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1, T2, T3, T4, T5, T6>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__6_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``6(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``7(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__7_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``7(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``8(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7, T8>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__8_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``8(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7, T8)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7, T8>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7, T8)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7, T8>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7, T8)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``9(System.Nullable{System.Threading.CancellationToken})
+  name: ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7, T8, T9>(Nullable<CancellationToken>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ExecuteQueryAsync__9_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync``9(System.Nullable{System.Threading.CancellationToken})
+  name.vb: ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(Nullable(Of CancellationToken))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7, T8, T9>(System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: QueryBuilder.ExecuteQueryAsync<T1, T2, T3, T4, T5, T6, T7, T8, T9>(Nullable<CancellationToken>)
+  nameWithType.vb: QueryBuilder.ExecuteQueryAsync(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(Nullable(Of CancellationToken))
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.Read*
+  name: Read
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_Read_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.Read
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.Read
+  nameWithType: QueryBuilder.Read
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.Read``1(System.Func{Microsoft.Data.SqlClient.SqlDataReader,``0},System.Boolean)
+  name: Read<T>(Func<SqlDataReader, T>, Boolean)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_Read__1_System_Func_Microsoft_Data_SqlClient_SqlDataReader___0__System_Boolean_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.Read``1(System.Func{Microsoft.Data.SqlClient.SqlDataReader,``0},System.Boolean)
+  name.vb: Read(Of T)(Func(Of SqlDataReader, T), Boolean)
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.Read<T>(System.Func<Microsoft.Data.SqlClient.SqlDataReader, T>, System.Boolean)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.Read(Of T)(System.Func(Of Microsoft.Data.SqlClient.SqlDataReader, T), System.Boolean)
+  nameWithType: QueryBuilder.Read<T>(Func<SqlDataReader, T>, Boolean)
+  nameWithType.vb: QueryBuilder.Read(Of T)(Func(Of SqlDataReader, T), Boolean)
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.Timeout
+  name: Timeout
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_Timeout
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryBuilder.Timeout
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.Timeout
+  nameWithType: QueryBuilder.Timeout
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.Timeout*
+  name: Timeout
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_Timeout_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.Timeout
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.Timeout
+  nameWithType: QueryBuilder.Timeout
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.WithParameter(OpenCollar.Extensions.SqlClient.Model.ParameterName,System.Object)
+  name: WithParameter(ParameterName, Object)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_WithParameter_OpenCollar_Extensions_SqlClient_Model_ParameterName_System_Object_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.WithParameter(OpenCollar.Extensions.SqlClient.Model.ParameterName,System.Object)
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.WithParameter(OpenCollar.Extensions.SqlClient.Model.ParameterName, System.Object)
+  nameWithType: QueryBuilder.WithParameter(ParameterName, Object)
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.WithParameter*
+  name: WithParameter
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_WithParameter_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.WithParameter
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.WithParameter
+  nameWithType: QueryBuilder.WithParameter
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Int32)
+  name: WithRetries(Int32)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_WithRetries_System_Int32_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Int32)
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Int32)
+  nameWithType: QueryBuilder.WithRetries(Int32)
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries*
+  name: WithRetries
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_WithRetries_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries
+  nameWithType: QueryBuilder.WithRetries
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.WithTimeout(System.TimeSpan)
+  name: WithTimeout(TimeSpan)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_WithTimeout_System_TimeSpan_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.WithTimeout(System.TimeSpan)
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.WithTimeout(System.TimeSpan)
+  nameWithType: QueryBuilder.WithTimeout(TimeSpan)
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.WithTimeout*
+  name: WithTimeout
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_WithTimeout_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.WithTimeout
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.WithTimeout
+  nameWithType: QueryBuilder.WithTimeout
+- uid: OpenCollar.Extensions.SqlClient.QueryException
+  name: QueryException
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryException
+  fullName: OpenCollar.Extensions.SqlClient.QueryException
+  nameWithType: QueryException
+- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: QueryException(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: QueryException.QueryException(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String)
+  name: QueryException(String)
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String)
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.String)
+  nameWithType: QueryException.QueryException(String)
+- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String)
+  name: QueryException(String, String)
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_String_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.String, System.String)
+  nameWithType: QueryException.QueryException(String, String)
+- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String,System.Exception)
+  name: QueryException(String, String, Exception)
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_String_System_String_System_Exception_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String,System.Exception)
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.String, System.String, System.Exception)
+  nameWithType: QueryException.QueryException(String, String, Exception)
+- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor*
+  name: QueryException
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryException.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException
+  nameWithType: QueryException.QueryException
+- uid: OpenCollar.Extensions.SqlClient.QueryException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: QueryException.GetObjectData(SerializationInfo, StreamingContext)
+- uid: OpenCollar.Extensions.SqlClient.QueryException.GetObjectData*
+  name: GetObjectData
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException_GetObjectData_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryException.GetObjectData
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.GetObjectData
+  nameWithType: QueryException.GetObjectData
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`1
+  name: QueryResults<T1>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-1.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`1
+  name.vb: QueryResults(Of T1)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1)
+  nameWithType: QueryResults<T1>
+  nameWithType.vb: QueryResults(Of T1)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-1.html#OpenCollar_Extensions_SqlClient_QueryResults_1_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`1.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1).GetEnumerator()
+  nameWithType: QueryResults<T1>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-1.html#OpenCollar_Extensions_SqlClient_QueryResults_1_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`1.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1).GetEnumerator
+  nameWithType: QueryResults<T1>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`1.Results1
+  name: Results1
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-1.html#OpenCollar_Extensions_SqlClient_QueryResults_1_Results1
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`1.Results1
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1>.Results1
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1).Results1
+  nameWithType: QueryResults<T1>.Results1
+  nameWithType.vb: QueryResults(Of T1).Results1
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`1.Results1*
+  name: Results1
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-1.html#OpenCollar_Extensions_SqlClient_QueryResults_1_Results1_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`1.Results1
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1>.Results1
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1).Results1
+  nameWithType: QueryResults<T1>.Results1
+  nameWithType.vb: QueryResults(Of T1).Results1
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-1.html#OpenCollar_Extensions_SqlClient_QueryResults_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: QueryResults<T1>.IEnumerable.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1).System.Collections.IEnumerable.GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-1.html#OpenCollar_Extensions_SqlClient_QueryResults_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: QueryResults<T1>.IEnumerable.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1).System.Collections.IEnumerable.GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`10
+  name: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-10.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`10
+  name.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`10.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-10.html#OpenCollar_Extensions_SqlClient_QueryResults_10_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`10.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).GetEnumerator()
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`10.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-10.html#OpenCollar_Extensions_SqlClient_QueryResults_10_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`10.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).GetEnumerator
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`10.Results10
+  name: Results10
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-10.html#OpenCollar_Extensions_SqlClient_QueryResults_10_Results10
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`10.Results10
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.Results10
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).Results10
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.Results10
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).Results10
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`10.Results10*
+  name: Results10
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-10.html#OpenCollar_Extensions_SqlClient_QueryResults_10_Results10_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`10.Results10
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.Results10
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).Results10
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.Results10
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).Results10
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`2
+  name: QueryResults<T1, T2>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-2.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`2
+  name.vb: QueryResults(Of T1, T2)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2)
+  nameWithType: QueryResults<T1, T2>
+  nameWithType.vb: QueryResults(Of T1, T2)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`2.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-2.html#OpenCollar_Extensions_SqlClient_QueryResults_2_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`2.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2).GetEnumerator()
+  nameWithType: QueryResults<T1, T2>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1, T2).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`2.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-2.html#OpenCollar_Extensions_SqlClient_QueryResults_2_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`2.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2).GetEnumerator
+  nameWithType: QueryResults<T1, T2>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1, T2).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`2.Results2
+  name: Results2
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-2.html#OpenCollar_Extensions_SqlClient_QueryResults_2_Results2
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`2.Results2
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2>.Results2
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2).Results2
+  nameWithType: QueryResults<T1, T2>.Results2
+  nameWithType.vb: QueryResults(Of T1, T2).Results2
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`2.Results2*
+  name: Results2
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-2.html#OpenCollar_Extensions_SqlClient_QueryResults_2_Results2_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`2.Results2
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2>.Results2
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2).Results2
+  nameWithType: QueryResults<T1, T2>.Results2
+  nameWithType.vb: QueryResults(Of T1, T2).Results2
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`3
+  name: QueryResults<T1, T2, T3>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-3.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`3
+  name.vb: QueryResults(Of T1, T2, T3)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3)
+  nameWithType: QueryResults<T1, T2, T3>
+  nameWithType.vb: QueryResults(Of T1, T2, T3)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`3.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-3.html#OpenCollar_Extensions_SqlClient_QueryResults_3_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`3.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3).GetEnumerator()
+  nameWithType: QueryResults<T1, T2, T3>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1, T2, T3).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`3.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-3.html#OpenCollar_Extensions_SqlClient_QueryResults_3_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`3.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3).GetEnumerator
+  nameWithType: QueryResults<T1, T2, T3>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1, T2, T3).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`3.Results3
+  name: Results3
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-3.html#OpenCollar_Extensions_SqlClient_QueryResults_3_Results3
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`3.Results3
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3>.Results3
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3).Results3
+  nameWithType: QueryResults<T1, T2, T3>.Results3
+  nameWithType.vb: QueryResults(Of T1, T2, T3).Results3
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`3.Results3*
+  name: Results3
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-3.html#OpenCollar_Extensions_SqlClient_QueryResults_3_Results3_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`3.Results3
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3>.Results3
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3).Results3
+  nameWithType: QueryResults<T1, T2, T3>.Results3
+  nameWithType.vb: QueryResults(Of T1, T2, T3).Results3
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`4
+  name: QueryResults<T1, T2, T3, T4>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-4.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`4
+  name.vb: QueryResults(Of T1, T2, T3, T4)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4)
+  nameWithType: QueryResults<T1, T2, T3, T4>
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`4.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-4.html#OpenCollar_Extensions_SqlClient_QueryResults_4_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`4.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4).GetEnumerator()
+  nameWithType: QueryResults<T1, T2, T3, T4>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`4.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-4.html#OpenCollar_Extensions_SqlClient_QueryResults_4_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`4.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4).GetEnumerator
+  nameWithType: QueryResults<T1, T2, T3, T4>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`4.Results4
+  name: Results4
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-4.html#OpenCollar_Extensions_SqlClient_QueryResults_4_Results4
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`4.Results4
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4>.Results4
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4).Results4
+  nameWithType: QueryResults<T1, T2, T3, T4>.Results4
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4).Results4
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`4.Results4*
+  name: Results4
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-4.html#OpenCollar_Extensions_SqlClient_QueryResults_4_Results4_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`4.Results4
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4>.Results4
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4).Results4
+  nameWithType: QueryResults<T1, T2, T3, T4>.Results4
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4).Results4
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`5
+  name: QueryResults<T1, T2, T3, T4, T5>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-5.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`5
+  name.vb: QueryResults(Of T1, T2, T3, T4, T5)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5)
+  nameWithType: QueryResults<T1, T2, T3, T4, T5>
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`5.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-5.html#OpenCollar_Extensions_SqlClient_QueryResults_5_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`5.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5).GetEnumerator()
+  nameWithType: QueryResults<T1, T2, T3, T4, T5>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`5.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-5.html#OpenCollar_Extensions_SqlClient_QueryResults_5_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`5.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5).GetEnumerator
+  nameWithType: QueryResults<T1, T2, T3, T4, T5>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`5.Results5
+  name: Results5
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-5.html#OpenCollar_Extensions_SqlClient_QueryResults_5_Results5
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`5.Results5
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5>.Results5
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5).Results5
+  nameWithType: QueryResults<T1, T2, T3, T4, T5>.Results5
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5).Results5
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`5.Results5*
+  name: Results5
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-5.html#OpenCollar_Extensions_SqlClient_QueryResults_5_Results5_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`5.Results5
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5>.Results5
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5).Results5
+  nameWithType: QueryResults<T1, T2, T3, T4, T5>.Results5
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5).Results5
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`6
+  name: QueryResults<T1, T2, T3, T4, T5, T6>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-6.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`6
+  name.vb: QueryResults(Of T1, T2, T3, T4, T5, T6)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6)
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6>
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`6.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-6.html#OpenCollar_Extensions_SqlClient_QueryResults_6_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`6.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6).GetEnumerator()
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`6.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-6.html#OpenCollar_Extensions_SqlClient_QueryResults_6_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`6.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6).GetEnumerator
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`6.Results6
+  name: Results6
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-6.html#OpenCollar_Extensions_SqlClient_QueryResults_6_Results6
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`6.Results6
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6>.Results6
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6).Results6
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6>.Results6
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6).Results6
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`6.Results6*
+  name: Results6
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-6.html#OpenCollar_Extensions_SqlClient_QueryResults_6_Results6_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`6.Results6
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6>.Results6
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6).Results6
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6>.Results6
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6).Results6
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`7
+  name: QueryResults<T1, T2, T3, T4, T5, T6, T7>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-7.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`7
+  name.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7)
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7>
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`7.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-7.html#OpenCollar_Extensions_SqlClient_QueryResults_7_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`7.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7).GetEnumerator()
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`7.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-7.html#OpenCollar_Extensions_SqlClient_QueryResults_7_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`7.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7).GetEnumerator
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`7.Results7
+  name: Results7
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-7.html#OpenCollar_Extensions_SqlClient_QueryResults_7_Results7
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`7.Results7
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7>.Results7
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7).Results7
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7>.Results7
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7).Results7
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`7.Results7*
+  name: Results7
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-7.html#OpenCollar_Extensions_SqlClient_QueryResults_7_Results7_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`7.Results7
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7>.Results7
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7).Results7
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7>.Results7
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7).Results7
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`8
+  name: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-8.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`8
+  name.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`8.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-8.html#OpenCollar_Extensions_SqlClient_QueryResults_8_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`8.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8).GetEnumerator()
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`8.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-8.html#OpenCollar_Extensions_SqlClient_QueryResults_8_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`8.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8).GetEnumerator
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`8.Results8
+  name: Results8
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-8.html#OpenCollar_Extensions_SqlClient_QueryResults_8_Results8
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`8.Results8
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>.Results8
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8).Results8
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>.Results8
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8).Results8
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`8.Results8*
+  name: Results8
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-8.html#OpenCollar_Extensions_SqlClient_QueryResults_8_Results8_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`8.Results8
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>.Results8
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8).Results8
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8>.Results8
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8).Results8
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`9
+  name: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-9.html
+  commentId: T:OpenCollar.Extensions.SqlClient.QueryResults`9
+  name.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`9.GetEnumerator
+  name: GetEnumerator()
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-9.html#OpenCollar_Extensions_SqlClient_QueryResults_9_GetEnumerator
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryResults`9.GetEnumerator
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>.GetEnumerator()
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).GetEnumerator()
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>.GetEnumerator()
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).GetEnumerator()
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`9.GetEnumerator*
+  name: GetEnumerator
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-9.html#OpenCollar_Extensions_SqlClient_QueryResults_9_GetEnumerator_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`9.GetEnumerator
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>.GetEnumerator
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).GetEnumerator
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>.GetEnumerator
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).GetEnumerator
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`9.Results9
+  name: Results9
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-9.html#OpenCollar_Extensions_SqlClient_QueryResults_9_Results9
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryResults`9.Results9
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>.Results9
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).Results9
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>.Results9
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).Results9
+- uid: OpenCollar.Extensions.SqlClient.QueryResults`9.Results9*
+  name: Results9
+  href: api/OpenCollar.Extensions.SqlClient.QueryResults-9.html#OpenCollar_Extensions_SqlClient_QueryResults_9_Results9_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryResults`9.Results9
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>.Results9
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).Results9
+  nameWithType: QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9>.Results9
+  nameWithType.vb: QueryResults(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).Results9
+- uid: OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.html
+  commentId: T:OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions
+  fullName: OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.AddConnectionFactory*
+  name: AddConnectionFactory
+  href: api/OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.html#OpenCollar_Extensions_SqlClient_ServiceCollectionExtensions_AddConnectionFactory_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.AddConnectionFactory
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.AddConnectionFactory
+  nameWithType: ServiceCollectionExtensions.AddConnectionFactory
+- uid: OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.AddConnectionFactory``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddConnectionFactory<TConnectionFactory>(IServiceCollection)
+  href: api/OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.html#OpenCollar_Extensions_SqlClient_ServiceCollectionExtensions_AddConnectionFactory__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.AddConnectionFactory``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddConnectionFactory(Of TConnectionFactory)(IServiceCollection)
+  fullName: OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.AddConnectionFactory<TConnectionFactory>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.AddConnectionFactory(Of TConnectionFactory)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddConnectionFactory<TConnectionFactory>(IServiceCollection)
+  nameWithType.vb: ServiceCollectionExtensions.AddConnectionFactory(Of TConnectionFactory)(IServiceCollection)
+- uid: OpenCollar.Extensions.SqlClient.SqlReaderExtensions
+  name: SqlReaderExtensions
+  href: api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.html
+  commentId: T:OpenCollar.Extensions.SqlClient.SqlReaderExtensions
+  fullName: OpenCollar.Extensions.SqlClient.SqlReaderExtensions
+  nameWithType: SqlReaderExtensions
+- uid: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetDateTimeOffsetOrDefault(Microsoft.Data.SqlClient.SqlDataReader,System.Int32,System.Nullable{System.DateTimeOffset})
+  name: GetDateTimeOffsetOrDefault(SqlDataReader, Int32, Nullable<DateTimeOffset>)
+  href: api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.html#OpenCollar_Extensions_SqlClient_SqlReaderExtensions_GetDateTimeOffsetOrDefault_Microsoft_Data_SqlClient_SqlDataReader_System_Int32_System_Nullable_System_DateTimeOffset__
+  commentId: M:OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetDateTimeOffsetOrDefault(Microsoft.Data.SqlClient.SqlDataReader,System.Int32,System.Nullable{System.DateTimeOffset})
+  name.vb: GetDateTimeOffsetOrDefault(SqlDataReader, Int32, Nullable(Of DateTimeOffset))
+  fullName: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetDateTimeOffsetOrDefault(Microsoft.Data.SqlClient.SqlDataReader, System.Int32, System.Nullable<System.DateTimeOffset>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetDateTimeOffsetOrDefault(Microsoft.Data.SqlClient.SqlDataReader, System.Int32, System.Nullable(Of System.DateTimeOffset))
+  nameWithType: SqlReaderExtensions.GetDateTimeOffsetOrDefault(SqlDataReader, Int32, Nullable<DateTimeOffset>)
+  nameWithType.vb: SqlReaderExtensions.GetDateTimeOffsetOrDefault(SqlDataReader, Int32, Nullable(Of DateTimeOffset))
+- uid: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetDateTimeOffsetOrDefault*
+  name: GetDateTimeOffsetOrDefault
+  href: api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.html#OpenCollar_Extensions_SqlClient_SqlReaderExtensions_GetDateTimeOffsetOrDefault_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetDateTimeOffsetOrDefault
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetDateTimeOffsetOrDefault
+  nameWithType: SqlReaderExtensions.GetDateTimeOffsetOrDefault
+- uid: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrDefault*
+  name: GetValueOrDefault
+  href: api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.html#OpenCollar_Extensions_SqlClient_SqlReaderExtensions_GetValueOrDefault_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrDefault
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrDefault
+  nameWithType: SqlReaderExtensions.GetValueOrDefault
+- uid: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrDefault``1(Microsoft.Data.SqlClient.SqlDataReader,System.Int32,``0)
+  name: GetValueOrDefault<T>(SqlDataReader, Int32, T)
+  href: api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.html#OpenCollar_Extensions_SqlClient_SqlReaderExtensions_GetValueOrDefault__1_Microsoft_Data_SqlClient_SqlDataReader_System_Int32___0_
+  commentId: M:OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrDefault``1(Microsoft.Data.SqlClient.SqlDataReader,System.Int32,``0)
+  name.vb: GetValueOrDefault(Of T)(SqlDataReader, Int32, T)
+  fullName: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrDefault<T>(Microsoft.Data.SqlClient.SqlDataReader, System.Int32, T)
+  fullName.vb: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrDefault(Of T)(Microsoft.Data.SqlClient.SqlDataReader, System.Int32, T)
+  nameWithType: SqlReaderExtensions.GetValueOrDefault<T>(SqlDataReader, Int32, T)
+  nameWithType.vb: SqlReaderExtensions.GetValueOrDefault(Of T)(SqlDataReader, Int32, T)
+- uid: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrFail*
+  name: GetValueOrFail
+  href: api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.html#OpenCollar_Extensions_SqlClient_SqlReaderExtensions_GetValueOrFail_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrFail
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrFail
+  nameWithType: SqlReaderExtensions.GetValueOrFail
+- uid: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrFail``1(Microsoft.Data.SqlClient.SqlDataReader,System.Int32)
+  name: GetValueOrFail<T>(SqlDataReader, Int32)
+  href: api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.html#OpenCollar_Extensions_SqlClient_SqlReaderExtensions_GetValueOrFail__1_Microsoft_Data_SqlClient_SqlDataReader_System_Int32_
+  commentId: M:OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrFail``1(Microsoft.Data.SqlClient.SqlDataReader,System.Int32)
+  name.vb: GetValueOrFail(Of T)(SqlDataReader, Int32)
+  fullName: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrFail<T>(Microsoft.Data.SqlClient.SqlDataReader, System.Int32)
+  fullName.vb: OpenCollar.Extensions.SqlClient.SqlReaderExtensions.GetValueOrFail(Of T)(Microsoft.Data.SqlClient.SqlDataReader, System.Int32)
+  nameWithType: SqlReaderExtensions.GetValueOrFail<T>(SqlDataReader, Int32)
+  nameWithType.vb: SqlReaderExtensions.GetValueOrFail(Of T)(SqlDataReader, Int32)

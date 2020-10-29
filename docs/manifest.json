@@ -1,0 +1,585 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/openc/Source/Repos/open-collar/OpenCollar.Extensions.SqlClient/docs-src/ApiDocs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html",
+          "hash": "7JvGA/EKU5r3BxknAwP0vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.CallingContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.CallingContext.html",
+          "hash": "dIOr1HfazCgKjQU42WM9zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.html",
+          "hash": "HonlRQeqM9IX/b/ZOg+eFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html",
+          "hash": "G1p4zAspap/8GZBySSnygA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.Configuration.html",
+          "hash": "c4XOy2kGgBO/SNEphjXUuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.Connection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.Connection.html",
+          "hash": "LS2IElHC6+7bgtEmIyCMdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionException.html",
+          "hash": "TaQkmZnV79vMFpFZ2TVByw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html",
+          "hash": "uRd4ZP0CPod7MbuTBoKZTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html",
+          "hash": "9agbvV1K38Mzv1sM2YR0bA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html",
+          "hash": "p5EPCZMZTxT7Xp+2ezKjgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.Constants.Keys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.Constants.Keys.html",
+          "hash": "TitGBWqhXtW4l9GPbdhxoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.Constants.html",
+          "hash": "pl9BOt5W0iYVbIFBmgwrQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.DatabaseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.DatabaseException.html",
+          "hash": "LWbJmOzgyp57Pz+WBvh12A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.DbException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.DbException.html",
+          "hash": "y03tG4JLs3RGOGk6cIj/Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html",
+          "hash": "E08lZ+A1Ffd9h57Q41eKaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.Model.Identifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.Model.Identifier.html",
+          "hash": "EAqRM4LpvnQg2q4wNZo/jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.Model.ParameterName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html",
+          "hash": "zPriA2KJoY2jrZRoUJJ2bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.Model.html",
+          "hash": "zhxvYk6ixhFzDFK1TOKbpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.ParseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.ParseException.html",
+          "hash": "6I7AKUipxYj0DZdY6c7u6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryBuilder.html",
+          "hash": "sLMmRCVdm+qdrJnHQn+B0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryException.html",
+          "hash": "OUnP8WZhbunH1iXtPSMnAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-1.html",
+          "hash": "NcqovzK46x6UfNTIFhmW+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-10.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-10.html",
+          "hash": "zKkHJLkIqaxiAutj4uzVMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-2.html",
+          "hash": "9NyDlCkLt6poc0p0RXAjUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-3.html",
+          "hash": "j29OH2ZstqwjWZc6zcjo3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-4.html",
+          "hash": "tgJL7HOQsdk8IM/ntqjC+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-5.html",
+          "hash": "s11c50nJ0VJT+5qGvtLx0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-6.html",
+          "hash": "eqqVmUqq//Y7UnYK+r44xQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-7.html",
+          "hash": "yvhgyQcSOudb4zjwqqEPRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-8.html",
+          "hash": "JkZKVVAKqmAXh81eqn6sGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-9.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-9.html",
+          "hash": "SLDzD6EV/y9QC/aA3E+oow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.html",
+          "hash": "iN/EzI7ZJzv0fmkmrlIlvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.html",
+          "hash": "e6GZYRPJ0S0v1FoEFD6Zng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCollar.Extensions.SqlClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCollar.Extensions.SqlClient.html",
+          "hash": "0rA2wo2diQHZShmBEzjSxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "kUbXOk7LuR0WGcJkHtQSMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "EYr7QwK3IQx8z2O9bgLcPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/opencollar-icon-48x96x32.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/opencollar-icon-48x96x32.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "Frf+b2A3Yc8xWxdSnei22w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "qLR8oaMq+CsSTf9ceS6f5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "usage/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "usage/index.html",
+          "hash": "dM4dW6GAZnxyrq2v+Tf7KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "usage/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "usage/toc.html",
+          "hash": "ek2IDqrFkjt4dcCmmDo7IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 34,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

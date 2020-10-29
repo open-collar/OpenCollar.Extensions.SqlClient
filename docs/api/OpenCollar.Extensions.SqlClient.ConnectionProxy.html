@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConnectionProxy
+   | API Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConnectionProxy
+   | API Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href=".././images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././images/opencollar-icon-48x96x32.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy">
+  
+  
+  <h1 id="OpenCollar_Extensions_SqlClient_ConnectionProxy" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy" class="text-break">Class ConnectionProxy
+  </h1>
+  <div class="markdown level0 summary"><p>A proxy that wraps the <a class="xref" href="OpenCollar.Extensions.SqlClient.Connection.html">Connection</a> class that provides simple
+<span class="xref">System.IDisposable</span> semantics and other niceties.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OpenCollar.Extensions.Disposable</span></div>
+    <div class="level2"><span class="xref">ConnectionProxy</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">OpenCollar.Extensions.Disposable.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">OpenCollar.Extensions.Disposable.CheckNotDisposed()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCollar.Extensions.SqlClient.html">OpenCollar.Extensions.SqlClient</a></h6>
+  <h6><strong>Assembly</strong>: OpenCollar.Extensions.SqlClient.dll</h6>
+  <h5 id="OpenCollar_Extensions_SqlClient_ConnectionProxy_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ConnectionProxy : Disposable, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionProxy_SqlConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.SqlConnection*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionProxy_SqlConnection" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.SqlConnection">SqlConnection</h4>
+  <div class="markdown level1 summary"><p>Gets the underlying connection to wrap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+public SqlConnection SqlConnection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Data.SqlClient.SqlConnection</span></td>
+        <td><p>The underlying connection to wrap.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionProxy_Dispose_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.Dispose*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionProxy_Dispose_System_Boolean_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p><span class="xref">true</span> to release both managed and unmanaged resources; <span class="xref">false</span> to
+release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">OpenCollar.Extensions.Disposable.Dispose(System.Boolean)</span></div>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteNonQueryAsync_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteNonQueryAsync*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteNonQueryAsync_Microsoft_Data_SqlClient_SqlCommand_System_Nullable_System_Threading_CancellationToken__" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteNonQueryAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable{System.Threading.CancellationToken})">ExecuteNonQueryAsync(SqlCommand, Nullable&lt;CancellationToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Executes an SQL statement against the <span class="xref">langword_csharp_Connection</span> object of a .NET Framework data
+provider, and returns the number of rows affected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; ExecuteNonQueryAsync([NotNull] SqlCommand command, CancellationToken? cancellationToken = default(CancellationToken? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Threading.CancellationToken</span>&gt;</td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to be used to request that the operation be abandoned before the command timeout elapses.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows affected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">command</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteReaderAsync_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteReaderAsync_Microsoft_Data_SqlClient_SqlCommand_System_Data_CommandBehavior_System_Nullable_System_Threading_CancellationToken__" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Data.CommandBehavior,System.Nullable{System.Threading.CancellationToken})">ExecuteReaderAsync(SqlCommand, CommandBehavior, Nullable&lt;CancellationToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Executes the <span class="xref">System.Data.IDbCommand.CommandText</span> against the
+<span class="xref">System.Data.IDbCommand.Connection</span>, and builds an <span class="xref">System.Data.IDataReader</span>
+using one of the <span class="xref">System.Data.CommandBehavior</span> values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SqlDataReader&gt; ExecuteReaderAsync([NotNull] SqlCommand command, CommandBehavior behavior, CancellationToken? cancellationToken = default(CancellationToken? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandBehavior</span></td>
+        <td><span class="parametername">behavior</span></td>
+        <td><p>One of the <span class="xref">System.Data.CommandBehavior</span> values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Threading.CancellationToken</span>&gt;</td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to be used to request that the operation be abandoned before the command timeout elapses.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.Data.SqlClient.SqlDataReader</span>&gt;</td>
+        <td><p>An <span class="xref">System.Data.IDataReader</span> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteReaderAsync_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteReaderAsync_Microsoft_Data_SqlClient_SqlCommand_System_Nullable_System_Threading_CancellationToken__" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable{System.Threading.CancellationToken})">ExecuteReaderAsync(SqlCommand, Nullable&lt;CancellationToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Executes the <span class="xref">System.Data.IDbCommand.CommandText</span> against the
+<span class="xref">System.Data.IDbCommand.Connection</span> and builds an <span class="xref">System.Data.IDataReader</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SqlDataReader&gt; ExecuteReaderAsync([NotNull] SqlCommand command, CancellationToken? cancellationToken = default(CancellationToken? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Threading.CancellationToken</span>&gt;</td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to be used to request that the operation be abandoned before the command timeout elapses.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.Data.SqlClient.SqlDataReader</span>&gt;</td>
+        <td><p>An <span class="xref">System.Data.IDataReader</span> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteScalarAsync_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteScalarAsync*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionProxy_ExecuteScalarAsync_Microsoft_Data_SqlClient_SqlCommand_System_Nullable_System_Threading_CancellationToken__" data-uid="OpenCollar.Extensions.SqlClient.ConnectionProxy.ExecuteScalarAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable{System.Threading.CancellationToken})">ExecuteScalarAsync(SqlCommand, Nullable&lt;CancellationToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Executes the query, and returns the first column of the first row in the resultset returned by the
+query. Extra columns or rows are ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; ExecuteScalarAsync([NotNull] SqlCommand command, CancellationToken? cancellationToken = default(CancellationToken? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Data.SqlClient.SqlCommand</span></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Threading.CancellationToken</span>&gt;</td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token to be used to request that the operation be abandoned before the command timeout elapses.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><p>The first column of the first row in the resultset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html#OpenCollar_Extensions_SqlClient_ConnectionProxyExtensions_QueryProcedure_OpenCollar_Extensions_SqlClient_ConnectionProxy_OpenCollar_Extensions_SqlClient_Model_Identifier_">ConnectionProxyExtensions.QueryProcedure(ConnectionProxy, Identifier)</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><span class="xref">OpenCollar.Extensions.Disposable</span></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div style='box-sizing: border-box;'><div style='float: left; width: calc(100% - 200px);'>Copyright &copy; 2020 <a href='mailto:jevans@open-collar.org.uk'>Jonathan Evans</a></div><div style='float: left; width: 200px;'><span style='font-style: italic;'>Version: BUILD_VERSION</span></div></div>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
