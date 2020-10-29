@@ -17,7 +17,7 @@
 
 
 
-A framework that allows database queries to be executed quickly and cleanly, with logging, retries and concurrency.
+A framework that allows database queries to be executed quickly and cleanly, with validation, logging, retries and concurrency.
 
  * [API Documentation](https://open-collar.github.io/OpenCollar.Extensions.SqlClient/)
  * View package in [nuget.org](https://nuget.org) at: https://www.nuget.org/packages/OpenCollar.Extensions.SqlClient/

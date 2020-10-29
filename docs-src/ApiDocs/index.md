@@ -1,6 +1,6 @@
 # OpenCollar.Extensions.SqlClient
 
-A framework that allows database queries to be executed quickly and cleanly, with logging, retries and concurrency.
+A framework that allows database queries to be executed quickly and cleanly, with validation, logging, retries and concurrency.
 
 ## NuGet Package
 
@@ -23,7 +23,7 @@ Package and installation instructions at: https://www.nuget.org/packages/OpenCol
 
 # Usage
 
-A framework that allows database queries to be executed quickly and cleanly, with logging, retries and concurrency.
+A framework that allows database queries to be executed quickly and cleanly, with validation, logging, retries and concurrency.
 
 # Related Projects
 
