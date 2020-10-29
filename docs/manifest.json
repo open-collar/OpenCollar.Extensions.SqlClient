@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/openc/Source/Repos/open-collar/OpenCollar.Extensions.SqlClient/docs-src/ApiDocs",
+  "source_base_path": "/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/docs-src/ApiDocs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -14,23 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html",
-          "hash": "7JvGA/EKU5r3BxknAwP0vg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/OpenCollar.Extensions.SqlClient.CallingContext.yml",
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.CallingContext.html",
-          "hash": "dIOr1HfazCgKjQU42WM9zw=="
+          "hash": "SNGwn/zZYxcRXhX6keZ70g=="
         }
       },
       "is_incremental": false,
@@ -42,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.html",
-          "hash": "HonlRQeqM9IX/b/ZOg+eFQ=="
+          "hash": "UYCpwrlcbDe3OeP0mpUXHg=="
         }
       },
       "is_incremental": false,
@@ -54,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html",
-          "hash": "G1p4zAspap/8GZBySSnygA=="
+          "hash": "9NxLCo3a/jSijOl1pegUAg=="
         }
       },
       "is_incremental": false,
@@ -66,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.Configuration.html",
-          "hash": "c4XOy2kGgBO/SNEphjXUuA=="
+          "hash": "PVTzNs/IGWGY9h/8VB6LJw=="
         }
       },
       "is_incremental": false,
@@ -78,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.Connection.html",
-          "hash": "LS2IElHC6+7bgtEmIyCMdQ=="
+          "hash": "vL9epcg2bmyJozxNqvh6YA=="
         }
       },
       "is_incremental": false,
@@ -90,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionException.html",
-          "hash": "TaQkmZnV79vMFpFZ2TVByw=="
+          "hash": "BK08gqXmf7CfKhfYX6/+YA=="
         }
       },
       "is_incremental": false,
@@ -102,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html",
-          "hash": "uRd4ZP0CPod7MbuTBoKZTQ=="
+          "hash": "gSArAUEXd5nbUBappKYCmA=="
         }
       },
       "is_incremental": false,
@@ -114,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html",
-          "hash": "9agbvV1K38Mzv1sM2YR0bA=="
+          "hash": "hgSnDsi6k+aWTR5x2E4gMg=="
         }
       },
       "is_incremental": false,
@@ -126,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html",
-          "hash": "p5EPCZMZTxT7Xp+2ezKjgg=="
+          "hash": "Bgd8dVsXELcUugMRLzfP3w=="
         }
       },
       "is_incremental": false,
@@ -138,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.Constants.Keys.html",
-          "hash": "TitGBWqhXtW4l9GPbdhxoA=="
+          "hash": "WihN9TKmIVaNy/1miJLQHQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.Constants.html",
-          "hash": "pl9BOt5W0iYVbIFBmgwrQQ=="
+          "hash": "/yiiRMV/2lfuSvTLG4dM9w=="
         }
       },
       "is_incremental": false,
@@ -162,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.DatabaseException.html",
-          "hash": "LWbJmOzgyp57Pz+WBvh12A=="
+          "hash": "eu7ir0nznBcgfATRibNrAA=="
         }
       },
       "is_incremental": false,
@@ -174,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.DbException.html",
-          "hash": "y03tG4JLs3RGOGk6cIj/Bg=="
+          "hash": "nR0dW4YVXeYMxfuTtHW0ww=="
         }
       },
       "is_incremental": false,
@@ -186,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html",
-          "hash": "E08lZ+A1Ffd9h57Q41eKaQ=="
+          "hash": "QrG91TILhlclwYNGWB/v0A=="
         }
       },
       "is_incremental": false,
@@ -198,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.Model.Identifier.html",
-          "hash": "EAqRM4LpvnQg2q4wNZo/jQ=="
+          "hash": "ajalz4JRWWZ4sxVSxksMYw=="
         }
       },
       "is_incremental": false,
@@ -210,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html",
-          "hash": "zPriA2KJoY2jrZRoUJJ2bw=="
+          "hash": "a5envmNgVrukoyN3jQK0uQ=="
         }
       },
       "is_incremental": false,
@@ -222,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.Model.html",
-          "hash": "zhxvYk6ixhFzDFK1TOKbpg=="
+          "hash": "vbHt8fGp9KBWDcnWX3ipUQ=="
         }
       },
       "is_incremental": false,
@@ -234,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.ParseException.html",
-          "hash": "6I7AKUipxYj0DZdY6c7u6g=="
+          "hash": "2l0nyDx3Hh9mVjvzrbe+Rg=="
         }
       },
       "is_incremental": false,
@@ -246,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryBuilder.html",
-          "hash": "sLMmRCVdm+qdrJnHQn+B0Q=="
+          "hash": "6LHCqgc6EKxUx9rW9BQM6A=="
         }
       },
       "is_incremental": false,
@@ -258,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryException.html",
-          "hash": "OUnP8WZhbunH1iXtPSMnAg=="
+          "hash": "8cjlLumiY0SMvzrRFyvYQQ=="
         }
       },
       "is_incremental": false,
@@ -270,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-1.html",
-          "hash": "NcqovzK46x6UfNTIFhmW+Q=="
+          "hash": "WjmqMguccibkGim18iByLA=="
         }
       },
       "is_incremental": false,
@@ -282,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-10.html",
-          "hash": "zKkHJLkIqaxiAutj4uzVMA=="
+          "hash": "fPqIeAgjxsxe6xZ8mRqD4g=="
         }
       },
       "is_incremental": false,
@@ -294,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-2.html",
-          "hash": "9NyDlCkLt6poc0p0RXAjUw=="
+          "hash": "0ljAYyQGGe/DGc30z9yvAQ=="
         }
       },
       "is_incremental": false,
@@ -306,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-3.html",
-          "hash": "j29OH2ZstqwjWZc6zcjo3g=="
+          "hash": "jAu/G80PRwxoRyUr1aQ4fA=="
         }
       },
       "is_incremental": false,
@@ -318,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-4.html",
-          "hash": "tgJL7HOQsdk8IM/ntqjC+A=="
+          "hash": "lah+8l7HYusWyii/7/FscQ=="
         }
       },
       "is_incremental": false,
@@ -330,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-5.html",
-          "hash": "s11c50nJ0VJT+5qGvtLx0Q=="
+          "hash": "gop9tmCIzQSlTcF9+UuwPA=="
         }
       },
       "is_incremental": false,
@@ -342,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-6.html",
-          "hash": "eqqVmUqq//Y7UnYK+r44xQ=="
+          "hash": "WIiVgzsMCXwwz27Uwk7SwQ=="
         }
       },
       "is_incremental": false,
@@ -354,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-7.html",
-          "hash": "yvhgyQcSOudb4zjwqqEPRg=="
+          "hash": "uW82F1vynqm2CqH2SIzj/Q=="
         }
       },
       "is_incremental": false,
@@ -366,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-8.html",
-          "hash": "JkZKVVAKqmAXh81eqn6sGg=="
+          "hash": "32+V+2TsC0O5OqF0pCCkFg=="
         }
       },
       "is_incremental": false,
@@ -378,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryResults-9.html",
-          "hash": "SLDzD6EV/y9QC/aA3E+oow=="
+          "hash": "bWrJwMvQaCxgGWJ+2yZ45A=="
         }
       },
       "is_incremental": false,
@@ -390,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions.html",
-          "hash": "iN/EzI7ZJzv0fmkmrlIlvA=="
+          "hash": "USTdiiF4dePGMW6BZB3guA=="
         }
       },
       "is_incremental": false,
@@ -402,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.SqlReaderExtensions.html",
-          "hash": "e6GZYRPJ0S0v1FoEFD6Zng=="
+          "hash": "PdLYRj0J3HTL5iChVAT7zQ=="
         }
       },
       "is_incremental": false,
@@ -414,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.html",
-          "hash": "0rA2wo2diQHZShmBEzjSxg=="
+          "hash": "1tnHvvkpmuPobo6OLlpiqw=="
         }
       },
       "is_incremental": false,
@@ -426,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "kUbXOk7LuR0WGcJkHtQSMg=="
+          "hash": "nR2mkriiNHKjp/TavcSplQ=="
         }
       },
       "is_incremental": false,
@@ -483,7 +471,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "Frf+b2A3Yc8xWxdSnei22w=="
+          "hash": "vdQjgr6Qe/K9FCcZzHvCxQ=="
         }
       },
       "is_incremental": false,
@@ -507,7 +495,7 @@
       "output": {
         ".html": {
           "relative_path": "usage/index.html",
-          "hash": "dM4dW6GAZnxyrq2v+Tf7KA=="
+          "hash": "xPQXcwl3EoG0ntz5lQ0btw=="
         }
       },
       "is_incremental": false,
@@ -530,35 +518,35 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 33,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 34,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
