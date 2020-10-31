@@ -29,8 +29,8 @@ using OpenCollar.Extensions.Validation;
 namespace OpenCollar.Extensions.SqlClient
 {
     /// <summary>
-    ///     Extensions to the <see cref="IServiceCollection" /> class providing fluent methods to register the
-    ///     <see cref="IConnectionService" /> service.
+    ///     Extensions to the <see cref="IServiceCollection" /> class providing fluent methods to register
+    ///     <see cref="ConnectionFactory" /> services.
     /// </summary>
     public static class ServiceCollectionExtensions
     {

@@ -17,11 +17,9 @@
  * Copyright © 2020 Jonathan Evans (jevans@open-collar.org.uk).
  */
 
-using System;
+using Microsoft.Data.SqlClient;
 
-using JetBrains.Annotations;
-
-namespace OpenCollar.Extensions.SqlClient
+namespace OpenCollar.Extensions.SqlClient.LoggingContext
 {
     /// <summary>
     ///     Extensions methods for the <see cref="Logging.LoggingContext" /> class.
@@ -40,7 +38,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The logging context provided, allowing fluent-style chaining of calls.
         /// </returns>
-        public static Logging.LoggingContext AddDatabaseConnection([CanBeNull] this Logging.LoggingContext loggingContext, [CanBeNull] string databaseConnection)
+        public static Logging.LoggingContext? AddDatabaseConnection(this Logging.LoggingContext? loggingContext, string databaseConnection)
         {
             if(ReferenceEquals(loggingContext, null))
             {
@@ -49,37 +47,6 @@ namespace OpenCollar.Extensions.SqlClient
             }
 
             loggingContext.AppendInfo(OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseConnection, databaseConnection);
-
-            return loggingContext;
-        }
-
-        /// <summary>
-        ///     Adds the details of a originating request to the logging context.
-        /// </summary>
-        /// <param name="loggingContext">
-        ///     The logging context to which to add the details.
-        /// </param>
-        /// <param name="requestUri">
-        ///     The URI of the request that originates the current activity.
-        /// </param>
-        /// <returns>
-        ///     The logging context provided, allowing fluent-style chaining of calls.
-        /// </returns>
-        public static Logging.LoggingContext AddRequest([CanBeNull] this Logging.LoggingContext loggingContext, [CanBeNull] Uri requestUri)
-        {
-            if(ReferenceEquals(loggingContext, null))
-            {
-                // No errors!
-                return null;
-            }
-
-            if(ReferenceEquals(requestUri, null))
-            {
-                // No errors!
-                return loggingContext;
-            }
-
-            loggingContext.AppendInfo(OpenCollar.Extensions.SqlClient.Constants.Keys.RequestUri, requestUri.ToString());
 
             return loggingContext;
         }
@@ -96,7 +63,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The logging context provided, allowing fluent-style chaining of calls.
         /// </returns>
-        public static Logging.LoggingContext AddStoredProcedure([CanBeNull] this Logging.LoggingContext loggingContext, [CanBeNull] string storedProcedure)
+        public static Logging.LoggingContext? AddStoredProcedure(this Logging.LoggingContext? loggingContext, string? storedProcedure)
         {
             if(ReferenceEquals(loggingContext, null))
             {
@@ -107,6 +74,23 @@ namespace OpenCollar.Extensions.SqlClient
             loggingContext.AppendInfo(OpenCollar.Extensions.SqlClient.Constants.Keys.StoredProcedure, storedProcedure);
 
             return loggingContext;
+        }
+
+        /// <summary>
+        ///     Adds the details of a submission to the logging context.
+        /// </summary>
+        /// <param name="loggingContext">
+        ///     The logging context to which to add the details.
+        /// </param>
+        /// <param name="command">
+        ///     The SQL command from which to extract the stored procedure name.
+        /// </param>
+        /// <returns>
+        ///     The logging context provided, allowing fluent-style chaining of calls.
+        /// </returns>
+        public static Logging.LoggingContext? AddStoredProcedure(this Logging.LoggingContext? loggingContext, SqlCommand? command)
+        {
+            return AddStoredProcedure(loggingContext, command?.CommandText);
         }
     }
 }

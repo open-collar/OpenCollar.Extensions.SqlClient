@@ -38,6 +38,9 @@ namespace OpenCollar.Extensions.SqlClient.Configuration
         [Configuration(Persistence = ConfigurationPersistenceActions.LoadOnly, DefaultValue = null)]
         [Path(PathIs.Absolute, @"DatabaseConfiguration:Connections")]
         [NotNull]
+#pragma warning disable CA2227 // Collection properties should be read only
         public IConfigurationDictionary<IDatabaseConnectionConfiguration> Connections { get; set; }
+
+#pragma warning restore CA2227 // Collection properties should be read only
     }
 }

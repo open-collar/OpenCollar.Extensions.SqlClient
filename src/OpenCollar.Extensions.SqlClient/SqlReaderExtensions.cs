@@ -184,7 +184,7 @@ namespace OpenCollar.Extensions.SqlClient
         [NotNull]
         private static string GetSql()
         {
-            return CallingContext.Current()?.Builder?.CommandText ?? @"[Unspecified]";
+            return CallingContext.Current()?.Query?.CommandText ?? @"[Unspecified]";
         }
 
         /// <summary>

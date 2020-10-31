@@ -27,13 +27,14 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 
 using OpenCollar.Extensions.Logging;
+using OpenCollar.Extensions.SqlClient.LoggingContext;
 using OpenCollar.Extensions.Validation;
 
 namespace OpenCollar.Extensions.SqlClient
 {
     /// <summary>
-    ///     A proxy that wraps the <see cref="Connection" /> class that provides simple
-    ///     <see cref="IDisposable" /> semantics and other niceties.
+    ///     A proxy that wraps the <see cref="Connection" /> class that provides simple <see cref="IDisposable" />
+    ///     semantics and other niceties.
     /// </summary>
     /// <seealso cref="Disposable" />
     public sealed class ConnectionProxy : Disposable
@@ -120,21 +121,21 @@ namespace OpenCollar.Extensions.SqlClient
             var token = cancellationToken ?? System.Threading.CancellationToken.None;
             command.Connection = _connection.SqlConnection;
 
-            Logger.SafeLogTrace($"Executing: \"{command.CommandText}\".");
+            var scope = InitializeLogging(command);
 
             var start = System.DateTime.UtcNow;
 
             return command.ExecuteNonQueryAsync(token).ContinueWith(t =>
             {
-                CompleteExecution(command, start);
-
+                CompleteExecution(command, start, scope);
+                scope.Dispose();
                 return t.Result;
             }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
 
         /// <summary>
-        ///     Executes the <see cref="IDbCommand.CommandText" /> against the
-        ///     <see cref="IDbCommand.Connection" /> and builds an <see cref="IDataReader" />.
+        ///     Executes the <see cref="IDbCommand.CommandText" /> against the <see cref="IDbCommand.Connection" /> and
+        ///     builds an <see cref="IDataReader" />.
         /// </summary>
         /// <param name="command">
         ///     The command to execute.
@@ -152,13 +153,13 @@ namespace OpenCollar.Extensions.SqlClient
             var token = cancellationToken ?? System.Threading.CancellationToken.None;
             command.Connection = _connection.SqlConnection;
 
-            Logger.SafeLogTrace($"Executing: \"{command.CommandText}\".");
+            var scope = InitializeLogging(command);
 
             var start = System.DateTime.UtcNow;
 
             return command.ExecuteReaderAsync(token).ContinueWith(t =>
             {
-                CompleteExecution(command, start);
+                CompleteExecution(command, start, scope);
 
                 command.Dispose();
                 return t.Result;
@@ -166,9 +167,8 @@ namespace OpenCollar.Extensions.SqlClient
         }
 
         /// <summary>
-        ///     Executes the <see cref="IDbCommand.CommandText" /> against the
-        ///     <see cref="IDbCommand.Connection" />, and builds an <see cref="IDataReader" />
-        ///     using one of the <see cref="CommandBehavior" /> values.
+        ///     Executes the <see cref="IDbCommand.CommandText" /> against the <see cref="IDbCommand.Connection" />, and
+        ///     builds an <see cref="IDataReader" /> using one of the <see cref="CommandBehavior" /> values.
         /// </summary>
         /// <param name="command">
         ///     The command to execute.
@@ -189,13 +189,13 @@ namespace OpenCollar.Extensions.SqlClient
             var token = cancellationToken ?? System.Threading.CancellationToken.None;
             command.Connection = _connection.SqlConnection;
 
-            Logger.SafeLogTrace($"Executing: \"{command.CommandText}\".");
+            var scope = InitializeLogging(command);
 
             var start = System.DateTime.UtcNow;
 
             return command.ExecuteReaderAsync(behavior, token).ContinueWith(t =>
             {
-                CompleteExecution(command, start);
+                CompleteExecution(command, start, scope);
 
                 return t.Result;
             }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
@@ -221,13 +221,13 @@ namespace OpenCollar.Extensions.SqlClient
             var token = cancellationToken ?? System.Threading.CancellationToken.None;
             command.Connection = _connection.SqlConnection;
 
-            Logger.SafeLogTrace($"Executing: \"{command.CommandText}\".");
+            var scope = InitializeLogging(command);
 
             var start = System.DateTime.UtcNow;
 
             return command.ExecuteScalarAsync(token).ContinueWith(t =>
             {
-                CompleteExecution(command, start);
+                CompleteExecution(command, start, scope);
 
                 command.Dispose();
                 return t.Result;
@@ -260,7 +260,10 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="start">
         ///     The time at which the command started executed.
         /// </param>
-        private void CompleteExecution([NotNull] SqlCommand command, DateTime start)
+        /// <param name="scope">
+        ///     The logging scope within which the command is being executed.
+        /// </param>
+        private void CompleteExecution([NotNull] SqlCommand command, DateTime start, ITransientContextualInformationScope scope)
         {
             Logger.SafeLogTrace($"Executed: \"{command.CommandText}\".  Duration: {(System.DateTime.UtcNow.Subtract(start)).TotalMilliseconds.ToString("F0", System.Globalization.CultureInfo.InvariantCulture)}");
             try
@@ -285,7 +288,16 @@ namespace OpenCollar.Extensions.SqlClient
             finally
             {
                 command.Dispose();
+                scope.Dispose();
             }
+        }
+
+        private ITransientContextualInformationScope InitializeLogging(SqlCommand command)
+        {
+            var scope = OpenCollar.Extensions.Logging.LoggingContext.Current().StartScope();
+            scope.Context.AddDatabaseConnection(Key.ConnectionString).AddStoredProcedure(command);
+            Logger.SafeLogTrace($"Executing: \"{command.CommandText}\".");
+            return scope;
         }
     }
 }

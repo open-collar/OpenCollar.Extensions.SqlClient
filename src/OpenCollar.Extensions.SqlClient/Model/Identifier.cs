@@ -107,7 +107,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         ///     The result of the conversion.
         /// </returns>
         [CanBeNull]
-        public static implicit operator Identifier(string value) => string.IsNullOrWhiteSpace(value) ? null : new Identifier(value);
+        public static implicit operator Identifier?(string? value) => string.IsNullOrWhiteSpace(value) ? null : new Identifier(value);
 
         /// <summary>
         ///     Performs an implicit conversion from <see cref="Identifier" /> to <see cref="System.String" />.
@@ -119,11 +119,10 @@ namespace OpenCollar.Extensions.SqlClient.Model
         ///     The result of the conversion.
         /// </returns>
         [CanBeNull]
-        public static implicit operator string(Identifier value) => ReferenceEquals(value, null) ? null : value.ToString();
+        public static implicit operator string?(Identifier? value) => ReferenceEquals(value, null) ? null : value.ToString();
 
         /// <summary>
-        ///     Returns a value that indicates whether two
-        ///     <see cref="Identifier" /> objects have different values.
+        ///     Returns a value that indicates whether two <see cref="Identifier" /> objects have different values.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -138,8 +137,8 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator !=(Identifier left, Identifier right) => !Equals(left, right);
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="Identifier" />
-        ///     value is less than another <see cref="Identifier" /> value.
+        ///     Returns a value that indicates whether a <see cref="Identifier" /> value is less than another
+        ///     <see cref="Identifier" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -153,8 +152,8 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator <(Identifier left, Identifier right) => Comparer<Identifier>.Default.Compare(left, right) < 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="Identifier" />
-        ///     value is less than or equal to another <see cref="Identifier" /> value.
+        ///     Returns a value that indicates whether a <see cref="Identifier" /> value is less than or equal to
+        ///     another <see cref="Identifier" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -169,8 +168,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator <=(Identifier left, Identifier right) => Comparer<Identifier>.Default.Compare(left, right) <= 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether the values of two
-        ///     <see cref="Identifier" /> objects are equal.
+        ///     Returns a value that indicates whether the values of two <see cref="Identifier" /> objects are equal.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -185,8 +183,8 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator ==(Identifier left, Identifier right) => Equals(left, right);
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="Identifier" />
-        ///     value is greater than another <see cref="Identifier" /> value.
+        ///     Returns a value that indicates whether a <see cref="Identifier" /> value is greater than another
+        ///     <see cref="Identifier" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -201,9 +199,8 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator >(Identifier left, Identifier right) => Comparer<Identifier>.Default.Compare(left, right) > 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="Identifier" />
-        ///     value is greater than or equal to another
-        ///     <see cref="Identifier" /> value.
+        ///     Returns a value that indicates whether a <see cref="Identifier" /> value is greater than or equal to
+        ///     another <see cref="Identifier" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -394,7 +391,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         ///     Invalid identifier, no closing bracket found before of string.
         /// </exception>
         [NotNull]
-        private string NormalizedValue([NotNull] string originalValue)
+        private static string NormalizedValue([NotNull] string originalValue)
         {
             var state = new IdentifierTokenizer();
 

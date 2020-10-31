@@ -222,7 +222,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// </param>
         /// <exception cref="DatabaseException">
         /// </exception>
-        public void CheckForUnreportedErrors([CanBeNull] SqlCommand command = null)
+        public void CheckForUnreportedErrors(SqlCommand? command = null)
         {
             if(Messages.Count <= 0)
             {
@@ -268,7 +268,9 @@ namespace OpenCollar.Extensions.SqlClient
             {
                 _connectionPool.Factory.RecycleConnection(Key.Owner, _connection);
             }
+#pragma warning disable CA1031 // Do not catch general exception types
             catch(Exception ex)
+#pragma warning restore CA1031 // Do not catch general exception types
             {
                 _log.SafeLogWarning(ex, $@"Unable to recycle connection: {ex.Message}");
 
@@ -379,23 +381,23 @@ namespace OpenCollar.Extensions.SqlClient
             {
                 builder.Append("N'");
                 builder.Append(value);
-                builder.Append("'");
+                builder.Append('\'');
                 return;
             }
 
             if(value is DateTime time)
             {
-                builder.Append("'");
+                builder.Append('\'');
                 builder.Append(time.ToString("O", CultureInfo.InvariantCulture));
-                builder.Append("'");
+                builder.Append('\'');
                 return;
             }
 
             if(value is Guid guid)
             {
-                builder.Append("'");
+                builder.Append('\'');
                 builder.Append(guid.ToString("D", CultureInfo.InvariantCulture));
-                builder.Append("'");
+                builder.Append('\'');
                 return;
             }
 
@@ -408,7 +410,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="command">
         ///     The command that was being executed.
         /// </param>
-        private string DescribeSqlCommand([CanBeNull] SqlCommand command)
+        private string DescribeSqlCommand(SqlCommand? command)
         {
             var builder = new StringBuilder();
 
@@ -425,7 +427,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="error">
         ///     The exception that was thrown.
         /// </param>
-        private string DescribeSqlError([CanBeNull] SqlError error)
+        private static string DescribeSqlError(SqlError? error)
         {
             var builder = new StringBuilder();
 
@@ -443,7 +445,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="exception">
         ///     The exception that was thrown.
         /// </param>
-        private string DescribeSqlError([CanBeNull] SqlCommand command, [CanBeNull] SqlException exception)
+        private string DescribeSqlError(SqlCommand? command, [CanBeNull] SqlException exception)
         {
             var builder = new StringBuilder();
 
@@ -494,7 +496,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="builder">
         ///     The string builder to which to write the details.
         /// </param>
-        private void WriteCommandDetails([CanBeNull] SqlCommand command, [NotNull] StringBuilder builder)
+        private static void WriteCommandDetails(SqlCommand? command, StringBuilder builder)
         {
             builder.Append("SQL: ");
             if(ReferenceEquals(command, null))
@@ -562,7 +564,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="ignoreProperties">
         ///     The names of the properties to ignore.
         /// </param>
-        private void WriteExceptionProperties([NotNull] Exception exception, [NotNull] StringBuilder builder,
+        private static void WriteExceptionProperties([NotNull] Exception exception, [NotNull] StringBuilder builder,
             [NotNull][ItemNotNull] params string[] ignoreProperties)
         {
             var ignore = ignoreProperties.ToDictionary(p => p);
@@ -616,7 +618,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="builder">
         ///     The string builder to which to write the details.
         /// </param>
-        private void WriteSqlError([CanBeNull] SqlError error, [NotNull] StringBuilder builder)
+        private static void WriteSqlError(SqlError? error, StringBuilder builder)
         {
             if(ReferenceEquals(error, null))
             {

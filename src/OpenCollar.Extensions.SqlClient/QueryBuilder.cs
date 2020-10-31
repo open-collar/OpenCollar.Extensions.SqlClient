@@ -230,7 +230,7 @@ namespace OpenCollar.Extensions.SqlClient
             CallingContext.Current().SetActiveBuilder(this);
             var task = Connection.ExecuteReaderAsync(command, token);
 
-            var results = new List<object>();
+            var results = new List<object?>();
 
             var n = 0;
             foreach(var reader in _readers.ToArray())
@@ -342,7 +342,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The default value for the type specified
         /// </returns>
-        private static object GetDefaultValue(Type type)
+        private static object? GetDefaultValue(Type type)
         {
             if(type.IsValueType)
             {

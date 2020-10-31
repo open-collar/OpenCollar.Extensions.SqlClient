@@ -82,7 +82,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         ///     The result of the conversion.
         /// </returns>
         [CanBeNull]
-        public static implicit operator ParameterName(string value) => string.IsNullOrWhiteSpace(value) ? null : new ParameterName(value);
+        public static implicit operator ParameterName?(string? value) => string.IsNullOrWhiteSpace(value) ? null : new ParameterName(value);
 
         /// <summary>
         ///     Performs an implicit conversion from <see cref="ParameterName" /> to <see cref="System.String" />.
@@ -94,11 +94,10 @@ namespace OpenCollar.Extensions.SqlClient.Model
         ///     The result of the conversion.
         /// </returns>
         [CanBeNull]
-        public static implicit operator string(ParameterName value) => ReferenceEquals(value, null) ? null : value.ToString();
+        public static implicit operator string?(ParameterName? value) => ReferenceEquals(value, null) ? null : value.ToString();
 
         /// <summary>
-        ///     Returns a value that indicates whether two
-        ///     <see cref="ParameterName" /> objects have different values.
+        ///     Returns a value that indicates whether two <see cref="ParameterName" /> objects have different values.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -113,8 +112,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator !=(ParameterName left, ParameterName right) => !Equals(left, right);
 
         /// <summary>
-        ///     Returns a value that indicates whether a
-        ///     <see cref="ParameterName" /> value is less than another
+        ///     Returns a value that indicates whether a <see cref="ParameterName" /> value is less than another
         ///     <see cref="ParameterName" /> value.
         /// </summary>
         /// <param name="left">
@@ -129,8 +127,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator <(ParameterName left, ParameterName right) => Comparer<ParameterName>.Default.Compare(left, right) < 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether a
-        ///     <see cref="ParameterName" /> value is less than or equal to
+        ///     Returns a value that indicates whether a <see cref="ParameterName" /> value is less than or equal to
         ///     another <see cref="ParameterName" /> value.
         /// </summary>
         /// <param name="left">
@@ -146,8 +143,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator <=(ParameterName left, ParameterName right) => Comparer<ParameterName>.Default.Compare(left, right) <= 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether the values of two
-        ///     <see cref="ParameterName" /> objects are equal.
+        ///     Returns a value that indicates whether the values of two <see cref="ParameterName" /> objects are equal.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -162,8 +158,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator ==(ParameterName left, ParameterName right) => Equals(left, right);
 
         /// <summary>
-        ///     Returns a value that indicates whether a
-        ///     <see cref="ParameterName" /> value is greater than another
+        ///     Returns a value that indicates whether a <see cref="ParameterName" /> value is greater than another
         ///     <see cref="ParameterName" /> value.
         /// </summary>
         /// <param name="left">
@@ -179,8 +174,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator >(ParameterName left, ParameterName right) => Comparer<ParameterName>.Default.Compare(left, right) > 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether a
-        ///     <see cref="ParameterName" /> value is greater than or equal to
+        ///     Returns a value that indicates whether a <see cref="ParameterName" /> value is greater than or equal to
         ///     another <see cref="ParameterName" /> value.
         /// </summary>
         /// <param name="left">
