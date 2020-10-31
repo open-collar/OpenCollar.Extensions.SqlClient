@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -29,9 +29,9 @@ namespace OpenCollar.Extensions.SqlClient
     /// <summary>
     ///     A class used to identify a connection created for an individual user.
     /// </summary>
-    /// <seealso cref="System.IEquatable{T}" />
-    /// <seealso cref="System.IComparable{T}" />
-    /// <seealso cref="System.IComparable" />
+    /// <seealso cref="IEquatable{T}" />
+    /// <seealso cref="IComparable{T}" />
+    /// <seealso cref="IComparable" />
     internal sealed class ConnectionKey : IEquatable<ConnectionKey>, IComparable<ConnectionKey>, IComparable
     {
         /// <summary>
@@ -190,7 +190,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///         <description> This instance follows <paramref name="obj" /> in the sort order. </description>
         ///     </item>
         /// </list>
-        /// <exception cref="System.ArgumentException">
+        /// <exception cref="ArgumentException">
         ///     <paramref name="obj" /> is not the same type as this instance.
         /// </exception>
         public int CompareTo(object obj)

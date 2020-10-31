@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -27,8 +27,9 @@ namespace TestRig
     {
         private static readonly EnvironmentType[] _environmentTypes = new[]
         {
-            new EnvironmentType("Development", "Development environment", 100, "D", "DEV"),
-            new EnvironmentType("Quality Assurance", "Quality assurance environment", 500, "Q", "QA"),
+            new EnvironmentType("Development", "Development environment", 100, "D", "DV", "DEV"),
+            new EnvironmentType("Quality Assurance", "Quality assurance environment", 500, "Q", "QA", "TEST"),
+            new EnvironmentType("Integration Testing", "Integration testing environment", 700, "I", "IT", "INT", "IAT"),
             new EnvironmentType("User Acceptance Testing", "User acceptance testing environment", 800, "U", "UAT"),
             new EnvironmentType("Production", "Production environment", 1000, "P", "PDN", "PRD", "PROD")
         };

@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -92,7 +92,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The value of the field or <paramref name="defaultValue" /> if the field contains <see cref="DBNull" />.
         /// </returns>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         ///     <paramref name="reader" /> was <see langword="null" />.
         /// </exception>
         /// <exception cref="ArgumentOutOfRangeException">
@@ -132,7 +132,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The value of the field.
         /// </returns>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         ///     <paramref name="reader" /> was <see langword="null" />.
         /// </exception>
         /// <exception cref="ArgumentOutOfRangeException">

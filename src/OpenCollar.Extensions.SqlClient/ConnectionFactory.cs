@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -27,6 +27,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
+using OpenCollar.Extensions.Environment;
 using OpenCollar.Extensions.SqlClient.Configuration;
 using OpenCollar.Extensions.Validation;
 
@@ -68,20 +69,49 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="configuration">
         ///     The configuration for database connections as a whole.
         /// </param>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         ///     <paramref name="configuration" /> is <see langword="null" />.
         /// </exception>
-        protected ConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration)
+        protected ConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration) : this(services, configuration, null)
+        { }
+
+        /// <summary>
+        ///     Initializes a new instance of the <see cref="ConnectionFactory" /> class.
+        /// </summary>
+        /// <param name="services">
+        ///     The services provider from which to get resources such as loggers.
+        /// </param>
+        /// <param name="configuration">
+        ///     The configuration for database connections as a whole.
+        /// </param>
+        /// <param name="environmentMetadataProvider">
+        ///     The service that provides the environment metadata for a given application.
+        /// </param>
+        /// <exception cref="ArgumentNullException">
+        ///     <paramref name="configuration" /> is <see langword="null" />.
+        /// </exception>
+        protected ConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration, IEnvironmentMetadataProvider? environmentMetadataProvider)
         {
             configuration.Validate(nameof(configuration), ObjectIs.NotNull);
 
-            _configuration = configuration.Connections[ConnectionKey];
+            EnvironmentMetadataProvider = environmentMetadataProvider;
+
+            var connectionConfiguration = configuration.Connections[ConnectionKey];
+
+            _configuration = connectionConfiguration;
 
             _services = services;
 
             _log = services.GetService<ILogger<ConnectionFactory>>();
 
             InitializeAzureManagedIdentity = _configuration.InitializeAzureManagedIdentity && IsMsiInitializationRequired(_configuration.ConnectionString);
+
+            if(_configuration.IsEnvironmentValidationEnabled)
+            {
+#pragma warning disable CA2214 // Do not call overridable methods in constructors
+                ValidateConnection();
+#pragma warning restore CA2214 // Do not call overridable methods in constructors
+            }
         }
 
         /// <summary>
@@ -121,7 +151,14 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The default name of the owner.
         /// </value>
-        [NotNull] protected virtual string DefaultOwnerName { get { return @"Default"; } }
+        [NotNull] protected virtual string DefaultOwnerName => @"Default";
+
+        /// <summary>
+        ///     Gets the service that provides the environment metadata for a given application. Can be
+        ///     <see langword="null" /> if the host application does not support the environment
+        ///     <see cref="IEnvironmentMetadataProvider" /> service.
+        /// </summary>
+        protected IEnvironmentMetadataProvider? EnvironmentMetadataProvider { get; }
 
         /// <summary>
         ///     Gets a connection for the owner specified.
@@ -203,10 +240,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// </param>
         /// <returns>
         /// </returns>
-        protected internal virtual Exception AnalyzeException([NotNull] Exception exception, [NotNull] Connection connection, SqlCommand command)
-        {
-            return exception;
-        }
+        protected internal virtual Exception AnalyzeException([NotNull] Exception exception, [NotNull] Connection connection, SqlCommand command) => exception;
 
         /// <summary>
         ///     Perform custom initialization on the connection specified.
@@ -274,6 +308,116 @@ namespace OpenCollar.Extensions.SqlClient
         /// </remarks>
         protected internal virtual void SetCommandTimemout([NotNull] IDbCommand command)
         {
+        }
+
+        /// <summary>
+        ///     Gets a string containing the environment to which the database defined by the connection string belongs.
+        ///     This can be <see langword="null" /> if no environment metadata provider has been configured.
+        /// </summary>
+        /// <value>
+        ///     A string containing the environment to which the database defined by the connection string belongs. This
+        ///     can be <see langword="null" /> if no environment metadata provider has been configured.
+        /// </value>
+        protected string? DatabaseEnvironment
+        {
+            get
+            {
+                if(EnvironmentMetadataProvider is null)
+                {
+                    // We can't determine the enviornment if there is no metadata provider to do the work.
+                    return null;
+                }
+
+                var builder = new SqlConnectionStringBuilder(_configuration.ConnectionString);
+
+                return EnvironmentMetadataProvider.GetResourceEnvironment(builder.DataSource);
+            }
+        }
+
+        /// <summary>
+        ///     Validates the connection configuration before attempting to create an new connection.
+        /// </summary>
+        /// <exception cref="MismatchedEnvironmentException">
+        ///     Database environment cannot be determined.
+        /// </exception>
+        /// <exception cref="MismatchedEnvironmentException">
+        ///     Database environment does not match the application environment.
+        /// </exception>
+        /// <exception cref="MismatchedEnvironmentException">
+        ///     Database environment could not be compared to the application environment, probably because it was not a
+        ///     known envioronment.
+        /// </exception>
+        /// <remarks>
+        ///     <para>
+        ///         Environment validation uses the <see cref="Environment.EnvironmentMetadataProvider" /> service to
+        ///         determine the application environment and the database environment and with that information
+        ///         validate that connections between environments are not be created accidentally.
+        ///     </para>
+        ///     <para> This method can be overridden by factory classes to implement special behavior. </para>
+        ///     <para> Environment validation is controlled by these following configuration properties:
+        ///         <list type="table">
+        ///             <listheader>
+        ///                 <term> Property </term>
+        ///                 <description> Description </description>
+        ///             </listheader>
+        ///             <item>
+        ///                 <term> <see cref="IDatabaseConnectionConfiguration.IsEnvironmentValidationEnabled" /> </term>
+        ///                 <description>
+        ///                     This defaults to <see langword="true" />. Where validation is not required the it can be
+        ///                     disabled using this flag.
+        ///                 </description>
+        ///             </item>
+        ///             <item>
+        ///                 <term> <see cref="IDatabaseConnectionConfiguration.IsEnvironmentValidationStrict" /> </term>
+        ///                 <description>
+        ///                     This defaults to <see langword="true" />. When a naming conventions are not always
+        ///                     adhered to (for example on a developers desktop) it may be desirable to ignore the
+        ///                     mismatches that might be caused by and unrecognized environment name.
+        ///                 </description>
+        ///             </item>
+        ///         </list>
+        ///     </para>
+        /// </remarks>
+        protected virtual void ValidateConnection()
+        {
+            if(EnvironmentMetadataProvider is null)
+            {
+                // We can't make comparisons if there is no metadata provider to do the work.
+                return;
+            }
+
+            var appEnvironment = EnvironmentMetadataProvider.GetEnvironmentMetadata();
+
+            if(appEnvironment is null)
+            {
+                // If the application has no defined environment then there is nothing to validate against.
+                return;
+            }
+
+            var dbEnvironment = DatabaseEnvironment;
+
+            if(dbEnvironment is null)
+            {
+                // If there is an app environment, but no DB environment.
+                throw new MismatchedEnvironmentException($"Database environment cannot be determined.");
+            }
+
+            var compare = EnvironmentMetadataProvider.IsValidEnvironmentPairing(appEnvironment, dbEnvironment);
+
+            if(!compare.HasValue)
+            {
+                if(_configuration.IsEnvironmentValidationStrict)
+                {
+                    throw new MismatchedEnvironmentException($"Database environment (\"{dbEnvironment}\") could not be compared to the application environment (\"{appEnvironment.Environment}\"), probably because it was not a known environment.");
+                }
+
+                return;
+            }
+
+            if(!compare.Value)
+            {
+                throw new MismatchedEnvironmentException($"Database environment (\"{dbEnvironment}\") does not match the application environment (\"{appEnvironment.Environment}\").");
+            }
         }
     }
 }

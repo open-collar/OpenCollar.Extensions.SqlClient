@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -83,18 +83,18 @@ namespace OpenCollar.Extensions.SqlClient
         ///     Initializes a new instance of the <see cref="ParseException"> </see> class with serialized data.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="System.Runtime.Serialization.SerializationInfo"> </see> that holds the serialized object
+        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object
         ///     data about the exception being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="System.Runtime.Serialization.StreamingContext"> </see> that contains contextual
+        ///     The <see cref="StreamingContext"> </see> that contains contextual
         ///     information about the source or destination.
         /// </param>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         ///     The <paramref name="info"> info </paramref> parameter is <see langword="null" />.
         /// </exception>
-        /// <exception cref="System.Runtime.Serialization.SerializationException">
-        ///     The class name is null or <see cref="System.Exception.HResult"> </see> is zero (0).
+        /// <exception cref="SerializationException">
+        ///     The class name is null or <see cref="Exception.HResult"> </see> is zero (0).
         /// </exception>
         protected ParseException([NotNull] SerializationInfo info, StreamingContext context) : base(info, context)
         {
@@ -110,18 +110,18 @@ namespace OpenCollar.Extensions.SqlClient
         public int CharacterPosition { get; }
 
         /// <summary>
-        ///     When overridden in a derived class, sets the <see cref="System.Runtime.Serialization.SerializationInfo">
+        ///     When overridden in a derived class, sets the <see cref="SerializationInfo">
         ///     </see> with information about the exception.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="System.Runtime.Serialization.SerializationInfo"> </see> that holds the serialized object
+        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object
         ///     data about the exception being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="System.Runtime.Serialization.StreamingContext"> </see> that contains contextual
+        ///     The <see cref="StreamingContext"> </see> that contains contextual
         ///     information about the source or destination.
         /// </param>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         ///     The <paramref name="info"> info </paramref> parameter is <see langword="null" />.
         /// </exception>
         public override void GetObjectData(SerializationInfo info, StreamingContext context)

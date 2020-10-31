@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -26,7 +26,7 @@ namespace OpenCollar.Extensions.SqlClient.Configuration
     /// <summary>
     ///     A configuration object used to define the settings for database connections.
     /// </summary>
-    /// <seealso cref="OpenCollar.Extensions.Configuration.IConfigurationObject" />
+    /// <seealso cref="IConfigurationObject" />
     public interface IDatabaseConfiguration : IConfigurationObject
     {
         /// <summary>

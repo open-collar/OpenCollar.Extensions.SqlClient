@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -21,6 +21,7 @@ using System;
 
 using JetBrains.Annotations;
 
+using OpenCollar.Extensions.Environment;
 using OpenCollar.Extensions.SqlClient;
 using OpenCollar.Extensions.SqlClient.Configuration;
 
@@ -29,7 +30,7 @@ namespace TestRig.DatabaseConnections
     /// <summary>
     ///     A connection factory that provodes connections to the default database for the application.
     /// </summary>
-    /// <seealso cref="OpenCollar.Extensions.SqlClient.ConnectionFactory" />
+    /// <seealso cref="ConnectionFactory" />
     public sealed class DefaultConnectionFactory : ConnectionFactory
     {
         /// <summary>
@@ -41,7 +42,10 @@ namespace TestRig.DatabaseConnections
         /// <param name="configuration">
         ///     The configuration for database connections as a whole.
         /// </param>
-        public DefaultConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration) : base(services, configuration)
+        /// <param name="environmentMetadataProvider">
+        ///     The service that provides the environment metadata for a given application.
+        /// </param>
+        public DefaultConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration, IEnvironmentMetadataProvider? environmentMetadataProvider) : base(services, configuration, environmentMetadataProvider)
         {
         }
 

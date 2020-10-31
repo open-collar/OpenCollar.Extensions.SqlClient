@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -119,7 +119,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///         </item>
         ///     </list>
         /// </returns>
-        /// <exception cref="System.ArgumentException">
+        /// <exception cref="ArgumentException">
         ///     <paramref name="obj" /> is not the same type as this instance.
         /// </exception>
         public int CompareTo(object obj)
@@ -227,7 +227,7 @@ namespace OpenCollar.Extensions.SqlClient
 
         /// <summary>
         ///     Returns a value that indicates whether the values of two
-        ///     <see cref="OpenCollar.Extensions.SqlClient.CallingContext" /> objects are equal.
+        ///     <see cref="CallingContext" /> objects are equal.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -242,8 +242,8 @@ namespace OpenCollar.Extensions.SqlClient
         public static bool operator ==(CallingContext left, CallingContext right) => Equals(left, right);
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="OpenCollar.Extensions.SqlClient.CallingContext" />
-        ///     value is greater than another <see cref="OpenCollar.Extensions.SqlClient.CallingContext" /> value.
+        ///     Returns a value that indicates whether a <see cref="CallingContext" />
+        ///     value is greater than another <see cref="CallingContext" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -258,8 +258,8 @@ namespace OpenCollar.Extensions.SqlClient
         public static bool operator >(CallingContext left, CallingContext right) => Comparer<CallingContext>.Default.Compare(left, right) > 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="OpenCollar.Extensions.SqlClient.CallingContext" />
-        ///     value is greater than or equal to another <see cref="OpenCollar.Extensions.SqlClient.CallingContext" /> value.
+        ///     Returns a value that indicates whether a <see cref="CallingContext" />
+        ///     value is greater than or equal to another <see cref="CallingContext" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -274,7 +274,7 @@ namespace OpenCollar.Extensions.SqlClient
         public static bool operator >=(CallingContext left, CallingContext right) => Comparer<CallingContext>.Default.Compare(left, right) >= 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether two <see cref="OpenCollar.Extensions.SqlClient.CallingContext" />
+        ///     Returns a value that indicates whether two <see cref="CallingContext" />
         ///     objects have different values.
         /// </summary>
         /// <param name="left">
@@ -290,8 +290,8 @@ namespace OpenCollar.Extensions.SqlClient
         public static bool operator !=(CallingContext left, CallingContext right) => !Equals(left, right);
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="OpenCollar.Extensions.SqlClient.CallingContext" />
-        ///     value is less than another <see cref="OpenCollar.Extensions.SqlClient.CallingContext" /> value.
+        ///     Returns a value that indicates whether a <see cref="CallingContext" />
+        ///     value is less than another <see cref="CallingContext" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -305,8 +305,8 @@ namespace OpenCollar.Extensions.SqlClient
         public static bool operator <(CallingContext left, CallingContext right) => Comparer<CallingContext>.Default.Compare(left, right) < 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="OpenCollar.Extensions.SqlClient.CallingContext" />
-        ///     value is less than or equal to another <see cref="OpenCollar.Extensions.SqlClient.CallingContext" /> value.
+        ///     Returns a value that indicates whether a <see cref="CallingContext" />
+        ///     value is less than or equal to another <see cref="CallingContext" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.

@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -32,10 +32,10 @@ using OpenCollar.Extensions.Validation;
 namespace OpenCollar.Extensions.SqlClient
 {
     /// <summary>
-    ///     A proxy that wraps the <see cref="SqlClient.Connection" /> class that provides simple
+    ///     A proxy that wraps the <see cref="Connection" /> class that provides simple
     ///     <see cref="IDisposable" /> semantics and other niceties.
     /// </summary>
-    /// <seealso cref="OpenCollar.Extensions.Disposable" />
+    /// <seealso cref="Disposable" />
     public sealed class ConnectionProxy : Disposable
     {
         /// <summary>
@@ -110,7 +110,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The number of rows affected.
         /// </returns>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         ///     <paramref name="command" /> is <see langword="null" />.
         /// </exception>
         public Task<int> ExecuteNonQueryAsync([NotNull] SqlCommand command, System.Threading.CancellationToken? cancellationToken = null)
@@ -133,8 +133,8 @@ namespace OpenCollar.Extensions.SqlClient
         }
 
         /// <summary>
-        ///     Executes the <see cref="System.Data.IDbCommand.CommandText" /> against the
-        ///     <see cref="System.Data.IDbCommand.Connection" /> and builds an <see cref="System.Data.IDataReader" />.
+        ///     Executes the <see cref="IDbCommand.CommandText" /> against the
+        ///     <see cref="IDbCommand.Connection" /> and builds an <see cref="IDataReader" />.
         /// </summary>
         /// <param name="command">
         ///     The command to execute.
@@ -143,7 +143,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///     The cancellation token to be used to request that the operation be abandoned before the command timeout elapses.
         /// </param>
         /// <returns>
-        ///     An <see cref="System.Data.IDataReader" /> object.
+        ///     An <see cref="IDataReader" /> object.
         /// </returns>
         public Task<SqlDataReader> ExecuteReaderAsync([NotNull] SqlCommand command, System.Threading.CancellationToken? cancellationToken = null)
         {
@@ -166,21 +166,21 @@ namespace OpenCollar.Extensions.SqlClient
         }
 
         /// <summary>
-        ///     Executes the <see cref="System.Data.IDbCommand.CommandText" /> against the
-        ///     <see cref="System.Data.IDbCommand.Connection" />, and builds an <see cref="System.Data.IDataReader" />
-        ///     using one of the <see cref="System.Data.CommandBehavior" /> values.
+        ///     Executes the <see cref="IDbCommand.CommandText" /> against the
+        ///     <see cref="IDbCommand.Connection" />, and builds an <see cref="IDataReader" />
+        ///     using one of the <see cref="CommandBehavior" /> values.
         /// </summary>
         /// <param name="command">
         ///     The command to execute.
         /// </param>
         /// <param name="behavior">
-        ///     One of the <see cref="System.Data.CommandBehavior" /> values.
+        ///     One of the <see cref="CommandBehavior" /> values.
         /// </param>
         /// <param name="cancellationToken">
         ///     The cancellation token to be used to request that the operation be abandoned before the command timeout elapses.
         /// </param>
         /// <returns>
-        ///     An <see cref="System.Data.IDataReader" /> object.
+        ///     An <see cref="IDataReader" /> object.
         /// </returns>
         public Task<SqlDataReader> ExecuteReaderAsync([NotNull] SqlCommand command, CommandBehavior behavior, System.Threading.CancellationToken? cancellationToken = null)
         {

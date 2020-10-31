@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -95,11 +95,11 @@ namespace OpenCollar.Extensions.SqlClient
         ///     Initializes a new instance of the <see cref="DatabaseException" /> class.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data
+        ///     The <see cref="SerializationInfo" /> that holds the serialized object data
         ///     about the exception being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="System.Runtime.Serialization.StreamingContext" /> that contains contextual information
+        ///     The <see cref="StreamingContext" /> that contains contextual information
         ///     about the source or destination.
         /// </param>
         protected DatabaseException(SerializationInfo info, StreamingContext context) : base(info, context)
@@ -108,14 +108,14 @@ namespace OpenCollar.Extensions.SqlClient
 
         /// <summary>
         ///     When overridden in a derived class, sets the
-        ///     <see cref="System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+        ///     <see cref="SerializationInfo" /> with information about the exception.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data
+        ///     The <see cref="SerializationInfo" /> that holds the serialized object data
         ///     about the exception being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="System.Runtime.Serialization.StreamingContext" /> that contains contextual information
+        ///     The <see cref="StreamingContext" /> that contains contextual information
         ///     about the source or destination.
         /// </param>
         public override void GetObjectData(SerializationInfo info, StreamingContext context)

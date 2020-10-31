@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -24,7 +24,7 @@ namespace OpenCollar.Extensions.SqlClient.Configuration
     /// <summary>
     ///     A configuration object used to define the settings for a database connection.
     /// </summary>
-    /// <seealso cref="OpenCollar.Extensions.Configuration.IConfigurationObject" />
+    /// <seealso cref="IConfigurationObject" />
     public interface IDatabaseConnectionConfiguration : IConfigurationObject
     {
         /// <summary>
@@ -38,10 +38,10 @@ namespace OpenCollar.Extensions.SqlClient.Configuration
         public int ConnectionCacheTimeoutSeconds { get; }
 
         /// <summary>
-        ///     Gets the connection string.
+        ///     Gets the database connection string.
         /// </summary>
         /// <value>
-        ///     The connection string.
+        ///     The database connection string.
         /// </value>
         [Configuration(Persistence = ConfigurationPersistenceActions.LoadOnly)]
         [Path(PathIs.Relative, @"ConnectionString")]
@@ -62,5 +62,40 @@ namespace OpenCollar.Extensions.SqlClient.Configuration
         [Configuration(Persistence = ConfigurationPersistenceActions.LoadOnly, DefaultValue = false)]
         [Path(PathIs.Relative, @"InitializeAzureManagedIdentity")]
         public bool InitializeAzureManagedIdentity { get; }
+
+        /// <summary>
+        ///     Gets a value indicating whether this environment validation is enabled for connections.
+        /// </summary>
+        /// <value>
+        ///     <see langword="true" /> if environment validation is enabled; otherwise, <see langword="false" />.
+        /// </value>
+        /// <remarks>
+        ///     This defaults to <see langword="true" />. Environment validation uses the
+        ///     <see cref="Environment.EnvironmentMetadataProvider" /> service to determine the application environment
+        ///     and the database environment and with that information validate that connections between environments
+        ///     are not be created accidentally. Where validation is not required the it can be disabled using this flag.
+        /// </remarks>
+        [Configuration(Persistence = ConfigurationPersistenceActions.LoadOnly, DefaultValue = true)]
+        [Path(PathIs.Relative, @"IsEnvironmentValidationEnabled")]
+        public bool IsEnvironmentValidationEnabled { get; }
+
+        /// <summary>
+        ///     Gets a value indicating whether this environment validation should permit uncertainty or not.
+        /// </summary>
+        /// <value>
+        ///     <see langword="true" /> if environment validation should treat an uncertain outcome as a fail;
+        ///     otherwise, <see langword="false" />.
+        /// </value>
+        /// <remarks>
+        ///     This defaults to <see langword="true" />. Environment validation uses the
+        ///     <see cref="Environment.EnvironmentMetadataProvider" /> service to determine the application environment
+        ///     and the database environment and with that information validate that connections between environments
+        ///     are not be created accidentally. When a naming conventions are not always adhered to (for example on a
+        ///     developers desktop) it may be desirable to ignore the mismatches that might be caused by and
+        ///     unrecognized environment name.
+        /// </remarks>
+        [Configuration(Persistence = ConfigurationPersistenceActions.LoadOnly, DefaultValue = true)]
+        [Path(PathIs.Relative, @"IsEnvironmentValidationStrict")]
+        public bool IsEnvironmentValidationStrict { get; }
     }
 }

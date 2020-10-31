@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -411,7 +411,7 @@ namespace OpenCollar.Extensions.SqlClient
 
             var token = cancellationToken ?? System.Threading.CancellationToken.None;
 
-            return ExecuteQueryAsync(cancellationToken).ContinueWith<QueryResults<T1, T2>>(t => { return new QueryResults<T1, T2> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
+            return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
 
         /// <summary>

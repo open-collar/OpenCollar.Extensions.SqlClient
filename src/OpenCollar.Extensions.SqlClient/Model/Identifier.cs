@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -31,9 +31,9 @@ namespace OpenCollar.Extensions.SqlClient.Model
     /// <summary>
     ///     Represents a valid, normalized, SQL identifier.
     /// </summary>
-    /// <seealso cref="System.IEquatable{T}" />
-    /// <seealso cref="System.IComparable{T}" />
-    /// <seealso cref="System.IComparable" />
+    /// <seealso cref="IEquatable{T}" />
+    /// <seealso cref="IComparable{T}" />
+    /// <seealso cref="IComparable" />
     [DebuggerDisplay("{" + nameof(OriginalValue) + ",nq}")]
     public sealed class Identifier : IEquatable<Identifier>, IComparable<Identifier>, IComparable
     {
@@ -49,10 +49,10 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <param name="originalValue">
         ///     The original value given as the identifier.
         /// </param>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         ///     <paramref name="originalValue" /> was <see langword="null" />.
         /// </exception>
-        /// <exception cref="System.ArgumentException">
+        /// <exception cref="ArgumentException">
         ///     <paramref name="originalValue" /> was zero-length or contains only white-space characters.
         /// </exception>
         /// <exception cref="ParseException">
@@ -123,7 +123,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
 
         /// <summary>
         ///     Returns a value that indicates whether two
-        ///     <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" /> objects have different values.
+        ///     <see cref="Identifier" /> objects have different values.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -138,8 +138,8 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator !=(Identifier left, Identifier right) => !Equals(left, right);
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" />
-        ///     value is less than another <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" /> value.
+        ///     Returns a value that indicates whether a <see cref="Identifier" />
+        ///     value is less than another <see cref="Identifier" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -153,8 +153,8 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator <(Identifier left, Identifier right) => Comparer<Identifier>.Default.Compare(left, right) < 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" />
-        ///     value is less than or equal to another <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" /> value.
+        ///     Returns a value that indicates whether a <see cref="Identifier" />
+        ///     value is less than or equal to another <see cref="Identifier" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -170,7 +170,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
 
         /// <summary>
         ///     Returns a value that indicates whether the values of two
-        ///     <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" /> objects are equal.
+        ///     <see cref="Identifier" /> objects are equal.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -185,8 +185,8 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator ==(Identifier left, Identifier right) => Equals(left, right);
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" />
-        ///     value is greater than another <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" /> value.
+        ///     Returns a value that indicates whether a <see cref="Identifier" />
+        ///     value is greater than another <see cref="Identifier" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -201,9 +201,9 @@ namespace OpenCollar.Extensions.SqlClient.Model
         public static bool operator >(Identifier left, Identifier right) => Comparer<Identifier>.Default.Compare(left, right) > 0;
 
         /// <summary>
-        ///     Returns a value that indicates whether a <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" />
+        ///     Returns a value that indicates whether a <see cref="Identifier" />
         ///     value is greater than or equal to another
-        ///     <see cref="OpenCollar.Extensions.SqlClient.Model.Identifier" /> value.
+        ///     <see cref="Identifier" /> value.
         /// </summary>
         /// <param name="left">
         ///     The first value to compare.
@@ -246,7 +246,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         ///         </item>
         ///     </list>
         /// </returns>
-        /// <exception cref="System.ArgumentException">
+        /// <exception cref="ArgumentException">
         ///     <paramref name="obj" /> is not the same type as this instance.
         /// </exception>
         public int CompareTo(object obj)

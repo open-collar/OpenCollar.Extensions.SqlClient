@@ -1,7 +1,7 @@
 ﻿/*
- * This file is part of OpenCollar.Extensions.
+ * This file is part of OpenCollar.Extensions.SqlClient.
  *
- * OpenCollar.Extensions is free software: you can redistribute it
+ * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
@@ -24,7 +24,7 @@ using JetBrains.Annotations;
 namespace OpenCollar.Extensions.SqlClient
 {
     /// <summary>
-    ///     Extensions methods for the <see cref="OpenCollar.Extensions.Logging.LoggingContext" /> class.
+    ///     Extensions methods for the <see cref="Logging.LoggingContext" /> class.
     /// </summary>
     public static class LoggingContextExtensions
     {
@@ -40,7 +40,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The logging context provided, allowing fluent-style chaining of calls.
         /// </returns>
-        public static OpenCollar.Extensions.Logging.LoggingContext AddDatabaseConnection([CanBeNull] this OpenCollar.Extensions.Logging.LoggingContext loggingContext, [CanBeNull] string databaseConnection)
+        public static Logging.LoggingContext AddDatabaseConnection([CanBeNull] this Logging.LoggingContext loggingContext, [CanBeNull] string databaseConnection)
         {
             if(ReferenceEquals(loggingContext, null))
             {
@@ -65,7 +65,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The logging context provided, allowing fluent-style chaining of calls.
         /// </returns>
-        public static OpenCollar.Extensions.Logging.LoggingContext AddRequest([CanBeNull] this OpenCollar.Extensions.Logging.LoggingContext loggingContext, [CanBeNull] Uri requestUri)
+        public static Logging.LoggingContext AddRequest([CanBeNull] this Logging.LoggingContext loggingContext, [CanBeNull] Uri requestUri)
         {
             if(ReferenceEquals(loggingContext, null))
             {
@@ -96,7 +96,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The logging context provided, allowing fluent-style chaining of calls.
         /// </returns>
-        public static OpenCollar.Extensions.Logging.LoggingContext AddStoredProcedure([CanBeNull] this OpenCollar.Extensions.Logging.LoggingContext loggingContext, [CanBeNull] string storedProcedure)
+        public static Logging.LoggingContext AddStoredProcedure([CanBeNull] this Logging.LoggingContext loggingContext, [CanBeNull] string storedProcedure)
         {
             if(ReferenceEquals(loggingContext, null))
             {

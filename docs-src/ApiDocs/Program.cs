@@ -1,5 +1,5 @@
 /*
- * This file is part of OpenCollar.Extensions.SqlClient.
+ * This file is part of OpenCollar.Extensions.SqlClient.SqlClient.
  *
  * OpenCollar.Extensions.SqlClient is free software: you can redistribute it
  * and/or modify it under the terms of the GNU General Public License as published
