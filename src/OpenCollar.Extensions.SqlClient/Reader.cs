@@ -42,7 +42,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="isMandatory">
         ///     <see langword="true" /> if least one record must be returned in the recordset; otherwise, <see langword="false" />.
         /// </param>
-        private Reader(Func<SqlDataReader, object> function, Type returnType, bool isMandatory)
+        private Reader(Func<SqlDataReader, object?> function, Type returnType, bool isMandatory)
         {
             Function = function;
             ReturnType = returnType;
@@ -55,7 +55,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The function that will be executed to read data from a reader.
         /// </value>
-        public Func<SqlDataReader, object> Function { get; }
+        public Func<SqlDataReader, object?> Function { get; }
 
         /// <summary>
         ///     Gets a value indicating whether at least one record must be returned in the recordset.
@@ -91,7 +91,7 @@ namespace OpenCollar.Extensions.SqlClient
         internal static Reader GetReader<T>(Func<SqlDataReader, T> readAction, bool isMandatory = false)
         {
             var returnType = typeof(T);
-            Func<SqlDataReader, object> reader = (r) => readAction(r);
+            Func<SqlDataReader, object?> reader = (r) => readAction(r);
             return new Reader(reader, returnType, isMandatory);
         }
 
@@ -125,7 +125,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// </param>
         /// <returns>
         /// </returns>
-        internal object Execute(SqlDataReader reader)
+        internal object? Execute(SqlDataReader reader)
         {
             var result = Function(reader);
 

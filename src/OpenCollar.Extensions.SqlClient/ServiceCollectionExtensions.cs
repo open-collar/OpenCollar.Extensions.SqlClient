@@ -47,7 +47,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The service collection given in the <paramref name="serviceCollection" />.
         /// </returns>
-        public static IServiceCollection AddConnectionFactory<TConnectionFactory>([NotNull] this IServiceCollection serviceCollection) where TConnectionFactory : ConnectionFactory
+        public static IServiceCollection AddConnectionFactory<TConnectionFactory>(this IServiceCollection serviceCollection) where TConnectionFactory : ConnectionFactory
         {
             serviceCollection.Validate(nameof(serviceCollection), ObjectIs.NotNull);
 

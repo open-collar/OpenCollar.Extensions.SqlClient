@@ -41,7 +41,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="details">
         ///     The details of the error and the environment at the time.
         /// </param>
-        public DbException([CanBeNull] string details)
+        public DbException(string? details)
         {
             Details = details;
         }
@@ -55,7 +55,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="message">
         ///     The message that describes the error.
         /// </param>
-        public DbException([NotNull] string details, string message) : base(message)
+        public DbException(string details, string message) : base(message)
         {
             Details = details;
         }
@@ -74,7 +74,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///     The exception that is the cause of the current exception, or <see langword="null" /> if no inner
         ///     exception is specified.
         /// </param>
-        public DbException([NotNull] string details, string message, Exception innerException) : base(message, innerException)
+        public DbException(string details, string message, Exception innerException) : base(message, innerException)
         {
             Details = details;
         }
@@ -83,12 +83,11 @@ namespace OpenCollar.Extensions.SqlClient
         ///     Initializes a new instance of the <see cref="DbException"> </see> class with serialized data.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object
-        ///     data about the exception being thrown.
+        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object data about the exception
+        ///     being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="StreamingContext"> </see> that contains contextual
-        ///     information about the source or destination.
+        ///     The <see cref="StreamingContext"> </see> that contains contextual information about the source or destination.
         /// </param>
         /// <exception cref="ArgumentNullException">
         ///     The <paramref name="info"> info </paramref> parameter is <see langword="null" />.
@@ -96,7 +95,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="SerializationException">
         ///     The class name is null or <see cref="Exception.HResult"> </see> is zero (0).
         /// </exception>
-        protected DbException([NotNull] SerializationInfo info, StreamingContext context) : base(info, context)
+        protected DbException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
             Details = info.GetString(nameof(Details));
         }
@@ -107,20 +106,18 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The details of the error and the environment at the time.
         /// </value>
-        [CanBeNull]
-        public string Details { get; }
+        public string? Details { get; }
 
         /// <summary>
-        ///     When overridden in a derived class, sets the <see cref="SerializationInfo">
-        ///     </see> with information about the exception.
+        ///     When overridden in a derived class, sets the <see cref="SerializationInfo"> </see> with information
+        ///     about the exception.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object
-        ///     data about the exception being thrown.
+        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object data about the exception
+        ///     being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="StreamingContext"> </see> that contains contextual
-        ///     information about the source or destination.
+        ///     The <see cref="StreamingContext"> </see> that contains contextual information about the source or destination.
         /// </param>
         /// <exception cref="ArgumentNullException">
         ///     The <paramref name="info"> info </paramref> parameter is a <see langword="null" />.

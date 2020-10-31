@@ -21,8 +21,6 @@ using System;
 using System.Collections.Concurrent;
 using System.Data;
 
-using JetBrains.Annotations;
-
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -41,24 +39,24 @@ namespace OpenCollar.Extensions.SqlClient
         /// <summary>
         ///     The configuration of the database connection.
         /// </summary>
-        [NotNull]
+
         private readonly IDatabaseConnectionConfiguration _configuration;
 
         /// <summary>
         ///     A dictionary of connections pools, keyed on the connection string and user.
         /// </summary>
-        [NotNull]
+
         private readonly ConcurrentDictionary<ConnectionKey, ConnectionPool> _connectionPoolCache = new ConcurrentDictionary<ConnectionKey, ConnectionPool>();
 
         /// <summary>
         ///     The logger through which to record informatkon about activity and other information.
         /// </summary>
-        [CanBeNull] private readonly ILogger _log;
+        private readonly ILogger? _log;
 
         /// <summary>
         ///     The services provider from which to get resources such as loggers.
         /// </summary>
-        [NotNull] private readonly IServiceProvider _services;
+        private readonly IServiceProvider _services;
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="ConnectionFactory" /> class.
@@ -72,7 +70,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentNullException">
         ///     <paramref name="configuration" /> is <see langword="null" />.
         /// </exception>
-        protected ConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration) : this(services, configuration, null)
+        protected ConnectionFactory(IServiceProvider services, IDatabaseConfiguration configuration) : this(services, configuration, null)
         { }
 
         /// <summary>
@@ -90,7 +88,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentNullException">
         ///     <paramref name="configuration" /> is <see langword="null" />.
         /// </exception>
-        protected ConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration, IEnvironmentMetadataProvider? environmentMetadataProvider)
+        protected ConnectionFactory(IServiceProvider services, IDatabaseConfiguration configuration, IEnvironmentMetadataProvider? environmentMetadataProvider)
         {
             configuration.Validate(nameof(configuration), ObjectIs.NotNull);
 
@@ -120,7 +118,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The configuration of the database connection.
         /// </value>
-        [NotNull] public IDatabaseConnectionConfiguration Configuration => _configuration;
+        public IDatabaseConnectionConfiguration Configuration => _configuration;
 
         /// <summary>
         ///     Gets a value indicating whether
@@ -143,7 +141,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///     The key in the <see cref="IDatabaseConfiguration.Connections" /> dictionary of the
         ///     <see cref="IDatabaseConnectionConfiguration" /> that defines the connection details.
         /// </value>
-        [NotNull] protected abstract string ConnectionKey { get; }
+        protected abstract string ConnectionKey { get; }
 
         /// <summary>
         ///     Gets the default name of the owner.
@@ -151,7 +149,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The default name of the owner.
         /// </value>
-        [NotNull] protected virtual string DefaultOwnerName => @"Default";
+        protected virtual string DefaultOwnerName => @"Default";
 
         /// <summary>
         ///     Gets the service that provides the environment metadata for a given application. Can be
@@ -172,8 +170,8 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="BadImplementationException">
         ///     <see cref="DefaultOwnerName" /> returned <see langword="null" />.
         /// </exception>
-        [NotNull]
-        public ConnectionProxy GetConnection([CanBeNull] string? owner = null)
+
+        public ConnectionProxy GetConnection(string? owner = null)
         {
             if(owner is null)
             {
@@ -201,7 +199,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     <see langword="true" /> if MSI should be initialized; otherwise, <see langword="false" />.
         /// </returns>
-        internal static bool IsMsiInitializationRequired([NotNull] string connectionString)
+        internal static bool IsMsiInitializationRequired(string connectionString)
         {
             // If it is to an Azure endpoint it might still be using SQL Server authentication, so check to see if the
             // connection string also contains the keys required to configure that.
@@ -240,7 +238,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// </param>
         /// <returns>
         /// </returns>
-        protected internal virtual Exception AnalyzeException([NotNull] Exception exception, [NotNull] Connection connection, SqlCommand command) => exception;
+        protected internal virtual Exception AnalyzeException(Exception exception, Connection connection, SqlCommand command) => exception;
 
         /// <summary>
         ///     Perform custom initialization on the connection specified.
@@ -263,7 +261,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///         connections are recycled only when the owner is the same.
         ///     </para>
         /// </remarks>
-        protected internal virtual void InitializeConnection([CanBeNull] string? owner, [NotNull] SqlConnection connection)
+        protected internal virtual void InitializeConnection(string? owner, SqlConnection connection)
         {
         }
 
@@ -291,7 +289,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///         connections are recycled only when the owner is the same.
         ///     </para>
         /// </remarks>
-        protected internal virtual void RecycleConnection([CanBeNull] string? owner, [NotNull] SqlConnection connection)
+        protected internal virtual void RecycleConnection(string? owner, SqlConnection connection)
         {
         }
 
@@ -306,7 +304,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///     The command as a whole is provided allowing for any of its properties to be used to determine the
         ///     correct timeout value.
         /// </remarks>
-        protected internal virtual void SetCommandTimemout([NotNull] IDbCommand command)
+        protected internal virtual void SetCommandTimemout(IDbCommand command)
         {
         }
 

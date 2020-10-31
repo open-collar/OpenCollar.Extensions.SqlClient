@@ -28,7 +28,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" />
         <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.6.0" />
         <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
             <PrivateAssets>all</PrivateAssets>

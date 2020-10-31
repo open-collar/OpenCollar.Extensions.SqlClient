@@ -50,7 +50,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="System.ArgumentNullException">
         ///     <paramref name="storedProcedure" /> is <see langword="null" />.
         /// </exception>
-        public static QueryBuilder QueryProcedure([NotNull] this ConnectionProxy connection, [NotNull] Model.Identifier storedProcedure)
+        public static QueryBuilder QueryProcedure(this ConnectionProxy connection, Model.Identifier storedProcedure)
         {
             connection.Validate(nameof(connection), ObjectIs.NotNull);
             storedProcedure.Validate(nameof(storedProcedure), ObjectIs.NotNull);

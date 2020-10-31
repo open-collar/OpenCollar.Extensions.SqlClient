@@ -83,12 +83,11 @@ namespace OpenCollar.Extensions.SqlClient
         ///     Initializes a new instance of the <see cref="ParseException"> </see> class with serialized data.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object
-        ///     data about the exception being thrown.
+        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object data about the exception
+        ///     being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="StreamingContext"> </see> that contains contextual
-        ///     information about the source or destination.
+        ///     The <see cref="StreamingContext"> </see> that contains contextual information about the source or destination.
         /// </param>
         /// <exception cref="ArgumentNullException">
         ///     The <paramref name="info"> info </paramref> parameter is <see langword="null" />.
@@ -96,7 +95,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="SerializationException">
         ///     The class name is null or <see cref="Exception.HResult"> </see> is zero (0).
         /// </exception>
-        protected ParseException([NotNull] SerializationInfo info, StreamingContext context) : base(info, context)
+        protected ParseException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
             CharacterPosition = info.GetInt32(nameof(CharacterPosition));
         }
@@ -110,16 +109,15 @@ namespace OpenCollar.Extensions.SqlClient
         public int CharacterPosition { get; }
 
         /// <summary>
-        ///     When overridden in a derived class, sets the <see cref="SerializationInfo">
-        ///     </see> with information about the exception.
+        ///     When overridden in a derived class, sets the <see cref="SerializationInfo"> </see> with information
+        ///     about the exception.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object
-        ///     data about the exception being thrown.
+        ///     The <see cref="SerializationInfo"> </see> that holds the serialized object data about the exception
+        ///     being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="StreamingContext"> </see> that contains contextual
-        ///     information about the source or destination.
+        ///     The <see cref="StreamingContext"> </see> that contains contextual information about the source or destination.
         /// </param>
         /// <exception cref="ArgumentNullException">
         ///     The <paramref name="info"> info </paramref> parameter is <see langword="null" />.

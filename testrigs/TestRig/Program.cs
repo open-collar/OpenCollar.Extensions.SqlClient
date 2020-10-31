@@ -42,7 +42,7 @@ namespace TestRig
         /// <value>
         ///     The object from which to read configuration.
         /// </value>
-        [NotNull]
+
         public static IConfigurationRoot Configuration { get; private set; }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace TestRig
         /// </param>
         /// <exception cref="OpenCollar.Extensions.Configuration.ConfigurationException">
         /// </exception>
-        private static void ConfigureConfiguration([NotNull] IConfigurationBuilder configBuilder)
+        private static void ConfigureConfiguration(IConfigurationBuilder configBuilder)
         {
             var isInAzure = IsInAzure;
 
@@ -123,7 +123,7 @@ namespace TestRig
         /// </param>
         /// <exception cref="Wtw.Crb.CarrierPortal.Services.Configuration.ConfigurationException">
         /// </exception>
-        private static void ConfigureLogging([NotNull] IConfiguration configuration, [NotNull] ILoggingBuilder builder)
+        private static void ConfigureLogging(IConfiguration configuration, ILoggingBuilder builder)
         {
             // ReSharper disable PossibleNullReferenceException
             builder.AddConfiguration(configuration.GetSection(@"Logging"));

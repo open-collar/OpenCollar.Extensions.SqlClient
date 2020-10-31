@@ -45,7 +45,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public DatabaseException([NotNull] string connectionString) : base(connectionString)
+        public DatabaseException(string connectionString) : base(connectionString)
         {
         }
 
@@ -64,7 +64,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public DatabaseException([NotNull] string connectionString, string message) : base(connectionString, message)
+        public DatabaseException(string connectionString, string message) : base(connectionString, message)
         {
         }
 
@@ -87,7 +87,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public DatabaseException([NotNull] string connectionString, string message, Exception innerException) : base(connectionString, message, innerException)
+        public DatabaseException(string connectionString, string message, Exception innerException) : base(connectionString, message, innerException)
         {
         }
 
@@ -95,28 +95,23 @@ namespace OpenCollar.Extensions.SqlClient
         ///     Initializes a new instance of the <see cref="DatabaseException" /> class.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="SerializationInfo" /> that holds the serialized object data
-        ///     about the exception being thrown.
+        ///     The <see cref="SerializationInfo" /> that holds the serialized object data about the exception being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="StreamingContext" /> that contains contextual information
-        ///     about the source or destination.
+        ///     The <see cref="StreamingContext" /> that contains contextual information about the source or destination.
         /// </param>
         protected DatabaseException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
 
         /// <summary>
-        ///     When overridden in a derived class, sets the
-        ///     <see cref="SerializationInfo" /> with information about the exception.
+        ///     When overridden in a derived class, sets the <see cref="SerializationInfo" /> with information about the exception.
         /// </summary>
         /// <param name="info">
-        ///     The <see cref="SerializationInfo" /> that holds the serialized object data
-        ///     about the exception being thrown.
+        ///     The <see cref="SerializationInfo" /> that holds the serialized object data about the exception being thrown.
         /// </param>
         /// <param name="context">
-        ///     The <see cref="StreamingContext" /> that contains contextual information
-        ///     about the source or destination.
+        ///     The <see cref="StreamingContext" /> that contains contextual information about the source or destination.
         /// </param>
         public override void GetObjectData(SerializationInfo info, StreamingContext context)
         {

@@ -20,8 +20,6 @@
 using System;
 using System.Data.SqlTypes;
 
-using JetBrains.Annotations;
-
 using Microsoft.Data.SqlClient;
 
 using OpenCollar.Extensions.Validation;
@@ -51,7 +49,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="InvalidCastException">
         ///     Unable to convert from field type to <see cref="DateTimeOffset" />.
         /// </exception>
-        public static DateTimeOffset? GetDateTimeOffsetOrDefault([NotNull] this SqlDataReader reader, int index, DateTimeOffset? defaultValue)
+        public static DateTimeOffset? GetDateTimeOffsetOrDefault(this SqlDataReader reader, int index, DateTimeOffset? defaultValue)
         {
             reader.Validate(nameof(reader), ObjectIs.NotNull);
             if(reader.IsDBNull(index))
@@ -98,7 +96,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentOutOfRangeException">
         ///     <paramref name="index" /> must be in range.
         /// </exception>
-        public static T GetValueOrDefault<T>([NotNull] this SqlDataReader reader, int index, T defaultValue)
+        public static T GetValueOrDefault<T>(this SqlDataReader reader, int index, T defaultValue)
         {
             reader.Validate(nameof(reader), ObjectIs.NotNull);
 
@@ -141,7 +139,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="SqlNullValueException">
         ///     Field of dataset contains NULL.
         /// </exception>
-        public static T GetValueOrFail<T>([NotNull] this SqlDataReader reader, int index)
+        public static T GetValueOrFail<T>(this SqlDataReader reader, int index)
         {
             reader.Validate(nameof(reader), ObjectIs.NotNull);
 
@@ -181,10 +179,28 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The active SQL.
         /// </returns>
-        [NotNull]
+
         private static string GetSql()
         {
-            return CallingContext.Current()?.Query?.CommandText ?? @"[Unspecified]";
+            var context = CallingContext.Current();
+            if(context is null)
+            {
+                return @"[Unspecified]";
+            }
+
+            var query = context.Query;
+            if(query is null)
+            {
+                return @"[Unspecified]";
+            }
+
+            var commandText = query.CommandText;
+            if(commandText is null)
+            {
+                return @"[Unspecified]";
+            }
+
+            return commandText.ToString();
         }
 
         /// <summary>

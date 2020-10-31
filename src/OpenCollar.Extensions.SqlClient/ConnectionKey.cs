@@ -20,8 +20,6 @@
 using System;
 using System.Collections.Generic;
 
-using JetBrains.Annotations;
-
 using OpenCollar.Extensions.Validation;
 
 namespace OpenCollar.Extensions.SqlClient
@@ -45,7 +43,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="connectionString">
         ///     The connection string used to connect to the database.
         /// </param>
-        public ConnectionKey([CanBeNull] string owner, [NotNull] string connectionString)
+        public ConnectionKey(string? owner, string connectionString)
         {
             connectionString.Validate(nameof(connectionString), StringIs.NotNullEmptyOrWhiteSpace);
 
@@ -59,7 +57,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The connection string used to connect to the database.
         /// </value>
-        [NotNull]
+
         public string ConnectionString { get; }
 
         /// <summary>
@@ -70,8 +68,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///     the connection pool. Can be left empty or <see langword="null" /> if the connection isn't tied to a
         ///     single user.
         /// </value>
-        [CanBeNull]
-        public string Owner { get; }
+        public string? Owner { get; }
 
         /// <summary>
         ///     Returns a value that indicates whether two <see cref="ConnectionKey" /> objects have different values.

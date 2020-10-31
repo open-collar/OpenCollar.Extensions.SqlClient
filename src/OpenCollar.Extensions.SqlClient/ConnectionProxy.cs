@@ -21,8 +21,6 @@ using System;
 using System.Data;
 using System.Threading.Tasks;
 
-using JetBrains.Annotations;
-
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 
@@ -42,12 +40,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <summary>
         ///     The to wrap and with which to work.
         /// </summary>
-        [NotNull] private readonly Connection _connection;
-
-        /// <summary>
-        ///     The logger with which to record timings and trace information.
-        /// </summary>
-        [NotNull] private readonly ILogger _logger;
+        private readonly Connection _connection;
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="ConnectionProxy" /> class.
@@ -58,10 +51,10 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="logger">
         ///     The logger with which to record timings and trace information.
         /// </param>
-        internal ConnectionProxy([NotNull] Connection connection, [NotNull] ILogger logger)
+        internal ConnectionProxy(Connection connection, ILogger? logger)
         {
             _connection = connection;
-            _logger = logger;
+            Logger = logger;
         }
 
         /// <summary>
@@ -70,7 +63,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The underlying connection to wrap.
         /// </value>
-        [NotNull]
+
         public SqlConnection SqlConnection { get { return _connection.SqlConnection; } }
 
         /// <summary>
@@ -87,7 +80,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The key identifying the connection and owner.
         /// </value>
-        [NotNull]
+
         internal ConnectionKey Key { get { return _connection.Key; } }
 
         /// <summary>
@@ -96,7 +89,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The logger with which to record timings and trace information.
         /// </value>
-        internal ILogger Logger => _logger;
+        internal ILogger? Logger { get; }
 
         /// <summary>
         ///     Executes an SQL statement against the <see langword="Connection" /> object of a .NET Framework data
@@ -114,7 +107,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentNullException">
         ///     <paramref name="command" /> is <see langword="null" />.
         /// </exception>
-        public Task<int> ExecuteNonQueryAsync([NotNull] SqlCommand command, System.Threading.CancellationToken? cancellationToken = null)
+        public Task<int> ExecuteNonQueryAsync(SqlCommand command, System.Threading.CancellationToken? cancellationToken = null)
         {
             command.Validate(nameof(command), ObjectIs.NotNull);
 
@@ -146,7 +139,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     An <see cref="IDataReader" /> object.
         /// </returns>
-        public Task<SqlDataReader> ExecuteReaderAsync([NotNull] SqlCommand command, System.Threading.CancellationToken? cancellationToken = null)
+        public Task<SqlDataReader> ExecuteReaderAsync(SqlCommand command, System.Threading.CancellationToken? cancellationToken = null)
         {
             command.Validate(nameof(command), ObjectIs.NotNull);
 
@@ -182,7 +175,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     An <see cref="IDataReader" /> object.
         /// </returns>
-        public Task<SqlDataReader> ExecuteReaderAsync([NotNull] SqlCommand command, CommandBehavior behavior, System.Threading.CancellationToken? cancellationToken = null)
+        public Task<SqlDataReader> ExecuteReaderAsync(SqlCommand command, CommandBehavior behavior, System.Threading.CancellationToken? cancellationToken = null)
         {
             command.Validate(nameof(command), ObjectIs.NotNull);
 
@@ -214,7 +207,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The first column of the first row in the resultset.
         /// </returns>
-        public Task<object> ExecuteScalarAsync([NotNull] SqlCommand command, System.Threading.CancellationToken? cancellationToken = null)
+        public Task<object> ExecuteScalarAsync(SqlCommand command, System.Threading.CancellationToken? cancellationToken = null)
         {
             command.Validate(nameof(command), ObjectIs.NotNull);
 
@@ -263,7 +256,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="scope">
         ///     The logging scope within which the command is being executed.
         /// </param>
-        private void CompleteExecution([NotNull] SqlCommand command, DateTime start, ITransientContextualInformationScope scope)
+        private void CompleteExecution(SqlCommand command, DateTime start, ITransientContextualInformationScope scope)
         {
             Logger.SafeLogTrace($"Executed: \"{command.CommandText}\".  Duration: {(System.DateTime.UtcNow.Subtract(start)).TotalMilliseconds.ToString("F0", System.Globalization.CultureInfo.InvariantCulture)}");
             try

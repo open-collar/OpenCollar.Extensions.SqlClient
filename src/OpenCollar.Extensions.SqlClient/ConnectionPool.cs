@@ -22,8 +22,6 @@ using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Linq;
 
-using JetBrains.Annotations;
-
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
@@ -37,30 +35,30 @@ namespace OpenCollar.Extensions.SqlClient
         /// <summary>
         ///     A dictionary of all active connections, keyed on their <see cref="Connection.InstanceId" />.
         /// </summary>
-        [NotNull]
+
         private readonly ConcurrentDictionary<Guid, Connection> _activeConnections = new ConcurrentDictionary<Guid, Connection>();
 
         /// <summary>
         ///     The custom factory used to initialize connections before they are used.
         /// </summary>
-        [NotNull]
+
         private readonly ConnectionFactory _connectionFactory;
 
         /// <summary>
         ///     A dictionary of all idle connections, keyed on their <see cref="Connection.InstanceId" />.
         /// </summary>
-        [NotNull]
+
         private readonly ConcurrentDictionary<Guid, Connection> _idleConnections = new ConcurrentDictionary<Guid, Connection>();
 
         /// <summary>
         ///     The logger through which to record usage and other information.
         /// </summary>
-        [CanBeNull] private readonly ILogger _logger;
+        private readonly ILogger? _logger;
 
         /// <summary>
         ///     The services provider from which to get resource when intializing new connections.
         /// </summary>
-        [NotNull] private readonly IServiceProvider _services;
+        private readonly IServiceProvider _services;
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="ConnectionPool" /> class.
@@ -95,7 +93,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///         </item>
         ///     </list>
         /// </param>
-        internal ConnectionPool([NotNull] IServiceProvider services, [CanBeNull] ILogger<ConnectionPool> logger, [NotNull] ConnectionKey key, [NotNull] ConnectionFactory connectionFactory)
+        internal ConnectionPool(IServiceProvider services, ILogger<ConnectionPool>? logger, ConnectionKey key, ConnectionFactory connectionFactory)
         {
             _logger = logger;
             _services = services;
@@ -111,7 +109,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The key identifying the type of connection supplied by this pool (connection string and owner).
         /// </value>
-        [NotNull]
+
         public ConnectionKey Key { get; }
 
         /// <summary>
@@ -127,7 +125,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// </summary>
         /// <returns>
         /// </returns>
-        [NotNull]
+
         internal Connection GetConnection()
         {
             var instanceId = _idleConnections.Keys.FirstOrDefault();
@@ -146,7 +144,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="connection">
         ///     The connection to recycle (must come from this pool).
         /// </param>
-        internal void RecycleConnection([NotNull] Connection connection)
+        internal void RecycleConnection(Connection connection)
         {
 #pragma warning disable CA2000 // Dispose objects before losing scope
             if(_activeConnections.TryRemove(connection.InstanceId, out var removedConnection))
@@ -178,7 +176,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="connection">
         ///     The connection to remove.
         /// </param>
-        internal void RemoveConnection([NotNull] Connection connection)
+        internal void RemoveConnection(Connection connection)
         {
             throw new NotImplementedException();
         }

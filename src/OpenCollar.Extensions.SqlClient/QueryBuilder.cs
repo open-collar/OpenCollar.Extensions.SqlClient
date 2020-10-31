@@ -24,8 +24,6 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-using JetBrains.Annotations;
-
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 
@@ -43,13 +41,13 @@ namespace OpenCollar.Extensions.SqlClient
         /// <summary>
         ///     A dictionary, keyed on the case-insensitive argument name, of the parameters to add to the command.
         /// </summary>
-        [NotNull]
+
         private readonly Dictionary<ParameterName, SqlParameter> _parameters = new Dictionary<ParameterName, SqlParameter>();
 
         /// <summary>
         ///     The readers to be executed against the results.
         /// </summary>
-        [NotNull]
+
         private readonly List<Reader> _readers = new List<Reader>();
 
         /// <summary>
@@ -64,7 +62,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="commandText">
         ///     The name of the stored procedure to execute.
         /// </param>
-        internal QueryBuilder([NotNull] ConnectionProxy connection, CommandType commandType, [NotNull] Identifier commandText)
+        internal QueryBuilder(ConnectionProxy connection, CommandType commandType, Identifier commandText)
         {
             Connection = connection;
             CommandType = commandType;
@@ -110,8 +108,8 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     Returns a reference to this object, allowing further parameters or other methods to be called fluently.
         /// </returns>
-        [NotNull]
-        public QueryBuilder WithParameter([NotNull] ParameterName parameterName, [CanBeNull] object value)
+
+        public QueryBuilder WithParameter(ParameterName parameterName, object? value)
         {
             parameterName.Validate(nameof(parameterName), ObjectIs.NotNull);
 
@@ -132,8 +130,8 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="QueryException">
         ///     Attempt to execute command with readers without a return value.
         /// </exception>
-        [NotNull]
-        public Task ExecuteNonQueryAsync([CanBeNull] CancellationToken? cancellationToken = null)
+
+        public Task ExecuteNonQueryAsync(CancellationToken? cancellationToken = null)
         {
             if(_readers.Count != 0)
             {
@@ -160,7 +158,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The fully initialized command object.
         /// </returns>
-        [NotNull]
+
         private SqlCommand InitializeCommand()
         {
 #pragma warning disable CA2000 // Dispose objects before losing scope
@@ -202,7 +200,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// </param>
         /// <returns>
         /// </returns>
-        [NotNull]
+
         public QueryBuilder WithRetries(int maxRetries = 3)
         {
             _maxRetries = maxRetries;
@@ -312,7 +310,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="QueryException">
         ///     Mandatory result set missing for reader.
         /// </exception>
-        private SqlDataReader ProcessReader(SqlDataReader dataReader, List<object> results, int recordSetIndex, Reader reader)
+        private SqlDataReader ProcessReader(SqlDataReader dataReader, List<object?> results, int recordSetIndex, Reader reader)
         {
             if(dataReader.HasRows)
             {

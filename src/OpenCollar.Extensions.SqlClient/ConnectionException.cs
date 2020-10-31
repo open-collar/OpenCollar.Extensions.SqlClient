@@ -47,7 +47,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public ConnectionException([NotNull] string connectionString) : base()
+        public ConnectionException(string connectionString) : base()
         {
             connectionString.Validate(nameof(connectionString), StringIs.NotNullEmptyOrWhiteSpace);
 
@@ -69,7 +69,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public ConnectionException([NotNull] string connectionString, string message) : base(message)
+        public ConnectionException(string connectionString, string message) : base(message)
         {
             connectionString.Validate(nameof(connectionString), StringIs.NotNullEmptyOrWhiteSpace);
 
@@ -95,7 +95,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public ConnectionException([NotNull] string connectionString, string message, Exception innerException) : base(message, innerException)
+        public ConnectionException(string connectionString, string message, Exception innerException) : base(message, innerException)
         {
             connectionString.Validate(nameof(connectionString), StringIs.NotNullEmptyOrWhiteSpace);
 
@@ -122,7 +122,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The connection string that defines the connection on which the error occurred.
         /// </value>
-        [NotNull]
+
         public string ConnectionString { get; }
 
         /// <summary>

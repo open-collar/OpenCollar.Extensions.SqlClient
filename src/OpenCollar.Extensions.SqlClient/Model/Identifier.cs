@@ -22,8 +22,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-using JetBrains.Annotations;
-
 using OpenCollar.Extensions.Validation;
 
 namespace OpenCollar.Extensions.SqlClient.Model
@@ -40,7 +38,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <summary>
         ///     The normalized value used in comparisons and generated SQL.
         /// </summary>
-        [NotNull]
+
         private readonly string _normalizedValue;
 
         /// <summary>
@@ -79,7 +77,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <exception cref="ParseException">
         ///     Invalid identifier, no closing bracket found before of string.
         /// </exception>
-        public Identifier([NotNull] string originalValue)
+        public Identifier(string originalValue)
         {
             originalValue.Validate(nameof(originalValue), StringIs.NotNullEmptyOrWhiteSpace);
 
@@ -94,7 +92,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <value>
         ///     The original value passed to the constructor.
         /// </value>
-        [NotNull]
+
         public string OriginalValue { get; }
 
         /// <summary>
@@ -106,7 +104,6 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <returns>
         ///     The result of the conversion.
         /// </returns>
-        [CanBeNull]
         public static implicit operator Identifier?(string? value) => string.IsNullOrWhiteSpace(value) ? null : new Identifier(value);
 
         /// <summary>
@@ -118,7 +115,6 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <returns>
         ///     The result of the conversion.
         /// </returns>
-        [CanBeNull]
         public static implicit operator string?(Identifier? value) => ReferenceEquals(value, null) ? null : value.ToString();
 
         /// <summary>
@@ -213,6 +209,28 @@ namespace OpenCollar.Extensions.SqlClient.Model
         ///     otherwise, <see langword="false" />.
         /// </returns>
         public static bool operator >=(Identifier left, Identifier right) => Comparer<Identifier>.Default.Compare(left, right) >= 0;
+
+        /// <summary>
+        ///     Converts from <see cref="Identifier" /> to <see cref="System.String" />.
+        /// </summary>
+        /// <param name="value">
+        ///     The value to cast.
+        /// </param>
+        /// <returns>
+        ///     The result of the conversion.
+        /// </returns>
+        public static string? ToIdentifier(Identifier? value) => ReferenceEquals(value, null) ? null : value.ToString();
+
+        /// <summary>
+        ///     Converts from <see cref="System.String" /> to <see cref="Identifier" />.
+        /// </summary>
+        /// <param name="value">
+        ///     The value to cast.
+        /// </param>
+        /// <returns>
+        ///     The result of the conversion.
+        /// </returns>
+        public static Identifier? ToString(string? value) => string.IsNullOrWhiteSpace(value) ? null : new Identifier(value);
 
         /// <summary>
         ///     Compares the current instance with another object of the same type and returns an integer that indicates
@@ -390,8 +408,8 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <exception cref="ParseException">
         ///     Invalid identifier, no closing bracket found before of string.
         /// </exception>
-        [NotNull]
-        private static string NormalizedValue([NotNull] string originalValue)
+
+        private static string NormalizedValue(string originalValue)
         {
             var state = new IdentifierTokenizer();
 

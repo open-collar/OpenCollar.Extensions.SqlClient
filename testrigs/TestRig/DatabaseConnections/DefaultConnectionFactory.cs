@@ -45,7 +45,7 @@ namespace TestRig.DatabaseConnections
         /// <param name="environmentMetadataProvider">
         ///     The service that provides the environment metadata for a given application.
         /// </param>
-        public DefaultConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration, IEnvironmentMetadataProvider? environmentMetadataProvider) : base(services, configuration, environmentMetadataProvider)
+        public DefaultConnectionFactory(IServiceProvider services, IDatabaseConfiguration configuration, IEnvironmentMetadataProvider? environmentMetadataProvider) : base(services, configuration, environmentMetadataProvider)
         {
         }
 

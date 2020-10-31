@@ -45,7 +45,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public QueryException([NotNull] string connectionString) : base(connectionString)
+        public QueryException(string connectionString) : base(connectionString)
         {
         }
 
@@ -64,7 +64,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public QueryException([NotNull] string connectionString, string message) : base(connectionString, message)
+        public QueryException(string connectionString, string message) : base(connectionString, message)
         {
         }
 
@@ -87,7 +87,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public QueryException([NotNull] string connectionString, string message, Exception innerException) : base(connectionString, message, innerException)
+        public QueryException(string connectionString, string message, Exception innerException) : base(connectionString, message, innerException)
         {
         }
 

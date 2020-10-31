@@ -21,8 +21,6 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 
-using JetBrains.Annotations;
-
 namespace OpenCollar.Extensions.SqlClient
 {
     /// <summary>
@@ -36,7 +34,6 @@ namespace OpenCollar.Extensions.SqlClient
         /// <remarks>
         ///     We use the <see cref="AsyncLocal{T}" /> class to ensure that the value is local to the current task.
         /// </remarks>
-        [CanBeNull]
         private static AsyncLocal<CallingContext?> _threadContext = new AsyncLocal<CallingContext?>();
 
         /// <summary>
@@ -46,7 +43,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The context for the current thread.
         /// </returns>
-        [NotNull]
+
         public static CallingContext Current()
         {
             if(!ReferenceEquals(_threadContext.Value, null))
@@ -70,7 +67,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     Returns the calling context, allowing for fluent-style semantics.
         /// </returns>
-        internal CallingContext SetActiveBuilder([CanBeNull] QueryBuilder? builder)
+        internal CallingContext SetActiveBuilder(QueryBuilder? builder)
         {
             Query = builder;
             return this;
@@ -83,7 +80,6 @@ namespace OpenCollar.Extensions.SqlClient
         ///     The query builder currently being executed. Can be <see langword="null" /> if no query is currently
         ///     being executed.
         /// </value>
-        [CanBeNull]
         public QueryBuilder? Query { get; private set; }
 
         /// <summary>
@@ -94,7 +90,6 @@ namespace OpenCollar.Extensions.SqlClient
         ///     the connection pool. Can be left empty or <see langword="null" /> if the connection isn't tied to a
         ///     single user or if no query is currently being executed.
         /// </value>
-        [CanBeNull]
         public string? Owner { get; }
 
         /// <summary>

@@ -21,8 +21,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-using JetBrains.Annotations;
-
 using OpenCollar.Extensions.Validation;
 
 namespace OpenCollar.Extensions.SqlClient.Model
@@ -39,7 +37,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <summary>
         ///     The normalized value used in comparisons and generated SQL.
         /// </summary>
-        [NotNull]
+
         private readonly string _normalizedValue;
 
         /// <summary>
@@ -54,7 +52,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <exception cref="ArgumentException">
         ///     <paramref name="originalValue" /> was zero-length or contains only white-space characters.
         /// </exception>
-        public ParameterName([NotNull] string originalValue)
+        public ParameterName(string originalValue)
         {
             originalValue.Validate(nameof(originalValue), StringIs.NotNullEmptyOrWhiteSpace);
 
@@ -69,7 +67,7 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <value>
         ///     The original value passed to the constructor.
         /// </value>
-        [NotNull]
+
         public string OriginalValue { get; }
 
         /// <summary>
@@ -81,7 +79,6 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <returns>
         ///     The result of the conversion.
         /// </returns>
-        [CanBeNull]
         public static implicit operator ParameterName?(string? value) => string.IsNullOrWhiteSpace(value) ? null : new ParameterName(value);
 
         /// <summary>
@@ -93,7 +90,6 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <returns>
         ///     The result of the conversion.
         /// </returns>
-        [CanBeNull]
         public static implicit operator string?(ParameterName? value) => ReferenceEquals(value, null) ? null : value.ToString();
 
         /// <summary>
@@ -188,6 +184,28 @@ namespace OpenCollar.Extensions.SqlClient.Model
         ///     otherwise, <see langword="false" />.
         /// </returns>
         public static bool operator >=(ParameterName left, ParameterName right) => Comparer<ParameterName>.Default.Compare(left, right) >= 0;
+
+        /// <summary>
+        ///     Converts from <see cref="System.String" /> to <see cref="ParameterName" />.
+        /// </summary>
+        /// <param name="value">
+        ///     The value to cast.
+        /// </param>
+        /// <returns>
+        ///     The result of the conversion.
+        /// </returns>
+        public static ParameterName? ToParameterName(string? value) => string.IsNullOrWhiteSpace(value) ? null : new ParameterName(value);
+
+        /// <summary>
+        ///     Converts from <see cref="ParameterName" /> to <see cref="System.String" />.
+        /// </summary>
+        /// <param name="value">
+        ///     The value to cast.
+        /// </param>
+        /// <returns>
+        ///     The result of the conversion.
+        /// </returns>
+        public static string? ToString(ParameterName? value) => ReferenceEquals(value, null) ? null : value.ToString();
 
         /// <summary>
         ///     Compares the current instance with another object of the same type and returns an integer that indicates
@@ -341,8 +359,8 @@ namespace OpenCollar.Extensions.SqlClient.Model
         /// <returns>
         ///     The normalized value with standardized quotes and formatting.
         /// </returns>
-        [NotNull]
-        private static string NormalizedValue([NotNull] string originalValue)
+
+        private static string NormalizedValue(string originalValue)
         {
             if(originalValue.StartsWith("@", StringComparison.Ordinal))
             {
