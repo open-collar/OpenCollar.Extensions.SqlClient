@@ -104,7 +104,7 @@
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_System_IServiceProvider_OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.%23ctor(System.IServiceProvider%2COpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L74">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L75">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_System_IServiceProvider_OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)">ConnectionFactory(IServiceProvider, IDatabaseConfiguration)</h4>
@@ -155,6 +155,68 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_System_IServiceProvider_OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_OpenCollar_Extensions_Environment_IEnvironmentMetadataProvider_.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.%23ctor(System.IServiceProvider%2COpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration%2COpenCollar.Extensions.Environment.IEnvironmentMetadataProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L93">View Source</a>
+  </span>
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_System_IServiceProvider_OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_OpenCollar_Extensions_Environment_IEnvironmentMetadataProvider_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration,OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider)">ConnectionFactory(IServiceProvider, IDatabaseConfiguration, IEnvironmentMetadataProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenCollar.Extensions.SqlClient.ConnectionFactory.html">ConnectionFactory</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ConnectionFactory([NotNull] IServiceProvider services, [NotNull] IDatabaseConfiguration configuration, IEnvironmentMetadataProvider environmentMetadataProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IServiceProvider</span></td>
+        <td><span class="parametername">services</span></td>
+        <td><p>The services provider from which to get resources such as loggers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration.html">IDatabaseConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration for database connections as a whole.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider</span></td>
+        <td><span class="parametername">environmentMetadataProvider</span></td>
+        <td><p>The service that provides the environment metadata for a given application.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">configuration</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -162,7 +224,7 @@
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_Configuration.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L93">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L123">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_Configuration_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_Configuration" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.Configuration">Configuration</h4>
@@ -195,7 +257,7 @@ public IDatabaseConnectionConfiguration Configuration { get; }</code></pre>
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_ConnectionKey.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L116">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L146">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_ConnectionKey_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_ConnectionKey" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey">ConnectionKey</h4>
@@ -227,10 +289,44 @@ protected abstract string ConnectionKey { get; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_DatabaseEnvironment.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.DatabaseEnvironment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L321">View Source</a>
+  </span>
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_DatabaseEnvironment_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.DatabaseEnvironment*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_DatabaseEnvironment" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.DatabaseEnvironment">DatabaseEnvironment</h4>
+  <div class="markdown level1 summary"><p>Gets a string containing the environment to which the database defined by the connection string belongs.
+This can be <span class="xref">null</span> if no environment metadata provider has been configured.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string DatabaseEnvironment { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string containing the environment to which the database defined by the connection string belongs. This
+can be <span class="xref">null</span> if no environment metadata provider has been configured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_DefaultOwnerName.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L124">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L154">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_DefaultOwnerName_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_DefaultOwnerName" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName">DefaultOwnerName</h4>
@@ -260,10 +356,43 @@ protected virtual string DefaultOwnerName { get; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_EnvironmentMetadataProvider.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.EnvironmentMetadataProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L161">View Source</a>
+  </span>
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_EnvironmentMetadataProvider_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.EnvironmentMetadataProvider*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_EnvironmentMetadataProvider" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.EnvironmentMetadataProvider">EnvironmentMetadataProvider</h4>
+  <div class="markdown level1 summary"><p>Gets the service that provides the environment metadata for a given application. Can be
+<span class="xref">null</span> if the host application does not support the environment
+<span class="xref">OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider</span> service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnvironmentMetadataProvider EnvironmentMetadataProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeAzureManagedIdentity.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L106">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L136">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeAzureManagedIdentity_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeAzureManagedIdentity" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeAzureManagedIdentity">InitializeAzureManagedIdentity</h4>
@@ -302,7 +431,7 @@ connection; otherwise, <span class="xref">false</span>.</p>
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_AnalyzeException_System_Exception_OpenCollar_Extensions_SqlClient_Connection_Microsoft_Data_SqlClient_SqlCommand_.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException(System.Exception%2COpenCollar.Extensions.SqlClient.Connection%2CMicrosoft.Data.SqlClient.SqlCommand)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L206">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L243">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_AnalyzeException_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_AnalyzeException_System_Exception_OpenCollar_Extensions_SqlClient_Connection_Microsoft_Data_SqlClient_SqlCommand_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.AnalyzeException(System.Exception,OpenCollar.Extensions.SqlClient.Connection,Microsoft.Data.SqlClient.SqlCommand)">AnalyzeException(Exception, Connection, SqlCommand)</h4>
@@ -364,7 +493,7 @@ and throw a new exception if necessary.</p>
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_GetConnection_System_String_.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L138">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L175">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_GetConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_GetConnection_System_String_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection(System.String)">GetConnection(String)</h4>
@@ -431,7 +560,7 @@ public ConnectionProxy GetConnection([CanBeNull] string owner = null)</code></pr
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeConnection_System_String_Microsoft_Data_SqlClient_SqlConnection_.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection(System.String%2CMicrosoft.Data.SqlClient.SqlConnection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L232">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L266">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_InitializeConnection_System_String_Microsoft_Data_SqlClient_SqlConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.InitializeConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)">InitializeConnection(String, SqlConnection)</h4>
@@ -483,7 +612,7 @@ public ConnectionProxy GetConnection([CanBeNull] string owner = null)</code></pr
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_RecycleConnection_System_String_Microsoft_Data_SqlClient_SqlConnection_.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection(System.String%2CMicrosoft.Data.SqlClient.SqlConnection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L260">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L294">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_RecycleConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_RecycleConnection_System_String_Microsoft_Data_SqlClient_SqlConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.RecycleConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)">RecycleConnection(String, SqlConnection)</h4>
@@ -538,7 +667,7 @@ the connection is reused.</p>
     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_SetCommandTimemout_System_Data_IDbCommand_.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout(System.Data.IDbCommand)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L275">View Source</a>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L309">View Source</a>
   </span>
   <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_SetCommandTimemout_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout*"></a>
   <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_SetCommandTimemout_System_Data_IDbCommand_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout(System.Data.IDbCommand)">SetCommandTimemout(IDbCommand)</h4>
@@ -572,6 +701,67 @@ configured immediately before it is executed.</p>
   <div class="markdown level1 remarks"><p>The command as a whole is provided allowing for any of its properties to be used to determine the
 correct timeout value.</p>
 </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory_ValidateConnection.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory.ValidateConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L381">View Source</a>
+  </span>
+  <a id="OpenCollar_Extensions_SqlClient_ConnectionFactory_ValidateConnection_" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.ValidateConnection*"></a>
+  <h4 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_ValidateConnection" data-uid="OpenCollar.Extensions.SqlClient.ConnectionFactory.ValidateConnection">ValidateConnection()</h4>
+  <div class="markdown level1 summary"><p>Validates the connection configuration before attempting to create an new connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ValidateConnection()</code></pre>
+  </div>
+  <h5 id="OpenCollar_Extensions_SqlClient_ConnectionFactory_ValidateConnection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+    Environment validation uses the <span class="xref">OpenCollar.Extensions.Environment.EnvironmentMetadataProvider</span> service to
+    determine the application environment and the database environment and with that information
+    validate that connections between environments are not be created accidentally.
+</p>
+<p> This method can be overridden by factory classes to implement special behavior. </p>
+<p> Environment validation is controlled by these following configuration properties:
+<table><thead><tr><th> Property </th><th> Description </th></tr></thead><tbody><tr><td> <a class="xref" href="OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_IsEnvironmentValidationEnabled">IsEnvironmentValidationEnabled</a> </td><td>
+            This defaults to <span class="xref">true</span>. Where validation is not required the it can be
+            disabled using this flag.
+</td></tr><tr><td> <a class="xref" href="OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_IsEnvironmentValidationStrict">IsEnvironmentValidationStrict</a> </td><td>
+    This defaults to <span class="xref">true</span>. When a naming conventions are not always
+    adhered to (for example on a developers desktop) it may be desirable to ignore the
+    mismatches that might be caused by and unrecognized environment name.
+</td></tr></tbody></table>
+</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OpenCollar.Extensions.Environment.MismatchedEnvironmentException</span></td>
+        <td><p>Database environment cannot be determined.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">OpenCollar.Extensions.Environment.MismatchedEnvironmentException</span></td>
+        <td><p>Database environment does not match the application environment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">OpenCollar.Extensions.Environment.MismatchedEnvironmentException</span></td>
+        <td><p>Database environment could not be compared to the application environment, probably because it was not a
+known envioronment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -583,7 +773,7 @@ correct timeout value.</p>
                     <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/new/master/docs-ref-overwrite/new?filename=OpenCollar_Extensions_SqlClient_ConnectionFactory.md&amp;value=---%0Auid%3A%20OpenCollar.Extensions.SqlClient.ConnectionFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/c6127ee11f41dad6032bb39a9e3198b0e0a32ac9/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L38" class="contribution-link">View Source</a>
+                    <a href="https://github.com/open-collar/OpenCollar.Extensions.SqlClient/blob/d42d64e95a3cfde4df75061f938292611756fbf1/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs/#L39" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -602,7 +792,7 @@ correct timeout value.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            <div style='box-sizing: border-box;'><div style='float: left; width: calc(100% - 200px);'>Copyright &copy; 2020 <a href='mailto:jevans@open-collar.org.uk'>Jonathan Evans</a></div><div style='float: left; width: 200px;'><span style='font-style: italic;'>Version: 0.1.2</span></div></div>
+            <div style='box-sizing: border-box;'><div style='float: left; width: calc(100% - 200px);'>Copyright &copy; 2020 <a href='mailto:jevans@open-collar.org.uk'>Jonathan Evans</a></div><div style='float: left; width: 200px;'><span style='font-style: italic;'>Version: 0.1.3</span></div></div>
             
           </div>
         </div>
