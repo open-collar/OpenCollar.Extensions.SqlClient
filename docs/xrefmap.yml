@@ -264,6 +264,32 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
   nameWithType: IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationEnabled
+  name: IsEnvironmentValidationEnabled
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_IsEnvironmentValidationEnabled
+  commentId: P:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationEnabled
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationEnabled
+  nameWithType: IDatabaseConnectionConfiguration.IsEnvironmentValidationEnabled
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationEnabled*
+  name: IsEnvironmentValidationEnabled
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_IsEnvironmentValidationEnabled_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationEnabled
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationEnabled
+  nameWithType: IDatabaseConnectionConfiguration.IsEnvironmentValidationEnabled
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationStrict
+  name: IsEnvironmentValidationStrict
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_IsEnvironmentValidationStrict
+  commentId: P:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationStrict
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationStrict
+  nameWithType: IDatabaseConnectionConfiguration.IsEnvironmentValidationStrict
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationStrict*
+  name: IsEnvironmentValidationStrict
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_IsEnvironmentValidationStrict_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationStrict
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.IsEnvironmentValidationStrict
+  nameWithType: IDatabaseConnectionConfiguration.IsEnvironmentValidationStrict
 - uid: OpenCollar.Extensions.SqlClient.Connection
   name: Connection
   href: api/OpenCollar.Extensions.SqlClient.Connection.html
@@ -384,6 +410,12 @@ references:
   commentId: M:OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)
   fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionFactory(System.IServiceProvider, OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)
   nameWithType: ConnectionFactory.ConnectionFactory(IServiceProvider, IDatabaseConfiguration)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration,OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider)
+  name: ConnectionFactory(IServiceProvider, IDatabaseConfiguration, IEnvironmentMetadataProvider)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_System_IServiceProvider_OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConfiguration_OpenCollar_Extensions_Environment_IEnvironmentMetadataProvider_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration,OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionFactory(System.IServiceProvider, OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration, OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider)
+  nameWithType: ConnectionFactory.ConnectionFactory(IServiceProvider, IDatabaseConfiguration, IEnvironmentMetadataProvider)
 - uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.#ctor*
   name: ConnectionFactory
   href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory__ctor_
@@ -430,6 +462,19 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.ConnectionKey
   nameWithType: ConnectionFactory.ConnectionKey
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.DatabaseEnvironment
+  name: DatabaseEnvironment
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_DatabaseEnvironment
+  commentId: P:OpenCollar.Extensions.SqlClient.ConnectionFactory.DatabaseEnvironment
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.DatabaseEnvironment
+  nameWithType: ConnectionFactory.DatabaseEnvironment
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.DatabaseEnvironment*
+  name: DatabaseEnvironment
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_DatabaseEnvironment_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.DatabaseEnvironment
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.DatabaseEnvironment
+  nameWithType: ConnectionFactory.DatabaseEnvironment
 - uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName
   name: DefaultOwnerName
   href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_DefaultOwnerName
@@ -443,6 +488,19 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.DefaultOwnerName
   nameWithType: ConnectionFactory.DefaultOwnerName
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.EnvironmentMetadataProvider
+  name: EnvironmentMetadataProvider
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_EnvironmentMetadataProvider
+  commentId: P:OpenCollar.Extensions.SqlClient.ConnectionFactory.EnvironmentMetadataProvider
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.EnvironmentMetadataProvider
+  nameWithType: ConnectionFactory.EnvironmentMetadataProvider
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.EnvironmentMetadataProvider*
+  name: EnvironmentMetadataProvider
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_EnvironmentMetadataProvider_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.EnvironmentMetadataProvider
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.EnvironmentMetadataProvider
+  nameWithType: ConnectionFactory.EnvironmentMetadataProvider
 - uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.GetConnection(System.String)
   name: GetConnection(String)
   href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_GetConnection_System_String_
@@ -508,6 +566,19 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.SetCommandTimemout
   nameWithType: ConnectionFactory.SetCommandTimemout
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.ValidateConnection
+  name: ValidateConnection()
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_ValidateConnection
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionFactory.ValidateConnection
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.ValidateConnection()
+  nameWithType: ConnectionFactory.ValidateConnection()
+- uid: OpenCollar.Extensions.SqlClient.ConnectionFactory.ValidateConnection*
+  name: ValidateConnection
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionFactory.html#OpenCollar_Extensions_SqlClient_ConnectionFactory_ValidateConnection_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionFactory.ValidateConnection
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionFactory.ValidateConnection
+  nameWithType: ConnectionFactory.ValidateConnection
 - uid: OpenCollar.Extensions.SqlClient.ConnectionProxy
   name: ConnectionProxy
   href: api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html
