@@ -13,19 +13,6 @@ references:
   commentId: T:OpenCollar.Extensions.SqlClient.CallingContext
   fullName: OpenCollar.Extensions.SqlClient.CallingContext
   nameWithType: CallingContext
-- uid: OpenCollar.Extensions.SqlClient.CallingContext.Builder
-  name: Builder
-  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Builder
-  commentId: P:OpenCollar.Extensions.SqlClient.CallingContext.Builder
-  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Builder
-  nameWithType: CallingContext.Builder
-- uid: OpenCollar.Extensions.SqlClient.CallingContext.Builder*
-  name: Builder
-  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Builder_
-  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.Builder
-  isSpec: "True"
-  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Builder
-  nameWithType: CallingContext.Builder
 - uid: OpenCollar.Extensions.SqlClient.CallingContext.CompareTo(OpenCollar.Extensions.SqlClient.CallingContext)
   name: CompareTo(CallingContext)
   href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_CompareTo_OpenCollar_Extensions_SqlClient_CallingContext_
@@ -181,6 +168,19 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.CallingContext.Owner
   nameWithType: CallingContext.Owner
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Query
+  name: Query
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Query
+  commentId: P:OpenCollar.Extensions.SqlClient.CallingContext.Query
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Query
+  nameWithType: CallingContext.Query
+- uid: OpenCollar.Extensions.SqlClient.CallingContext.Query*
+  name: Query
+  href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_Query_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.CallingContext.Query
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.CallingContext.Query
+  nameWithType: CallingContext.Query
 - uid: OpenCollar.Extensions.SqlClient.CallingContext.ToString
   name: ToString()
   href: api/OpenCollar.Extensions.SqlClient.CallingContext.html#OpenCollar_Extensions_SqlClient_CallingContext_ToString
@@ -688,53 +688,53 @@ references:
   fullName: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QueryProcedure
   nameWithType: ConnectionProxyExtensions.QueryProcedure
 - uid: OpenCollar.Extensions.SqlClient.Constants
-  name: Constants
+  name: OpenCollar.Extensions.SqlClient.Constants
   href: api/OpenCollar.Extensions.SqlClient.Constants.html
-  commentId: T:OpenCollar.Extensions.SqlClient.Constants
+  commentId: N:OpenCollar.Extensions.SqlClient.Constants
   fullName: OpenCollar.Extensions.SqlClient.Constants
-  nameWithType: Constants
+  nameWithType: OpenCollar.Extensions.SqlClient.Constants
 - uid: OpenCollar.Extensions.SqlClient.Constants.Keys
-  name: Constants.Keys
+  name: Keys
   href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html
   commentId: T:OpenCollar.Extensions.SqlClient.Constants.Keys
   fullName: OpenCollar.Extensions.SqlClient.Constants.Keys
-  nameWithType: Constants.Keys
+  nameWithType: Keys
 - uid: OpenCollar.Extensions.SqlClient.Constants.Keys.CallingUserEmailAddress
   name: CallingUserEmailAddress
   href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_CallingUserEmailAddress
   commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.CallingUserEmailAddress
   fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.CallingUserEmailAddress
-  nameWithType: Constants.Keys.CallingUserEmailAddress
+  nameWithType: Keys.CallingUserEmailAddress
 - uid: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseConnection
   name: DatabaseConnection
   href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_DatabaseConnection
   commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseConnection
   fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseConnection
-  nameWithType: Constants.Keys.DatabaseConnection
+  nameWithType: Keys.DatabaseConnection
 - uid: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseName
   name: DatabaseName
   href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_DatabaseName
   commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseName
   fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseName
-  nameWithType: Constants.Keys.DatabaseName
+  nameWithType: Keys.DatabaseName
 - uid: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseSql
   name: DatabaseSql
   href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_DatabaseSql
   commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseSql
   fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseSql
-  nameWithType: Constants.Keys.DatabaseSql
+  nameWithType: Keys.DatabaseSql
 - uid: OpenCollar.Extensions.SqlClient.Constants.Keys.RequestUri
   name: RequestUri
   href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_RequestUri
   commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.RequestUri
   fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.RequestUri
-  nameWithType: Constants.Keys.RequestUri
+  nameWithType: Keys.RequestUri
 - uid: OpenCollar.Extensions.SqlClient.Constants.Keys.StoredProcedure
   name: StoredProcedure
   href: api/OpenCollar.Extensions.SqlClient.Constants.Keys.html#OpenCollar_Extensions_SqlClient_Constants_Keys_StoredProcedure
   commentId: F:OpenCollar.Extensions.SqlClient.Constants.Keys.StoredProcedure
   fullName: OpenCollar.Extensions.SqlClient.Constants.Keys.StoredProcedure
-  nameWithType: Constants.Keys.StoredProcedure
+  nameWithType: Keys.StoredProcedure
 - uid: OpenCollar.Extensions.SqlClient.DatabaseException
   name: DatabaseException
   href: api/OpenCollar.Extensions.SqlClient.DatabaseException.html
@@ -848,50 +848,49 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.DbException.GetObjectData
   nameWithType: DbException.GetObjectData
-- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions
+- uid: OpenCollar.Extensions.SqlClient.LoggingContext
+  name: OpenCollar.Extensions.SqlClient.LoggingContext
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContext.html
+  commentId: N:OpenCollar.Extensions.SqlClient.LoggingContext
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContext
+  nameWithType: OpenCollar.Extensions.SqlClient.LoggingContext
+- uid: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions
   name: LoggingContextExtensions
-  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html
-  commentId: T:OpenCollar.Extensions.SqlClient.LoggingContextExtensions
-  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.html
+  commentId: T:OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions
   nameWithType: LoggingContextExtensions
-- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+- uid: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext,System.String)
   name: AddDatabaseConnection(LoggingContext, String)
-  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddDatabaseConnection_OpenCollar_Extensions_Logging_LoggingContext_System_String_
-  commentId: M:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext,System.String)
-  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext, System.String)
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContext_LoggingContextExtensions_AddDatabaseConnection_OpenCollar_Extensions_Logging_LoggingContext_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext, System.String)
   nameWithType: LoggingContextExtensions.AddDatabaseConnection(LoggingContext, String)
-- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection*
+- uid: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddDatabaseConnection*
   name: AddDatabaseConnection
-  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddDatabaseConnection_
-  commentId: Overload:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContext_LoggingContextExtensions_AddDatabaseConnection_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddDatabaseConnection
   isSpec: "True"
-  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddDatabaseConnection
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddDatabaseConnection
   nameWithType: LoggingContextExtensions.AddDatabaseConnection
-- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest(OpenCollar.Extensions.Logging.LoggingContext,System.Uri)
-  name: AddRequest(LoggingContext, Uri)
-  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddRequest_OpenCollar_Extensions_Logging_LoggingContext_System_Uri_
-  commentId: M:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest(OpenCollar.Extensions.Logging.LoggingContext,System.Uri)
-  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest(OpenCollar.Extensions.Logging.LoggingContext, System.Uri)
-  nameWithType: LoggingContextExtensions.AddRequest(LoggingContext, Uri)
-- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest*
-  name: AddRequest
-  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddRequest_
-  commentId: Overload:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest
-  isSpec: "True"
-  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddRequest
-  nameWithType: LoggingContextExtensions.AddRequest
-- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+- uid: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,Microsoft.Data.SqlClient.SqlCommand)
+  name: AddStoredProcedure(LoggingContext, SqlCommand)
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContext_LoggingContextExtensions_AddStoredProcedure_OpenCollar_Extensions_Logging_LoggingContext_Microsoft_Data_SqlClient_SqlCommand_
+  commentId: M:OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,Microsoft.Data.SqlClient.SqlCommand)
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext, Microsoft.Data.SqlClient.SqlCommand)
+  nameWithType: LoggingContextExtensions.AddStoredProcedure(LoggingContext, SqlCommand)
+- uid: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,System.String)
   name: AddStoredProcedure(LoggingContext, String)
-  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddStoredProcedure_OpenCollar_Extensions_Logging_LoggingContext_System_String_
-  commentId: M:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,System.String)
-  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext, System.String)
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContext_LoggingContextExtensions_AddStoredProcedure_OpenCollar_Extensions_Logging_LoggingContext_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext, System.String)
   nameWithType: LoggingContextExtensions.AddStoredProcedure(LoggingContext, String)
-- uid: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure*
+- uid: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddStoredProcedure*
   name: AddStoredProcedure
-  href: api/OpenCollar.Extensions.SqlClient.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContextExtensions_AddStoredProcedure_
-  commentId: Overload:OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure
+  href: api/OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.html#OpenCollar_Extensions_SqlClient_LoggingContext_LoggingContextExtensions_AddStoredProcedure_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddStoredProcedure
   isSpec: "True"
-  fullName: OpenCollar.Extensions.SqlClient.LoggingContextExtensions.AddStoredProcedure
+  fullName: OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions.AddStoredProcedure
   nameWithType: LoggingContextExtensions.AddStoredProcedure
 - uid: OpenCollar.Extensions.SqlClient.Model
   name: OpenCollar.Extensions.SqlClient.Model
@@ -1088,12 +1087,31 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.OriginalValue
   nameWithType: Identifier.OriginalValue
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.ToIdentifier(OpenCollar.Extensions.SqlClient.Model.Identifier)
+  name: ToIdentifier(Identifier)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_ToIdentifier_OpenCollar_Extensions_SqlClient_Model_Identifier_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.ToIdentifier(OpenCollar.Extensions.SqlClient.Model.Identifier)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.ToIdentifier(OpenCollar.Extensions.SqlClient.Model.Identifier)
+  nameWithType: Identifier.ToIdentifier(Identifier)
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.ToIdentifier*
+  name: ToIdentifier
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_ToIdentifier_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.Identifier.ToIdentifier
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.ToIdentifier
+  nameWithType: Identifier.ToIdentifier
 - uid: OpenCollar.Extensions.SqlClient.Model.Identifier.ToString
   name: ToString()
   href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_ToString
   commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.ToString
   fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.ToString()
   nameWithType: Identifier.ToString()
+- uid: OpenCollar.Extensions.SqlClient.Model.Identifier.ToString(System.String)
+  name: ToString(String)
+  href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_ToString_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.Identifier.ToString(System.String)
+  fullName: OpenCollar.Extensions.SqlClient.Model.Identifier.ToString(System.String)
+  nameWithType: Identifier.ToString(String)
 - uid: OpenCollar.Extensions.SqlClient.Model.Identifier.ToString*
   name: ToString
   href: api/OpenCollar.Extensions.SqlClient.Model.Identifier.html#OpenCollar_Extensions_SqlClient_Model_Identifier_ToString_
@@ -1290,12 +1308,31 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.OriginalValue
   nameWithType: ParameterName.OriginalValue
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToParameterName(System.String)
+  name: ToParameterName(String)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_ToParameterName_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.ToParameterName(System.String)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToParameterName(System.String)
+  nameWithType: ParameterName.ToParameterName(String)
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToParameterName*
+  name: ToParameterName
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_ToParameterName_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Model.ParameterName.ToParameterName
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToParameterName
+  nameWithType: ParameterName.ToParameterName
 - uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString
   name: ToString()
   href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_ToString
   commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString
   fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString()
   nameWithType: ParameterName.ToString()
+- uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  name: ToString(ParameterName)
+  href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_ToString_OpenCollar_Extensions_SqlClient_Model_ParameterName_
+  commentId: M:OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  fullName: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+  nameWithType: ParameterName.ToString(ParameterName)
 - uid: OpenCollar.Extensions.SqlClient.Model.ParameterName.ToString*
   name: ToString
   href: api/OpenCollar.Extensions.SqlClient.Model.ParameterName.html#OpenCollar_Extensions_SqlClient_Model_ParameterName_ToString_
