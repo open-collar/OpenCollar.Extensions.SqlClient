@@ -1,38 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer
-  name: SqlClientTelemeteryInitializer
-  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html
-  commentId: T:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer
-  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer
-  nameWithType: SqlClientTelemeteryInitializer
-- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.#ctor
-  name: SqlClientTelemeteryInitializer()
-  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_SqlClientTelemeteryInitializer__ctor
-  commentId: M:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.#ctor
-  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.SqlClientTelemeteryInitializer()
-  nameWithType: SqlClientTelemeteryInitializer.SqlClientTelemeteryInitializer()
-- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.#ctor*
-  name: SqlClientTelemeteryInitializer
-  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_SqlClientTelemeteryInitializer__ctor_
-  commentId: Overload:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.#ctor
-  isSpec: "True"
-  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.SqlClientTelemeteryInitializer
-  nameWithType: SqlClientTelemeteryInitializer.SqlClientTelemeteryInitializer
-- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize(Microsoft.SqlClient.Channel.ITelemetry)
-  name: Initialize(ITelemetry)
-  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_SqlClientTelemeteryInitializer_Initialize_Microsoft_SqlClient_Channel_ITelemetry_
-  commentId: M:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize(Microsoft.SqlClient.Channel.ITelemetry)
-  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize(Microsoft.SqlClient.Channel.ITelemetry)
-  nameWithType: SqlClientTelemeteryInitializer.Initialize(ITelemetry)
-- uid: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize*
-  name: Initialize
-  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_SqlClientTelemeteryInitializer_Initialize_
-  commentId: Overload:OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize
-  isSpec: "True"
-  fullName: OpenCollar.Extensions.Logging.SqlClientTelemeteryInitializer.Initialize
-  nameWithType: SqlClientTelemeteryInitializer.Initialize
 - uid: OpenCollar.Extensions.SqlClient
   name: OpenCollar.Extensions.SqlClient
   href: api/OpenCollar.Extensions.SqlClient.html
