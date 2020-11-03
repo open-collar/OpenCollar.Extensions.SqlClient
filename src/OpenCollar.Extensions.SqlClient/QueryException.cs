@@ -20,8 +20,6 @@
 using System;
 using System.Runtime.Serialization;
 
-using JetBrains.Annotations;
-
 #pragma warning disable CA1032 // Implement standard exception constructors
 
 namespace OpenCollar.Extensions.SqlClient
@@ -34,10 +32,22 @@ namespace OpenCollar.Extensions.SqlClient
     public class QueryException : DatabaseException
     {
         /// <summary>
+        ///     Gets or sets a value indicating whether the query that caused this exception can safely be re-run.
+        /// </summary>
+        /// <value>
+        ///     <see langword="true" /> if the query that caused this exception can safely be re-run; otherwise, <see langword="false" />.
+        /// </value>
+        public bool CanRetry { get; set; }
+
+        /// <summary>
         ///     Initializes a new instance of the <see cref="QueryException" /> class.
         /// </summary>
         /// <param name="connectionString">
         ///     The connection string that defines the connection on which the error occurred.
+        /// </param>
+        /// <param name="canRetry">
+        ///     <see langword="true" /> if the query that caused this exception can safely be re-run; otherwise,
+        ///     <see langword="false" />. Defaults to <see langword="false" />.
         /// </param>
         /// <exception cref="ArgumentNullException">
         ///     <paramref name="connectionString" /> is <see langword="null" />.
@@ -45,8 +55,9 @@ namespace OpenCollar.Extensions.SqlClient
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public QueryException(string connectionString) : base(connectionString)
+        public QueryException(string connectionString, bool canRetry = false) : base(connectionString)
         {
+            CanRetry = canRetry;
         }
 
         /// <summary>
@@ -58,14 +69,19 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="connectionString">
         ///     The connection string that defines the connection on which the error occurred.
         /// </param>
+        /// <param name="canRetry">
+        ///     <see langword="true" /> if the query that caused this exception can safely be re-run; otherwise,
+        ///     <see langword="false" />. Defaults to <see langword="false" />.
+        /// </param>
         /// <exception cref="ArgumentNullException">
         ///     <paramref name="connectionString" /> is <see langword="null" />.
         /// </exception>
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public QueryException(string connectionString, string message) : base(connectionString, message)
+        public QueryException(string connectionString, string message, bool canRetry = false) : base(connectionString, message)
         {
+            CanRetry = canRetry;
         }
 
         /// <summary>
@@ -81,14 +97,19 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="connectionString">
         ///     The connection string that defines the connection on which the error occurred.
         /// </param>
+        /// <param name="canRetry">
+        ///     <see langword="true" /> if the query that caused this exception can safely be re-run; otherwise,
+        ///     <see langword="false" />. Defaults to <see langword="false" />.
+        /// </param>
         /// <exception cref="ArgumentNullException">
         ///     <paramref name="connectionString" /> is <see langword="null" />.
         /// </exception>
         /// <exception cref="ArgumentException">
         ///     <paramref name="connectionString" /> is zero-length or contains only white-space characters.
         /// </exception>
-        public QueryException(string connectionString, string message, Exception innerException) : base(connectionString, message, innerException)
+        public QueryException(string connectionString, string message, Exception innerException, bool canRetry = false) : base(connectionString, message, innerException)
         {
+            CanRetry = canRetry;
         }
 
         /// <summary>
@@ -102,6 +123,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// </param>
         protected QueryException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
+            CanRetry = info.GetBoolean(nameof(CanRetry));
         }
 
         /// <summary>
@@ -116,6 +138,8 @@ namespace OpenCollar.Extensions.SqlClient
         public override void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             base.GetObjectData(info, context);
+
+            info.AddValue(nameof(CanRetry), CanRetry);
         }
     }
 }

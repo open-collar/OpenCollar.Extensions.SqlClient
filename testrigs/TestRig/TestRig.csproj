@@ -32,5 +32,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\src\OpenCollar.Extensions.SqlClient\OpenCollar.Extensions.SqlClient.csproj" />
+        <ProjectReference Include="..\SqlClientTestDb\SqlClientTestDb.sqlproj" />
     </ItemGroup>
 </Project>

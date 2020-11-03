@@ -46,7 +46,7 @@ namespace OpenCollar.Extensions.SqlClient.LoggingContext
                 return null;
             }
 
-            loggingContext.AppendInfo(OpenCollar.Extensions.SqlClient.Constants.Keys.DatabaseConnection, databaseConnection);
+            loggingContext.AppendInfo(Constants.Keys.DatabaseConnection, databaseConnection);
 
             return loggingContext;
         }
@@ -71,7 +71,7 @@ namespace OpenCollar.Extensions.SqlClient.LoggingContext
                 return null;
             }
 
-            loggingContext.AppendInfo(OpenCollar.Extensions.SqlClient.Constants.Keys.StoredProcedure, storedProcedure);
+            loggingContext.AppendInfo(Constants.Keys.StoredProcedure, storedProcedure);
 
             return loggingContext;
         }

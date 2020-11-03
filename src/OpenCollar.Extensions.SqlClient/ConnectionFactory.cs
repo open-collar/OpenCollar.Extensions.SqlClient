@@ -37,12 +37,6 @@ namespace OpenCollar.Extensions.SqlClient
     public abstract class ConnectionFactory
     {
         /// <summary>
-        ///     The configuration of the database connection.
-        /// </summary>
-
-        private readonly IDatabaseConnectionConfiguration _configuration;
-
-        /// <summary>
         ///     A dictionary of connections pools, keyed on the connection string and user.
         /// </summary>
 
@@ -96,15 +90,15 @@ namespace OpenCollar.Extensions.SqlClient
 
             var connectionConfiguration = configuration.Connections[ConnectionKey];
 
-            _configuration = connectionConfiguration;
+            Configuration = connectionConfiguration;
 
             _services = services;
 
             _log = services.GetService<ILogger<ConnectionFactory>>();
 
-            InitializeAzureManagedIdentity = _configuration.InitializeAzureManagedIdentity && IsMsiInitializationRequired(_configuration.ConnectionString);
+            InitializeAzureManagedIdentity = Configuration.InitializeAzureManagedIdentity && IsMsiInitializationRequired(Configuration.ConnectionString);
 
-            if(_configuration.IsEnvironmentValidationEnabled)
+            if(Configuration.IsEnvironmentValidationEnabled)
             {
 #pragma warning disable CA2214 // Do not call overridable methods in constructors
                 ValidateConnection();
@@ -118,7 +112,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The configuration of the database connection.
         /// </value>
-        public IDatabaseConnectionConfiguration Configuration => _configuration;
+        public IDatabaseConnectionConfiguration Configuration { get; }
 
         /// <summary>
         ///     Gets a value indicating whether
@@ -326,7 +320,7 @@ namespace OpenCollar.Extensions.SqlClient
                     return null;
                 }
 
-                var builder = new SqlConnectionStringBuilder(_configuration.ConnectionString);
+                var builder = new SqlConnectionStringBuilder(Configuration.ConnectionString);
 
                 return EnvironmentMetadataProvider.GetResourceEnvironment(builder.DataSource);
             }
@@ -404,7 +398,7 @@ namespace OpenCollar.Extensions.SqlClient
 
             if(!compare.HasValue)
             {
-                if(_configuration.IsEnvironmentValidationStrict)
+                if(Configuration.IsEnvironmentValidationStrict)
                 {
                     throw new MismatchedEnvironmentException($"Database environment (\"{dbEnvironment}\") could not be compared to the application environment (\"{appEnvironment.Environment}\"), probably because it was not a known environment.");
                 }

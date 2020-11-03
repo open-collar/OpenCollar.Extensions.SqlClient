@@ -48,6 +48,19 @@ namespace OpenCollar.Extensions.SqlClient.Configuration
         public string ConnectionString { get; }
 
         /// <summary>
+        ///     Gets or sets the default number of retries to attempt, where premitted and necessary.
+        /// </summary>
+        /// <value>
+        ///     The default number of retries to attempt, where premitted and necessary.
+        /// </value>
+        [Configuration(Persistence = ConfigurationPersistenceActions.LoadOnly, DefaultValue = 3)]
+        [Path(PathIs.Relative, @"DefaultRetries")]
+        public int DefaultRetries
+        {
+            get; set;
+        }
+
+        /// <summary>
         ///     Gets a value indicating whether
         ///     <see href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview">
         ///     Azure Managed Identity </see> initializion should be performed before creating a connection (if an Azure

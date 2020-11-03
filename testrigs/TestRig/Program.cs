@@ -18,10 +18,9 @@
  */
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-
-using JetBrains.Annotations;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -53,22 +52,15 @@ namespace TestRig
         /// </value>
         private static bool IsInAzure => !string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable(@"WEBSITE_HOME_STAMPNAME"));
 
-        public static async Task<string> TestDbExecuteAsync(ConnectionProxy connection)
+        public static async Task<QueryResults<IEnumerable<int>, IEnumerable<int>>> TestDbExecuteAsync(ConnectionProxy connection)
         {
-            var result = await connection.QueryProcedure("[configuration].[AddOrUpdateConfigurationValue]")
-                    .WithParameter("@key", "key-1")
-                    .WithParameter("@value", "VALUE-1")
-                    .Read(r =>
-                    {
-                        if(r.Read())
-                        {
-                            return r.GetValueOrFail<string>(0);
-                        }
-                        else
-                        {
-                            throw new Exception();
-                        }
-                    }).ExecuteQueryAsync<string>().ConfigureAwait(false);
+            var result = await connection.QueryProcedure("TestProc1")
+                    .WithParameter("@param1", 1)
+                    .WithParameter("@param2", 2)
+                    .WithRetries()
+                    .ReadEach(r => r.GetValueOrFail<int>(0))
+                    .ReadEach(r => r.GetValueOrFail<int>(0))
+                    .ExecuteQueryAsync<IEnumerable<int>, IEnumerable<int>>().ConfigureAwait(false);
 
             return result;
         }
@@ -88,11 +80,11 @@ namespace TestRig
             string rootDirectory;
             if(isInAzure)
             {
-                rootDirectory = System.IO.Path.Combine(System.Environment.GetEnvironmentVariable(@"HOME"), @"site", @"wwwroot");
+                rootDirectory = Path.Combine(Environment.GetEnvironmentVariable(@"HOME"), @"site", @"wwwroot");
             }
             else
             {
-                rootDirectory = System.Environment.CurrentDirectory;
+                rootDirectory = Environment.CurrentDirectory;
             }
 
             // Order is important and appsettings should come after host
@@ -104,7 +96,7 @@ namespace TestRig
             if(!isInAzure && System.Diagnostics.Debugger.IsAttached)
             {
                 // We don't get development app settings for free on Function Apps, but we can emulate it easily enough.
-                var devConfigPath = System.IO.Path.Combine(rootDirectory, @"appsettings.Development.json");
+                var devConfigPath = Path.Combine(rootDirectory, @"appsettings.Development.json");
                 if(File.Exists(devConfigPath))
                 {
                     configBuilder.AddJsonFile(devConfigPath, true, true);
@@ -168,6 +160,17 @@ namespace TestRig
             var connection = factory.GetConnection("jevans@open-collar.org.uk");
 
             var value = TestDbExecuteAsync(connection).Result;
+
+            var n = 0;
+            foreach(var v in value.Results1)
+            {
+                Console.WriteLine($"Results(1, {n++}) = {v}");
+            }
+            n = 0;
+            foreach(var v in value.Results2)
+            {
+                Console.WriteLine($"Results(2, {n++}) = {v}");
+            }
         }
     }
 }

@@ -27,6 +27,7 @@ using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 
+using OpenCollar.Extensions.Logging;
 using OpenCollar.Extensions.SqlClient.Model;
 using OpenCollar.Extensions.Validation;
 
@@ -69,7 +70,13 @@ namespace OpenCollar.Extensions.SqlClient
             CommandText = commandText;
         }
 
-        private ILogger Logger { get { return Connection.Logger; } }
+        /// <summary>
+        ///     Gets the logger with which to record timings and trace information.
+        /// </summary>
+        /// <value>
+        ///     The logger with which to record timings and trace information.
+        /// </value>
+        private ILogger? Logger { get { return Connection.Logger; } }
 
         /// <summary>
         ///     Gets the name of the stored procedure to execute.
@@ -131,25 +138,62 @@ namespace OpenCollar.Extensions.SqlClient
         ///     Attempt to execute command with readers without a return value.
         /// </exception>
 
-        public Task ExecuteNonQueryAsync(CancellationToken? cancellationToken = null)
+        public async Task ExecuteNonQueryAsync(CancellationToken? cancellationToken = null)
         {
             if(_readers.Count != 0)
             {
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, "Attempt to execute command with readers without a return value.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
+
+            var attempt = (_maxRetries <= 0) ? 1 : _maxRetries;
+
+            while(attempt > 0)
+            {
+                --attempt;
+
+                try
+                {
+                    await ExecuteNonQueryCoreAsync(token).ConfigureAwait(true);
+                }
+                catch(QueryException ex) when(ex.CanRetry && (attempt > 0))
+                {
+                    Logger.SafeLogWarning(ex, "Attempt to execute query failed, retrying.");
+                }
+            }
+        }
+
+        /// <summary>
+        ///     Executes the commnad a non-query, asynchronous.
+        /// </summary>
+        /// <param name="cancellationToken">
+        ///     The cancellation token to be used to request that the operation be abandoned before the command timeout elapses.
+        /// </param>
+        /// <returns>
+        ///     A task that performs the action.
+        /// </returns>
+        /// <exception cref="QueryException">
+        ///     Attempt to execute command with readers without a return value.
+        /// </exception>
+
+        private Task ExecuteNonQueryCoreAsync(CancellationToken cancellationToken)
+        {
+            if(_readers.Count != 0)
+            {
+                throw new QueryException(Connection.Factory.Configuration.ConnectionString, "Attempt to execute command with readers without a return value.");
+            }
 
 #pragma warning disable CA2000 // Dispose objects before losing scope
             var command = InitializeCommand();
 #pragma warning restore CA2000 // Dispose objects before losing scope
 
             CallingContext.Current().SetActiveBuilder(this);
-            return Connection.ExecuteNonQueryAsync(command, token).ContinueWith(t =>
+            return Connection.ExecuteNonQueryAsync(command, cancellationToken).ContinueWith(t =>
             {
                 command.Dispose();
                 CallingContext.Current().SetActiveBuilder(null);
-            }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
+            }, cancellationToken, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
 
         /// <summary>
@@ -201,9 +245,16 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         /// </returns>
 
-        public QueryBuilder WithRetries(int maxRetries = 3)
+        public QueryBuilder WithRetries(int? maxRetries = null)
         {
-            _maxRetries = maxRetries;
+            if(maxRetries.HasValue)
+            {
+                _maxRetries = maxRetries.Value;
+            }
+            else
+            {
+                _maxRetries = Connection.Factory.Configuration.DefaultRetries;
+            }
 
             return this;
         }
@@ -217,16 +268,47 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     A task that performs the action.
         /// </returns>
-        public Task<IReadOnlyList<object>> ExecuteQueryAsync(CancellationToken? cancellationToken = null)
+        public async Task<IReadOnlyList<object>> ExecuteQueryAsync(CancellationToken? cancellationToken = null)
         {
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
+            var attempt = (_maxRetries <= 0) ? 1 : _maxRetries;
+
+            while(attempt > 0)
+            {
+                --attempt;
+
+                try
+                {
+                    return await ExecuteQueryCoreAsync(token).ConfigureAwait(true);
+                }
+                catch(QueryException ex) when(ex.CanRetry && (attempt > 0))
+                {
+                    Logger.SafeLogWarning(ex, "Attempt to execute query failed, retrying.");
+                }
+            }
+
+            // This will never be reached, but for completeness.
+            return (IReadOnlyList<object>)(new List<object>()).AsReadOnly();
+        }
+
+        /// <summary>
+        ///     Executes the command and returns a sequence of results, asynchronously.
+        /// </summary>
+        /// <param name="cancellationToken">
+        ///     The cancellation token to be used to request that the operation be abandoned before the command timeout elapses.
+        /// </param>
+        /// <returns>
+        ///     A task that performs the action.
+        /// </returns>
+        private Task<IReadOnlyList<object>> ExecuteQueryCoreAsync(CancellationToken cancellationToken)
+        {
 #pragma warning disable CA2000 // Dispose objects before losing scope
             var command = InitializeCommand();
 #pragma warning restore CA2000 // Dispose objects before losing scope
 
             CallingContext.Current().SetActiveBuilder(this);
-            var task = Connection.ExecuteReaderAsync(command, token);
+            var task = Connection.ExecuteReaderAsync(command, cancellationToken);
 
             var results = new List<object?>();
 
@@ -239,35 +321,24 @@ namespace OpenCollar.Extensions.SqlClient
                     task = task.ContinueWith(dataReaderTask =>
                     {
                         var dataReader = dataReaderTask.Result;
-                        dataReader.NextResultAsync(token).ContinueWith(c =>
+                        if(!dataReader.NextResult())
                         {
-                            var hasMoved = c.Result;
-                            if(!hasMoved)
+                            if(reader.IsMandatory)
                             {
-                                // No more results? Then we must deal with this either by appending a default value, or
-                                // by throwing.
-                                if(reader.IsMandatory)
-                                {
-                                    throw new QueryException(Connection.Key.ConnectionString, $"Mandatory result set missing for reader: {n.ToString("D", System.Globalization.CultureInfo.InvariantCulture)}.");
-                                }
-                                else
-                                {
-                                    results.Add(GetDefaultValue(reader.ReturnType));
-                                }
+                                throw new QueryException(Connection.Key.ConnectionString, $"Mandatory result set missing for reader: {n.ToString("D", System.Globalization.CultureInfo.InvariantCulture)}.");
                             }
                             else
                             {
-                                // If there are results then append a task to process those results.
-                                task = task.ContinueWith(dataReaderTask =>
-                                {
-                                    return ProcessReader(dataReaderTask.Result, results, n, reader);
-                                }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
+                                results.Add(GetDefaultValue(reader.ReturnType));
+                                return dataReader;
                             }
-                            return dataReader;
-                        }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
-
-                        return dataReader;
-                    }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
+                        }
+                        else
+                        {
+                            // If there are results then append a task to process those results.
+                            return ProcessReader(dataReaderTask.Result, results, n, reader);
+                        }
+                    }, cancellationToken, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
                 }
                 else
                 {
@@ -275,7 +346,7 @@ namespace OpenCollar.Extensions.SqlClient
                     task = task.ContinueWith(dataReaderTask =>
                     {
                         return ProcessReader(dataReaderTask.Result, results, n, reader);
-                    }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
+                    }, cancellationToken, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
                 }
                 ++n;
             }
@@ -286,7 +357,7 @@ namespace OpenCollar.Extensions.SqlClient
                 command.Dispose();
                 CallingContext.Current().SetActiveBuilder(this);
                 return (IReadOnlyList<object>)results.AsReadOnly();
-            }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
+            }, cancellationToken, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
 
         /// <summary>
@@ -374,7 +445,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a single reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(token).ContinueWith(t =>
             {
@@ -407,7 +478,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a two-value reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
@@ -441,7 +512,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a three-value reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2, T3> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1], Results3 = (T3)t.Result[2] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
@@ -478,7 +549,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a four-value reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2, T3, T4> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1], Results3 = (T3)t.Result[2], Results4 = (T4)t.Result[3] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
@@ -518,7 +589,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a five-value reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2, T3, T4, T5> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1], Results3 = (T3)t.Result[2], Results4 = (T4)t.Result[3], Results5 = (T5)t.Result[4] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
@@ -561,7 +632,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a six-value reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2, T3, T4, T5, T6> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1], Results3 = (T3)t.Result[2], Results4 = (T4)t.Result[3], Results5 = (T5)t.Result[4], Results6 = (T6)t.Result[5] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
@@ -607,7 +678,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a seven-value reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2, T3, T4, T5, T6, T7> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1], Results3 = (T3)t.Result[2], Results4 = (T4)t.Result[3], Results5 = (T5)t.Result[4], Results6 = (T6)t.Result[5], Results7 = (T7)t.Result[6] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
@@ -656,7 +727,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a eight-value reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2, T3, T4, T5, T6, T7, T8> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1], Results3 = (T3)t.Result[2], Results4 = (T4)t.Result[3], Results5 = (T5)t.Result[4], Results6 = (T6)t.Result[5], Results7 = (T7)t.Result[6], Results8 = (T8)t.Result[7] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
@@ -708,7 +779,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a nine-value reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1], Results3 = (T3)t.Result[2], Results4 = (T4)t.Result[3], Results5 = (T5)t.Result[4], Results6 = (T6)t.Result[5], Results7 = (T7)t.Result[6], Results8 = (T8)t.Result[7], Results9 = (T9)t.Result[8] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
@@ -763,7 +834,7 @@ namespace OpenCollar.Extensions.SqlClient
                 throw new QueryException(Connection.Factory.Configuration.ConnectionString, $"Attempt to execute a ten-value reader command with {_readers.Count} defined.");
             }
 
-            var token = cancellationToken ?? System.Threading.CancellationToken.None;
+            var token = cancellationToken ?? CancellationToken.None;
 
             return ExecuteQueryAsync(cancellationToken).ContinueWith(t => { return new QueryResults<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> { Results1 = (T1)t.Result[0], Results2 = (T2)t.Result[1], Results3 = (T3)t.Result[2], Results4 = (T4)t.Result[3], Results5 = (T5)t.Result[4], Results6 = (T6)t.Result[5], Results7 = (T7)t.Result[6], Results8 = (T8)t.Result[7], Results9 = (T9)t.Result[8], Results10 = (T10)t.Result[9] }; }, token, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Current);
         }
@@ -786,6 +857,37 @@ namespace OpenCollar.Extensions.SqlClient
         public QueryBuilder Read<T>(Func<SqlDataReader, T> readAction, bool isMandatory = false)
         {
             _readers.Add(Reader.GetReader(readAction, isMandatory));
+
+            return this;
+        }
+
+        /// <summary>
+        ///     Adds a reader to the command builder that iterates across all the records in a recordset reading each of
+        ///     them and return a result of type <see cref="IEnumerable{T}" />.
+        /// </summary>
+        /// <typeparam name="T">
+        ///     The type of the results returned for each record.
+        /// </typeparam>
+        /// <param name="readAction">
+        ///     The action that reads a single record from the data reader and returns a result.
+        /// </param>
+        /// <param name="isMandatory">
+        ///     <see langword="true" /> if least one record must be returned in the recordset; otherwise, <see langword="false" />.
+        /// </param>
+        /// <returns>
+        ///     Returns a reference to this object, allowing further parameters or other methods to be called fluently.
+        /// </returns>
+        public QueryBuilder ReadEach<T>(Func<SqlDataReader, T> readAction, bool isMandatory = false)
+        {
+            _readers.Add(Reader.GetReader(r =>
+            {
+                var results = new List<T>();
+                while(r.Read())
+                {
+                    results.Add(readAction(r));
+                }
+                return results;
+            }, isMandatory));
 
             return this;
         }

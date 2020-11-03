@@ -249,7 +249,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// </returns>
         internal bool Recycle()
         {
-            if(SqlConnection.State != System.Data.ConnectionState.Open)
+            if(SqlConnection.State != ConnectionState.Open)
             {
                 return false;
             }
@@ -282,7 +282,7 @@ namespace OpenCollar.Extensions.SqlClient
         internal void UpdateUsage(string? sql)
         {
             LastSql = sql;
-            LastUsed = System.DateTime.UtcNow;
+            LastUsed = DateTime.UtcNow;
         }
 
         /// <summary>

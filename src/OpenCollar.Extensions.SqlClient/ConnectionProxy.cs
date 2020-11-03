@@ -34,7 +34,7 @@ namespace OpenCollar.Extensions.SqlClient
     ///     A proxy that wraps the <see cref="Connection" /> class that provides simple <see cref="IDisposable" />
     ///     semantics and other niceties.
     /// </summary>
-    /// <seealso cref="Disposable" />
+    /// <seealso cref="IDisposable" />
     public sealed class ConnectionProxy : Disposable
     {
         /// <summary>
@@ -116,7 +116,7 @@ namespace OpenCollar.Extensions.SqlClient
 
             var scope = InitializeLogging(command);
 
-            var start = System.DateTime.UtcNow;
+            var start = DateTime.UtcNow;
 
             return command.ExecuteNonQueryAsync(token).ContinueWith(t =>
             {
@@ -148,7 +148,7 @@ namespace OpenCollar.Extensions.SqlClient
 
             var scope = InitializeLogging(command);
 
-            var start = System.DateTime.UtcNow;
+            var start = DateTime.UtcNow;
 
             return command.ExecuteReaderAsync(token).ContinueWith(t =>
             {
@@ -184,7 +184,7 @@ namespace OpenCollar.Extensions.SqlClient
 
             var scope = InitializeLogging(command);
 
-            var start = System.DateTime.UtcNow;
+            var start = DateTime.UtcNow;
 
             return command.ExecuteReaderAsync(behavior, token).ContinueWith(t =>
             {
@@ -216,7 +216,7 @@ namespace OpenCollar.Extensions.SqlClient
 
             var scope = InitializeLogging(command);
 
-            var start = System.DateTime.UtcNow;
+            var start = DateTime.UtcNow;
 
             return command.ExecuteScalarAsync(token).ContinueWith(t =>
             {
@@ -258,7 +258,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// </param>
         private void CompleteExecution(SqlCommand command, DateTime start, ITransientContextualInformationScope scope)
         {
-            Logger.SafeLogTrace($"Executed: \"{command.CommandText}\".  Duration: {(System.DateTime.UtcNow.Subtract(start)).TotalMilliseconds.ToString("F0", System.Globalization.CultureInfo.InvariantCulture)}");
+            Logger.SafeLogTrace($"Executed: \"{command.CommandText}\".  Duration: {(DateTime.UtcNow.Subtract(start)).TotalMilliseconds.ToString("F0", System.Globalization.CultureInfo.InvariantCulture)}");
             try
             {
                 _connection.CheckForUnreportedErrors(command);
@@ -287,7 +287,7 @@ namespace OpenCollar.Extensions.SqlClient
 
         private ITransientContextualInformationScope InitializeLogging(SqlCommand command)
         {
-            var scope = OpenCollar.Extensions.Logging.LoggingContext.Current().StartScope();
+            var scope = Logging.LoggingContext.Current().StartScope();
             scope.Context.AddDatabaseConnection(Key.ConnectionString).AddStoredProcedure(command);
             Logger.SafeLogTrace($"Executing: \"{command.CommandText}\".");
             return scope;
