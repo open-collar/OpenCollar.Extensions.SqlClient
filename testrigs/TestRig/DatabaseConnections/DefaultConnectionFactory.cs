@@ -19,8 +19,6 @@
 
 using System;
 
-using JetBrains.Annotations;
-
 using OpenCollar.Extensions.Environment;
 using OpenCollar.Extensions.SqlClient;
 using OpenCollar.Extensions.SqlClient.Configuration;
