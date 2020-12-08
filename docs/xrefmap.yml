@@ -251,6 +251,19 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.ConnectionString
   nameWithType: IDatabaseConnectionConfiguration.ConnectionString
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.DefaultRetries
+  name: DefaultRetries
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_DefaultRetries
+  commentId: P:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.DefaultRetries
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.DefaultRetries
+  nameWithType: IDatabaseConnectionConfiguration.DefaultRetries
+- uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.DefaultRetries*
+  name: DefaultRetries
+  href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_DefaultRetries_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.DefaultRetries
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.DefaultRetries
+  nameWithType: IDatabaseConnectionConfiguration.DefaultRetries
 - uid: OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.InitializeAzureManagedIdentity
   name: InitializeAzureManagedIdentity
   href: api/OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration.html#OpenCollar_Extensions_SqlClient_Configuration_IDatabaseConnectionConfiguration_InitializeAzureManagedIdentity
@@ -1586,6 +1599,22 @@ references:
   fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.Read(Of T)(System.Func(Of Microsoft.Data.SqlClient.SqlDataReader, T), System.Boolean)
   nameWithType: QueryBuilder.Read<T>(Func<SqlDataReader, T>, Boolean)
   nameWithType.vb: QueryBuilder.Read(Of T)(Func(Of SqlDataReader, T), Boolean)
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ReadEach*
+  name: ReadEach
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ReadEach_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryBuilder.ReadEach
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ReadEach
+  nameWithType: QueryBuilder.ReadEach
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.ReadEach``1(System.Func{Microsoft.Data.SqlClient.SqlDataReader,``0},System.Boolean)
+  name: ReadEach<T>(Func<SqlDataReader, T>, Boolean)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_ReadEach__1_System_Func_Microsoft_Data_SqlClient_SqlDataReader___0__System_Boolean_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.ReadEach``1(System.Func{Microsoft.Data.SqlClient.SqlDataReader,``0},System.Boolean)
+  name.vb: ReadEach(Of T)(Func(Of SqlDataReader, T), Boolean)
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.ReadEach<T>(System.Func<Microsoft.Data.SqlClient.SqlDataReader, T>, System.Boolean)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.ReadEach(Of T)(System.Func(Of Microsoft.Data.SqlClient.SqlDataReader, T), System.Boolean)
+  nameWithType: QueryBuilder.ReadEach<T>(Func<SqlDataReader, T>, Boolean)
+  nameWithType.vb: QueryBuilder.ReadEach(Of T)(Func(Of SqlDataReader, T), Boolean)
 - uid: OpenCollar.Extensions.SqlClient.QueryBuilder.Timeout
   name: Timeout
   href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_Timeout
@@ -1612,12 +1641,15 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.WithParameter
   nameWithType: QueryBuilder.WithParameter
-- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Int32)
-  name: WithRetries(Int32)
-  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_WithRetries_System_Int32_
-  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Int32)
-  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Int32)
-  nameWithType: QueryBuilder.WithRetries(Int32)
+- uid: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Nullable{System.Int32})
+  name: WithRetries(Nullable<Int32>)
+  href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_WithRetries_System_Nullable_System_Int32__
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Nullable{System.Int32})
+  name.vb: WithRetries(Nullable(Of Int32))
+  fullName: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Nullable<System.Int32>)
+  fullName.vb: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries(System.Nullable(Of System.Int32))
+  nameWithType: QueryBuilder.WithRetries(Nullable<Int32>)
+  nameWithType.vb: QueryBuilder.WithRetries(Nullable(Of Int32))
 - uid: OpenCollar.Extensions.SqlClient.QueryBuilder.WithRetries*
   name: WithRetries
   href: api/OpenCollar.Extensions.SqlClient.QueryBuilder.html#OpenCollar_Extensions_SqlClient_QueryBuilder_WithRetries_
@@ -1650,24 +1682,24 @@ references:
   commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
   nameWithType: QueryException.QueryException(SerializationInfo, StreamingContext)
-- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String)
-  name: QueryException(String)
-  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_String_
-  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String)
-  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.String)
-  nameWithType: QueryException.QueryException(String)
-- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String)
-  name: QueryException(String, String)
-  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_String_System_String_
-  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String)
-  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.String, System.String)
-  nameWithType: QueryException.QueryException(String, String)
-- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String,System.Exception)
-  name: QueryException(String, String, Exception)
-  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_String_System_String_System_Exception_
-  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String,System.Exception)
-  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.String, System.String, System.Exception)
-  nameWithType: QueryException.QueryException(String, String, Exception)
+- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.Boolean)
+  name: QueryException(String, Boolean)
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_String_System_Boolean_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.Boolean)
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.String, System.Boolean)
+  nameWithType: QueryException.QueryException(String, Boolean)
+- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String,System.Boolean)
+  name: QueryException(String, String, Boolean)
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_String_System_String_System_Boolean_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String,System.Boolean)
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.String, System.String, System.Boolean)
+  nameWithType: QueryException.QueryException(String, String, Boolean)
+- uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String,System.Exception,System.Boolean)
+  name: QueryException(String, String, Exception, Boolean)
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_System_String_System_String_System_Exception_System_Boolean_
+  commentId: M:OpenCollar.Extensions.SqlClient.QueryException.#ctor(System.String,System.String,System.Exception,System.Boolean)
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException(System.String, System.String, System.Exception, System.Boolean)
+  nameWithType: QueryException.QueryException(String, String, Exception, Boolean)
 - uid: OpenCollar.Extensions.SqlClient.QueryException.#ctor*
   name: QueryException
   href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException__ctor_
@@ -1675,6 +1707,19 @@ references:
   isSpec: "True"
   fullName: OpenCollar.Extensions.SqlClient.QueryException.QueryException
   nameWithType: QueryException.QueryException
+- uid: OpenCollar.Extensions.SqlClient.QueryException.CanRetry
+  name: CanRetry
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException_CanRetry
+  commentId: P:OpenCollar.Extensions.SqlClient.QueryException.CanRetry
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.CanRetry
+  nameWithType: QueryException.CanRetry
+- uid: OpenCollar.Extensions.SqlClient.QueryException.CanRetry*
+  name: CanRetry
+  href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException_CanRetry_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.QueryException.CanRetry
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.QueryException.CanRetry
+  nameWithType: QueryException.CanRetry
 - uid: OpenCollar.Extensions.SqlClient.QueryException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   name: GetObjectData(SerializationInfo, StreamingContext)
   href: api/OpenCollar.Extensions.SqlClient.QueryException.html#OpenCollar_Extensions_SqlClient_QueryException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
