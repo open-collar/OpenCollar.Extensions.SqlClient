@@ -1,4 +1,4 @@
-![Open Collar](./media/opencollar-logo-320x25x32.png) 
+[![Open Collar](./media/opencollar-logo-320x25x32.png)](https://open-collar.github.io/home/)
 # OpenCollar.Extensions.SqlClient
 
 <table style="border-style: none; width: 100%;">
