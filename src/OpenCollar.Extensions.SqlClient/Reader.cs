@@ -111,14 +111,14 @@ namespace OpenCollar.Extensions.SqlClient
         {
             if(ReturnType.IsAssignableFrom(typeof(T)))
             {
-                throw new TypeMismatchException("The type specified does not match that specified at the time of creation.");
+                throw new TypeMismatchException(null, "The type specified does not match that specified at the time of creation.");
             }
 
             return (T)Function(reader);
         }
 
         /// <summary>
-        ///     Executes the specified reader.
+        ///     , Executes the specified reader.
         /// </summary>
         /// <param name="reader">
         ///     The reader.
@@ -131,7 +131,7 @@ namespace OpenCollar.Extensions.SqlClient
 
             if(!(result is null) && !ReturnType.IsAssignableFrom(result.GetType()))
             {
-                throw new TypeMismatchException("The type specified does not match that specified at the time of creation.");
+                throw new TypeMismatchException(null, "The type specified does not match that specified at the time of creation.");
             }
 
             return result;
