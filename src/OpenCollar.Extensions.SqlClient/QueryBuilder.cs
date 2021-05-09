@@ -18,6 +18,7 @@
  */
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -411,16 +412,45 @@ namespace OpenCollar.Extensions.SqlClient
         /// <returns>
         ///     The default value for the type specified
         /// </returns>
-        private static object? GetDefaultValue(Type type)
+        internal static object? GetDefaultValue(Type type)
         {
             if(type.IsValueType)
             {
                 return Activator.CreateInstance(type);
             }
-            else
+
+            if(type.IsArray)
             {
-                return null;
+                var emptyMethod = typeof(Array).GetMethod("Empty", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+                var typedEmptyMethod = emptyMethod.MakeGenericMethod(new[] { type.GetElementType() });
+                return typedEmptyMethod.Invoke(null, Array.Empty<object>());
             }
+
+            if(type.IsGenericType && type.GetGenericTypeDefinition().Equals(typeof(IEnumerable<>)))
+            {
+                var emptyMethod = typeof(Array).GetMethod("Empty", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+                var typedEmptyMethod = emptyMethod.MakeGenericMethod(new[] { type.GetGenericArguments().First() });
+                return typedEmptyMethod.Invoke(null, Array.Empty<object>());
+            }
+
+            if(!type.IsGenericType && type.Equals(typeof(IEnumerable)))
+            {
+                return Array.Empty<object>();
+            }
+
+            if(type.IsGenericType && type.GetGenericTypeDefinition().Equals(typeof(IList<>)))
+            {
+                var emptyMethod = typeof(Array).GetMethod("Empty", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+                var typedEmptyMethod = emptyMethod.MakeGenericMethod(new[] { type.GetGenericArguments().First() });
+                return typedEmptyMethod.Invoke(null, Array.Empty<object>());
+            }
+
+            if(!type.IsGenericType && type.Equals(typeof(IList)))
+            {
+                return Array.Empty<object>();
+            }
+
+            return null;
         }
 
         /// <summary>
