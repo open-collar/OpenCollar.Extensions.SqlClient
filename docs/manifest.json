@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionProxy.html",
-          "hash": "cic3ST2LkpWZ1G6aZxpRk0PJRUUaWuRZ8RFHI45c+9M="
+          "hash": "uAIHtYczmw5gsWLGhFtRm2oNKUTm4srApFsac03oUtA="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html",
-          "hash": "Mo7z9m23QbHiGclyVilzvYbcSTmM09idsrV27+eUl34="
+          "hash": "zUUExOzhes8fl3zWr6+j/rooF9BHkPss4LrCldKxnEI="
         }
       },
       "is_incremental": false,
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCollar.Extensions.SqlClient.QueryBuilder.html",
-          "hash": "5ndDWw+QT8LE9Bq9EGt4F3vltO3yPQWb4ZlhZp1TVGg="
+          "hash": "nctPo+aAhZF0FZtQZCvjWUJy4v7P7xMW0IGbRBhhn/c="
         }
       },
       "is_incremental": false,

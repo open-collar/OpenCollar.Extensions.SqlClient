@@ -687,6 +687,19 @@ references:
   commentId: T:OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions
   fullName: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions
   nameWithType: ConnectionProxyExtensions
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QuerSql(OpenCollar.Extensions.SqlClient.ConnectionProxy,System.String)
+  name: QuerSql(ConnectionProxy, String)
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html#OpenCollar_Extensions_SqlClient_ConnectionProxyExtensions_QuerSql_OpenCollar_Extensions_SqlClient_ConnectionProxy_System_String_
+  commentId: M:OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QuerSql(OpenCollar.Extensions.SqlClient.ConnectionProxy,System.String)
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QuerSql(OpenCollar.Extensions.SqlClient.ConnectionProxy, System.String)
+  nameWithType: ConnectionProxyExtensions.QuerSql(ConnectionProxy, String)
+- uid: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QuerSql*
+  name: QuerSql
+  href: api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html#OpenCollar_Extensions_SqlClient_ConnectionProxyExtensions_QuerSql_
+  commentId: Overload:OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QuerSql
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QuerSql
+  nameWithType: ConnectionProxyExtensions.QuerSql
 - uid: OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.QueryProcedure(OpenCollar.Extensions.SqlClient.ConnectionProxy,OpenCollar.Extensions.SqlClient.Model.Identifier)
   name: QueryProcedure(ConnectionProxy, Identifier)
   href: api/OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions.html#OpenCollar_Extensions_SqlClient_ConnectionProxyExtensions_QueryProcedure_OpenCollar_Extensions_SqlClient_ConnectionProxy_OpenCollar_Extensions_SqlClient_Model_Identifier_
