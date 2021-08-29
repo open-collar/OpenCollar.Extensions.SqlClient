@@ -19,8 +19,6 @@
 
 using System.Data;
 
-using JetBrains.Annotations;
-
 using OpenCollar.Extensions.Validation;
 
 namespace OpenCollar.Extensions.SqlClient
@@ -31,8 +29,39 @@ namespace OpenCollar.Extensions.SqlClient
     public static class ConnectionProxyExtensions
     {
         /// <summary>
+        ///     Creates a new execution context builder, specifying that the SQL supplied that will be executed on the
+        ///     connection provided.
+        /// </summary>
+        /// <param name="connection">
+        ///     The connection on which the command will be executed.
+        /// </param>
+        /// <param name="sql">
+        ///     The SQL to execute.
+        /// </param>
+        /// <returns>
+        ///     A <see cref="QueryBuilder"> builder </see> that can be called with further extensions to register
+        ///     additional details of how the command will be processed.
+        /// </returns>
+        /// <exception cref="System.ArgumentNullException">
+        ///     <paramref name="connection" /> is <see langword="null" />.
+        /// </exception>
+        /// <exception cref="System.ArgumentNullException">
+        ///     <paramref name="sql" /> is <see langword="null" />.
+        /// </exception>
+        /// <exception cref="System.ArgumentException">
+        ///     <paramref name="sql" /> is zero-length or contains only white-space characters.
+        /// </exception>
+        public static QueryBuilder QuerSql(this ConnectionProxy connection, string sql)
+        {
+            connection.Validate(nameof(connection), ObjectIs.NotNull);
+            sql.Validate(nameof(sql), StringIs.NotNullEmptyOrWhiteSpace);
+
+            return new QueryBuilder(connection, CommandType.Text, sql);
+        }
+
+        /// <summary>
         ///     Creates a new execution context builder, specifying that the stored procedure named will be executed on
-        ///     the connection provided..
+        ///     the connection provided.
         /// </summary>
         /// <param name="connection">
         ///     The connection on which the command will be executed.
@@ -41,7 +70,7 @@ namespace OpenCollar.Extensions.SqlClient
         ///     The name of the stored procedure to execute.
         /// </param>
         /// <returns>
-        ///     An <see cref="QueryBuilder"> builder </see> that can be called with further extensions to register
+        ///     A <see cref="QueryBuilder"> builder </see> that can be called with further extensions to register
         ///     additional details of how the command will be processed.
         /// </returns>
         /// <exception cref="System.ArgumentNullException">

@@ -21,6 +21,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -38,6 +39,7 @@ namespace OpenCollar.Extensions.SqlClient
     ///     A class that provides a repository of the information required to construct, execute and process a query
     ///     against the database.
     /// </summary>
+    [DebuggerDisplay("{CommandText}")]
     public sealed class QueryBuilder
     {
         /// <summary>
