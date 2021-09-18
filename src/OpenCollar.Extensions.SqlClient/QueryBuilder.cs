@@ -66,7 +66,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <param name="commandText">
         ///     The name of the stored procedure to execute.
         /// </param>
-        internal QueryBuilder(ConnectionProxy connection, CommandType commandType, Identifier commandText)
+        internal QueryBuilder(ConnectionProxy connection, CommandType commandType, string commandText)
         {
             Connection = connection;
             CommandType = commandType;
@@ -87,7 +87,7 @@ namespace OpenCollar.Extensions.SqlClient
         /// <value>
         ///     The name of the stored procedure to execute.
         /// </value>
-        public Identifier CommandText { get; private set; }
+        public string CommandText { get; private set; }
 
         /// <summary>
         ///     Gets the type of the command to execute, defining the meaning of the text in the

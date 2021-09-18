@@ -195,7 +195,7 @@ namespace OpenCollar.Extensions.SqlClient
             }
 
             var commandText = query.CommandText;
-            if(commandText is null)
+            if(string.IsNullOrWhiteSpace(commandText))
             {
                 return @"[Unspecified]";
             }
