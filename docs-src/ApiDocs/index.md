@@ -6,6 +6,10 @@ A framework that allows database queries to be executed quickly and cleanly, wit
 
 Package and installation instructions at: https://www.nuget.org/packages/OpenCollar.Extensions.SqlClient/
 
+## Coverage
+
+Coverage <a href="/coverage/index.html">report</a>.
+
 ## Project
 <table style="border-style: none; width: 100%;">
     <tr style="border-style: none;">
