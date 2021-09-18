@@ -1,0 +1,2089 @@
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/CallingContext.cs
+FN:48,OpenCollar.Extensions.SqlClient.CallingContext OpenCollar.Extensions.SqlClient.CallingContext::Current()
+FNDA:0,OpenCollar.Extensions.SqlClient.CallingContext OpenCollar.Extensions.SqlClient.CallingContext::Current()
+DA:49,0
+DA:51,0
+DA:54,0
+DA:56,0
+DA:58,0
+BRDA:49,10,0,0
+BRDA:49,10,1,0
+FN:71,OpenCollar.Extensions.SqlClient.CallingContext OpenCollar.Extensions.SqlClient.CallingContext::SetActiveBuilder(OpenCollar.Extensions.SqlClient.QueryBuilder)
+FNDA:0,OpenCollar.Extensions.SqlClient.CallingContext OpenCollar.Extensions.SqlClient.CallingContext::SetActiveBuilder(OpenCollar.Extensions.SqlClient.QueryBuilder)
+DA:72,0
+DA:73,0
+FN:82,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.CallingContext::get_Query()
+FNDA:0,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.CallingContext::get_Query()
+DA:83,0
+FN:92,System.String OpenCollar.Extensions.SqlClient.CallingContext::get_Owner()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.CallingContext::get_Owner()
+DA:93,0
+FN:128,System.Int32 OpenCollar.Extensions.SqlClient.CallingContext::CompareTo(System.Object)
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.CallingContext::CompareTo(System.Object)
+DA:129,0
+DA:131,0
+DA:134,0
+DA:136,0
+DA:139,0
+BRDA:129,1,0,0
+BRDA:129,1,1,0
+BRDA:134,7,0,0
+BRDA:134,7,1,0
+BRDA:139,19,0,0
+BRDA:139,19,1,0
+FN:172,System.Int32 OpenCollar.Extensions.SqlClient.CallingContext::CompareTo(OpenCollar.Extensions.SqlClient.CallingContext)
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.CallingContext::CompareTo(OpenCollar.Extensions.SqlClient.CallingContext)
+DA:173,0
+DA:175,0
+DA:178,0
+DA:180,0
+DA:183,0
+BRDA:173,2,0,0
+BRDA:173,2,1,0
+BRDA:178,7,0,0
+BRDA:178,7,1,0
+FN:197,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::Equals(OpenCollar.Extensions.SqlClient.CallingContext)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::Equals(OpenCollar.Extensions.SqlClient.CallingContext)
+DA:198,0
+DA:200,0
+DA:203,0
+DA:205,0
+DA:208,0
+BRDA:198,1,0,0
+BRDA:198,1,1,0
+BRDA:203,7,0,0
+BRDA:203,7,1,0
+FN:219,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::Equals(System.Object)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::Equals(System.Object)
+DA:220,0
+BRDA:220,2,0,0
+BRDA:220,12,0,0
+BRDA:220,12,1,0
+BRDA:220,2,1,0
+FN:227,System.Int32 OpenCollar.Extensions.SqlClient.CallingContext::GetHashCode()
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.CallingContext::GetHashCode()
+DA:228,0
+BRDA:228,6,0,0
+BRDA:228,6,1,0
+FN:242,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_Equality(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_Equality(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+DA:243,0
+FN:258,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_GreaterThan(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_GreaterThan(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+DA:259,0
+FN:274,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+DA:275,0
+FN:289,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_Inequality(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_Inequality(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+DA:290,0
+FN:304,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_LessThan(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_LessThan(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+DA:305,0
+FN:320,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.CallingContext::op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.CallingContext,OpenCollar.Extensions.SqlClient.CallingContext)
+DA:321,0
+FN:330,System.String OpenCollar.Extensions.SqlClient.CallingContext::ToString()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.CallingContext::ToString()
+DA:331,0
+DA:332,0
+DA:334,0
+DA:338,0
+BRDA:332,13,0,0
+BRDA:332,13,1,0
+FN:36,System.Void OpenCollar.Extensions.SqlClient.CallingContext::.cctor()
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.CallingContext::.cctor()
+DA:37,0
+LF:37
+LH:0
+BRF:24
+BRH:0
+FNF:17
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/Connection.cs
+FN:138,Microsoft.Data.SqlClient.SqlConnection OpenCollar.Extensions.SqlClient.Connection::get_SqlConnection()
+FNDA:0,Microsoft.Data.SqlClient.SqlConnection OpenCollar.Extensions.SqlClient.Connection::get_SqlConnection()
+DA:139,0
+FN:146,OpenCollar.Extensions.SqlClient.ConnectionPool OpenCollar.Extensions.SqlClient.Connection::get_ConnectionPool()
+FNDA:0,OpenCollar.Extensions.SqlClient.ConnectionPool OpenCollar.Extensions.SqlClient.Connection::get_ConnectionPool()
+DA:147,0
+FN:154,System.Guid OpenCollar.Extensions.SqlClient.Connection::get_InstanceId()
+FNDA:0,System.Guid OpenCollar.Extensions.SqlClient.Connection::get_InstanceId()
+DA:155,0
+FN:163,OpenCollar.Extensions.SqlClient.ConnectionKey OpenCollar.Extensions.SqlClient.Connection::get_Key()
+FNDA:0,OpenCollar.Extensions.SqlClient.ConnectionKey OpenCollar.Extensions.SqlClient.Connection::get_Key()
+DA:164,0
+FN:171,System.String OpenCollar.Extensions.SqlClient.Connection::get_LastSql()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Connection::get_LastSql()
+DA:172,0
+FN:179,System.DateTime OpenCollar.Extensions.SqlClient.Connection::get_LastUsed()
+FNDA:0,System.DateTime OpenCollar.Extensions.SqlClient.Connection::get_LastUsed()
+DA:180,0
+FN:194,System.Collections.Generic.IReadOnlyCollection`1<Microsoft.Data.SqlClient.SqlError> OpenCollar.Extensions.SqlClient.Connection::get_Messages()
+FNDA:0,System.Collections.Generic.IReadOnlyCollection`1<Microsoft.Data.SqlClient.SqlError> OpenCollar.Extensions.SqlClient.Connection::get_Messages()
+DA:195,0
+DA:198,0
+DA:202,0
+DA:203,0
+DA:204,0
+FN:216,System.Void OpenCollar.Extensions.SqlClient.Connection::CheckForUnreportedErrors(Microsoft.Data.SqlClient.SqlCommand)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::CheckForUnreportedErrors(Microsoft.Data.SqlClient.SqlCommand)
+DA:217,0
+DA:219,0
+DA:222,0
+DA:223,0
+DA:225,0
+DA:227,0
+DA:229,0
+DA:230,0
+DA:234,0
+DA:236,0
+DA:241,0
+DA:243,0
+BRDA:217,12,0,0
+BRDA:217,12,1,0
+BRDA:225,132,1,0
+BRDA:227,56,0,0
+BRDA:229,66,0,0
+BRDA:229,66,1,0
+BRDA:230,100,0,0
+BRDA:230,100,1,0
+BRDA:227,56,1,0
+BRDA:225,132,0,0
+BRDA:234,153,0,0
+BRDA:234,153,1,0
+FN:251,System.Boolean OpenCollar.Extensions.SqlClient.Connection::Recycle()
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Connection::Recycle()
+DA:252,0
+DA:254,0
+DA:259,0
+DA:260,0
+DA:262,0
+DA:265,0
+DA:267,0
+DA:273,0
+DA:274,0
+BRDA:252,12,0,0
+BRDA:252,12,1,0
+FN:283,System.Void OpenCollar.Extensions.SqlClient.Connection::UpdateUsage(System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::UpdateUsage(System.String)
+DA:284,0
+DA:285,0
+DA:286,0
+FN:296,System.Void OpenCollar.Extensions.SqlClient.Connection::Dispose(System.Boolean)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::Dispose(System.Boolean)
+DA:297,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:304,0
+DA:305,0
+BRDA:297,1,0,0
+BRDA:297,1,1,0
+FN:317,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteValue(System.Text.StringBuilder,System.Object)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteValue(System.Text.StringBuilder,System.Object)
+DA:318,0
+DA:320,0
+DA:321,0
+DA:324,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:333,0
+DA:335,0
+DA:336,0
+DA:339,0
+DA:342,0
+DA:345,0
+DA:346,0
+DA:348,0
+DA:349,0
+DA:350,0
+DA:352,0
+DA:354,0
+DA:355,0
+DA:358,0
+DA:361,0
+DA:364,0
+DA:367,0
+DA:370,0
+DA:372,0
+DA:373,0
+DA:374,0
+DA:375,0
+DA:378,0
+DA:380,0
+DA:381,0
+DA:382,0
+DA:383,0
+DA:386,0
+DA:388,0
+DA:389,0
+DA:390,0
+DA:391,0
+DA:394,0
+DA:395,0
+BRDA:318,1,0,0
+BRDA:318,1,1,0
+BRDA:318,9,0,0
+BRDA:318,9,1,0
+BRDA:324,32,0,0
+BRDA:331,157,1,0
+BRDA:333,118,0,0
+BRDA:333,118,1,0
+BRDA:331,157,0,0
+BRDA:346,314,1,0
+BRDA:350,293,1,0
+BRDA:352,255,0,0
+BRDA:352,255,1,0
+BRDA:350,293,0,0
+BRDA:346,314,0,0
+BRDA:324,32,1,0
+BRDA:370,346,0,0
+BRDA:370,346,1,0
+BRDA:378,384,0,0
+BRDA:378,384,1,0
+BRDA:386,442,0,0
+BRDA:386,442,1,0
+FN:404,System.String OpenCollar.Extensions.SqlClient.Connection::DescribeSqlCommand(Microsoft.Data.SqlClient.SqlCommand)
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Connection::DescribeSqlCommand(Microsoft.Data.SqlClient.SqlCommand)
+DA:405,0
+DA:407,0
+DA:409,0
+DA:411,0
+FN:421,System.String OpenCollar.Extensions.SqlClient.Connection::DescribeSqlError(Microsoft.Data.SqlClient.SqlError)
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Connection::DescribeSqlError(Microsoft.Data.SqlClient.SqlError)
+DA:422,0
+DA:424,0
+DA:426,0
+FN:439,System.String OpenCollar.Extensions.SqlClient.Connection::DescribeSqlError(Microsoft.Data.SqlClient.SqlCommand,Microsoft.Data.SqlClient.SqlException)
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Connection::DescribeSqlError(Microsoft.Data.SqlClient.SqlCommand,Microsoft.Data.SqlClient.SqlException)
+DA:440,0
+DA:442,0
+DA:444,0
+DA:446,0
+DA:448,0
+DA:450,0
+FN:463,System.Void OpenCollar.Extensions.SqlClient.Connection::OnInfo(System.Object,Microsoft.Data.SqlClient.SqlInfoMessageEventArgs)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::OnInfo(System.Object,Microsoft.Data.SqlClient.SqlInfoMessageEventArgs)
+DA:464,0
+DA:466,0
+DA:469,0
+DA:472,0
+DA:474,0
+DA:477,0
+DA:478,0
+BRDA:464,1,0,0
+BRDA:464,1,1,0
+BRDA:472,59,1,0
+BRDA:472,59,0,0
+FN:490,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteCommandDetails(Microsoft.Data.SqlClient.SqlCommand,System.Text.StringBuilder)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteCommandDetails(Microsoft.Data.SqlClient.SqlCommand,System.Text.StringBuilder)
+DA:491,0
+DA:492,0
+DA:494,0
+DA:495,0
+DA:498,0
+DA:500,0
+DA:501,0
+DA:502,0
+DA:504,0
+DA:505,0
+DA:506,0
+DA:507,0
+DA:508,0
+DA:509,0
+DA:510,0
+DA:513,0
+DA:514,0
+DA:515,0
+BRDA:492,13,0,0
+BRDA:492,13,1,0
+BRDA:502,167,1,0
+BRDA:502,167,0,0
+FN:524,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteConnectionDetails(System.Text.StringBuilder)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteConnectionDetails(System.Text.StringBuilder)
+DA:525,0
+DA:526,0
+DA:528,0
+DA:529,0
+DA:531,0
+DA:532,0
+DA:534,0
+DA:535,0
+DA:537,0
+DA:538,0
+DA:539,0
+DA:541,0
+DA:542,0
+DA:543,0
+BRDA:529,59,0,0
+BRDA:529,59,1,0
+BRDA:532,114,0,0
+BRDA:532,114,1,0
+BRDA:535,154,0,0
+BRDA:535,154,1,0
+BRDA:535,170,0,0
+BRDA:535,170,1,0
+BRDA:539,226,0,0
+BRDA:539,226,1,0
+BRDA:542,270,0,0
+BRDA:542,270,1,0
+FN:559,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteExceptionProperties(System.Exception,System.Text.StringBuilder,System.String[])
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteExceptionProperties(System.Exception,System.Text.StringBuilder,System.String[])
+DA:560,0
+DA:562,0
+DA:564,0
+DA:569,0
+DA:574,0
+DA:579,0
+DA:580,0
+DA:582,0
+DA:584,0
+DA:585,0
+DA:588,0
+DA:590,0
+DA:591,0
+DA:592,0
+DA:593,0
+DA:596,0
+DA:600,0
+BRDA:562,239,1,0
+BRDA:564,75,0,0
+BRDA:569,86,0,0
+BRDA:574,98,0,0
+BRDA:582,137,0,0
+BRDA:582,137,1,0
+BRDA:582,146,0,0
+BRDA:582,146,1,0
+BRDA:588,183,0,0
+BRDA:588,183,1,0
+BRDA:564,75,1,0
+BRDA:569,86,1,0
+BRDA:574,98,1,0
+BRDA:562,239,0,0
+FN:612,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteSqlError(Microsoft.Data.SqlClient.SqlError,System.Text.StringBuilder)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteSqlError(Microsoft.Data.SqlClient.SqlError,System.Text.StringBuilder)
+DA:613,0
+DA:615,0
+DA:616,0
+DA:619,0
+DA:620,0
+DA:622,0
+DA:623,0
+DA:625,0
+DA:626,0
+DA:628,0
+DA:629,0
+DA:630,0
+BRDA:613,1,0,0
+BRDA:613,1,1,0
+FN:642,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteSqlException(Microsoft.Data.SqlClient.SqlException,System.Text.StringBuilder)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::WriteSqlException(Microsoft.Data.SqlClient.SqlException,System.Text.StringBuilder)
+DA:643,0
+DA:645,0
+DA:646,0
+DA:649,0
+DA:650,0
+DA:652,0
+DA:653,0
+DA:655,0
+DA:656,0
+DA:658,0
+DA:659,0
+DA:661,0
+DA:662,0
+DA:663,0
+DA:665,0
+DA:666,0
+DA:667,0
+DA:668,0
+DA:669,0
+DA:670,0
+DA:671,0
+DA:672,0
+DA:675,0
+DA:676,0
+DA:678,0
+DA:679,0
+DA:680,0
+DA:682,0
+DA:688,0
+DA:689,0
+DA:690,0
+DA:691,0
+DA:692,0
+DA:693,0
+DA:694,0
+DA:695,0
+DA:699,0
+DA:700,0
+BRDA:643,1,0,0
+BRDA:643,1,1,0
+BRDA:663,304,1,0
+BRDA:663,304,0,0
+BRDA:676,345,0,0
+BRDA:680,524,1,0
+BRDA:682,395,0,0
+BRDA:682,395,1,0
+BRDA:680,524,0,0
+BRDA:676,345,1,0
+FN:65,System.Void OpenCollar.Extensions.SqlClient.Connection::.ctor(OpenCollar.Extensions.SqlClient.ConnectionKey,System.Boolean,OpenCollar.Extensions.SqlClient.ConnectionFactory,OpenCollar.Extensions.SqlClient.ConnectionPool,Microsoft.Extensions.Logging.ILogger`1<OpenCollar.Extensions.SqlClient.Connection>)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Connection::.ctor(OpenCollar.Extensions.SqlClient.ConnectionKey,System.Boolean,OpenCollar.Extensions.SqlClient.ConnectionFactory,OpenCollar.Extensions.SqlClient.ConnectionPool,Microsoft.Extensions.Logging.ILogger`1<OpenCollar.Extensions.SqlClient.Connection>)
+DA:66,0
+DA:71,0
+DA:97,0
+DA:99,0
+DA:100,0
+DA:102,0
+DA:105,0
+DA:107,0
+DA:109,0
+DA:112,0
+DA:114,0
+DA:117,0
+DA:120,0
+DA:122,0
+DA:124,0
+DA:125,0
+DA:127,0
+DA:129,0
+DA:130,0
+BRDA:105,67,0,0
+BRDA:107,84,0,0
+BRDA:107,84,1,0
+BRDA:112,118,0,0
+BRDA:112,118,1,0
+BRDA:105,67,1,0
+LF:223
+LH:0
+BRF:90
+BRH:0
+FNF:22
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/ConnectionException.cs
+FN:125,System.String OpenCollar.Extensions.SqlClient.ConnectionException::get_ConnectionString()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.ConnectionException::get_ConnectionString()
+DA:126,0
+FN:138,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:139,0
+DA:141,0
+DA:142,0
+DA:143,0
+FN:49,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::.ctor(System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::.ctor(System.String)
+DA:50,0
+DA:52,0
+DA:54,0
+DA:55,0
+FN:71,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::.ctor(System.String,System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::.ctor(System.String,System.String)
+DA:72,0
+DA:74,0
+DA:76,0
+DA:77,0
+FN:97,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::.ctor(System.String,System.String,System.Exception)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::.ctor(System.String,System.String,System.Exception)
+DA:98,0
+DA:100,0
+DA:102,0
+DA:103,0
+FN:113,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:114,0
+DA:116,0
+DA:117,0
+LF:20
+LH:0
+BRF:0
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/ConnectionFactory.cs
+FN:114,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration OpenCollar.Extensions.SqlClient.ConnectionFactory::get_Configuration()
+FNDA:0,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConnectionConfiguration OpenCollar.Extensions.SqlClient.ConnectionFactory::get_Configuration()
+DA:115,0
+FN:127,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionFactory::get_InitializeAzureManagedIdentity()
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionFactory::get_InitializeAzureManagedIdentity()
+DA:128,0
+FN:145,System.String OpenCollar.Extensions.SqlClient.ConnectionFactory::get_DefaultOwnerName()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.ConnectionFactory::get_DefaultOwnerName()
+DA:146,0
+FN:152,OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider OpenCollar.Extensions.SqlClient.ConnectionFactory::get_EnvironmentMetadataProvider()
+FNDA:0,OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider OpenCollar.Extensions.SqlClient.ConnectionFactory::get_EnvironmentMetadataProvider()
+DA:153,0
+FN:169,OpenCollar.Extensions.SqlClient.ConnectionProxy OpenCollar.Extensions.SqlClient.ConnectionFactory::GetConnection(System.String)
+FNDA:0,OpenCollar.Extensions.SqlClient.ConnectionProxy OpenCollar.Extensions.SqlClient.ConnectionFactory::GetConnection(System.String)
+DA:170,0
+DA:172,0
+DA:174,0
+DA:176,0
+DA:180,0
+DA:182,0
+DA:184,0
+BRDA:170,14,0,0
+BRDA:174,25,0,0
+BRDA:170,14,1,0
+BRDA:174,25,1,0
+FN:199,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionFactory::IsMsiInitializationRequired(System.String)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionFactory::IsMsiInitializationRequired(System.String)
+DA:200,0
+DA:201,0
+DA:203,0
+DA:205,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:214,0
+DA:217,0
+BRDA:201,67,1,0
+BRDA:203,55,0,0
+BRDA:203,55,1,0
+BRDA:201,67,0,0
+BRDA:212,91,0,0
+BRDA:212,91,1,0
+FN:234,System.Exception OpenCollar.Extensions.SqlClient.ConnectionFactory::AnalyzeException(System.Exception,OpenCollar.Extensions.SqlClient.Connection,Microsoft.Data.SqlClient.SqlCommand)
+FNDA:0,System.Exception OpenCollar.Extensions.SqlClient.ConnectionFactory::AnalyzeException(System.Exception,OpenCollar.Extensions.SqlClient.Connection,Microsoft.Data.SqlClient.SqlCommand)
+DA:235,0
+FN:259,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::InitializeConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::InitializeConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)
+DA:260,0
+FN:287,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::RecycleConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::RecycleConnection(System.String,Microsoft.Data.SqlClient.SqlConnection)
+DA:288,0
+FN:302,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::SetCommandTimemout(System.Data.IDbCommand)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::SetCommandTimemout(System.Data.IDbCommand)
+DA:303,0
+FN:316,System.String OpenCollar.Extensions.SqlClient.ConnectionFactory::get_DatabaseEnvironment()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.ConnectionFactory::get_DatabaseEnvironment()
+DA:317,0
+DA:320,0
+DA:323,0
+DA:325,0
+BRDA:317,6,0,0
+BRDA:317,6,1,0
+FN:374,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::ValidateConnection()
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::ValidateConnection()
+DA:375,0
+DA:378,0
+DA:381,0
+DA:383,0
+DA:386,0
+DA:389,0
+DA:391,0
+DA:394,0
+DA:397,0
+DA:399,0
+DA:401,0
+DA:403,0
+DA:406,0
+DA:409,0
+DA:411,0
+DA:413,0
+BRDA:375,6,0,0
+BRDA:375,6,1,0
+BRDA:383,22,0,0
+BRDA:383,22,1,0
+BRDA:391,33,0,0
+BRDA:391,33,1,0
+BRDA:399,67,0,0
+BRDA:401,80,0,0
+BRDA:401,80,1,0
+BRDA:399,67,1,0
+BRDA:409,144,0,0
+BRDA:409,144,1,0
+FN:66,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::.ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::.ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration)
+DA:67,0
+DA:68,0
+FN:42,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::.ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration,OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionFactory::.ctor(System.IServiceProvider,OpenCollar.Extensions.SqlClient.Configuration.IDatabaseConfiguration,OpenCollar.Extensions.Environment.IEnvironmentMetadataProvider)
+DA:43,0
+DA:85,0
+DA:87,0
+DA:89,0
+DA:91,0
+DA:93,0
+DA:95,0
+DA:97,0
+DA:99,0
+DA:101,0
+DA:104,0
+DA:107,0
+BRDA:99,92,0,0
+BRDA:99,92,1,0
+BRDA:101,129,0,0
+BRDA:101,129,1,0
+LF:58
+LH:0
+BRF:28
+BRH:0
+FNF:14
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/ConnectionKey.cs
+FN:60,System.String OpenCollar.Extensions.SqlClient.ConnectionKey::get_ConnectionString()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.ConnectionKey::get_ConnectionString()
+DA:61,0
+FN:70,System.String OpenCollar.Extensions.SqlClient.ConnectionKey::get_Owner()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.ConnectionKey::get_Owner()
+DA:71,0
+FN:85,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_Inequality(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_Inequality(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+DA:86,0
+FN:100,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_LessThan(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_LessThan(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+DA:101,0
+FN:115,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+DA:116,0
+FN:130,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_Equality(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_Equality(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+DA:131,0
+FN:145,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_GreaterThan(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_GreaterThan(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+DA:146,0
+FN:160,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionKey)
+DA:161,0
+FN:194,System.Int32 OpenCollar.Extensions.SqlClient.ConnectionKey::CompareTo(System.Object)
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.ConnectionKey::CompareTo(System.Object)
+DA:195,0
+DA:197,0
+DA:200,0
+DA:202,0
+DA:205,0
+BRDA:195,1,0,0
+BRDA:195,1,1,0
+BRDA:200,7,0,0
+BRDA:200,7,1,0
+BRDA:205,19,0,0
+BRDA:205,19,1,0
+FN:236,System.Int32 OpenCollar.Extensions.SqlClient.ConnectionKey::CompareTo(OpenCollar.Extensions.SqlClient.ConnectionKey)
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.ConnectionKey::CompareTo(OpenCollar.Extensions.SqlClient.ConnectionKey)
+DA:237,0
+DA:239,0
+DA:242,0
+DA:244,0
+DA:247,0
+DA:248,0
+DA:250,0
+DA:253,0
+BRDA:237,2,0,0
+BRDA:237,2,1,0
+BRDA:242,7,0,0
+BRDA:242,7,1,0
+BRDA:248,31,0,0
+BRDA:248,31,1,0
+FN:267,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::Equals(OpenCollar.Extensions.SqlClient.ConnectionKey)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::Equals(OpenCollar.Extensions.SqlClient.ConnectionKey)
+DA:268,0
+DA:270,0
+DA:273,0
+DA:275,0
+DA:278,0
+BRDA:268,1,0,0
+BRDA:268,1,1,0
+BRDA:273,7,0,0
+BRDA:273,7,1,0
+BRDA:278,28,0,0
+BRDA:278,28,1,0
+FN:289,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::Equals(System.Object)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.ConnectionKey::Equals(System.Object)
+DA:290,0
+BRDA:290,2,0,0
+BRDA:290,12,0,0
+BRDA:290,12,1,0
+BRDA:290,2,1,0
+FN:297,System.Int32 OpenCollar.Extensions.SqlClient.ConnectionKey::GetHashCode()
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.ConnectionKey::GetHashCode()
+DA:298,0
+FN:45,System.Void OpenCollar.Extensions.SqlClient.ConnectionKey::.ctor(System.String,System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionKey::.ctor(System.String,System.String)
+DA:46,0
+DA:48,0
+DA:50,0
+DA:51,0
+DA:52,0
+LF:33
+LH:0
+BRF:22
+BRH:0
+FNF:14
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/ConnectionPool.cs
+FN:112,OpenCollar.Extensions.SqlClient.ConnectionKey OpenCollar.Extensions.SqlClient.ConnectionPool::get_Key()
+FNDA:0,OpenCollar.Extensions.SqlClient.ConnectionKey OpenCollar.Extensions.SqlClient.ConnectionPool::get_Key()
+DA:113,0
+FN:120,OpenCollar.Extensions.SqlClient.ConnectionFactory OpenCollar.Extensions.SqlClient.ConnectionPool::get_Factory()
+FNDA:0,OpenCollar.Extensions.SqlClient.ConnectionFactory OpenCollar.Extensions.SqlClient.ConnectionPool::get_Factory()
+DA:121,0
+FN:130,OpenCollar.Extensions.SqlClient.Connection OpenCollar.Extensions.SqlClient.ConnectionPool::GetConnection()
+FNDA:0,OpenCollar.Extensions.SqlClient.Connection OpenCollar.Extensions.SqlClient.ConnectionPool::GetConnection()
+DA:131,0
+DA:133,0
+DA:135,0
+DA:138,0
+BRDA:133,31,0,0
+BRDA:133,31,1,0
+FN:149,System.Void OpenCollar.Extensions.SqlClient.ConnectionPool::RecycleConnection(OpenCollar.Extensions.SqlClient.Connection)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionPool::RecycleConnection(OpenCollar.Extensions.SqlClient.Connection)
+DA:150,0
+DA:160,0
+DA:162,0
+DA:166,0
+DA:169,0
+DA:171,0
+BRDA:160,26,0,0
+BRDA:160,26,1,0
+FN:180,System.Void OpenCollar.Extensions.SqlClient.ConnectionPool::RemoveConnection(OpenCollar.Extensions.SqlClient.Connection)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionPool::RemoveConnection(OpenCollar.Extensions.SqlClient.Connection)
+DA:181,0
+FN:38,System.Void OpenCollar.Extensions.SqlClient.ConnectionPool::.ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger`1<OpenCollar.Extensions.SqlClient.ConnectionPool>,OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionFactory)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionPool::.ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger`1<OpenCollar.Extensions.SqlClient.ConnectionPool>,OpenCollar.Extensions.SqlClient.ConnectionKey,OpenCollar.Extensions.SqlClient.ConnectionFactory)
+DA:39,0
+DA:51,0
+DA:96,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:104,0
+LF:21
+LH:0
+BRF:4
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/ConnectionProxy.cs
+FN:66,Microsoft.Data.SqlClient.SqlConnection OpenCollar.Extensions.SqlClient.ConnectionProxy::get_SqlConnection()
+FNDA:0,Microsoft.Data.SqlClient.SqlConnection OpenCollar.Extensions.SqlClient.ConnectionProxy::get_SqlConnection()
+DA:67,0
+FN:74,OpenCollar.Extensions.SqlClient.ConnectionFactory OpenCollar.Extensions.SqlClient.ConnectionProxy::get_Factory()
+FNDA:0,OpenCollar.Extensions.SqlClient.ConnectionFactory OpenCollar.Extensions.SqlClient.ConnectionProxy::get_Factory()
+DA:75,0
+FN:83,OpenCollar.Extensions.SqlClient.ConnectionKey OpenCollar.Extensions.SqlClient.ConnectionProxy::get_Key()
+FNDA:0,OpenCollar.Extensions.SqlClient.ConnectionKey OpenCollar.Extensions.SqlClient.ConnectionProxy::get_Key()
+DA:84,0
+FN:91,Microsoft.Extensions.Logging.ILogger OpenCollar.Extensions.SqlClient.ConnectionProxy::get_Logger()
+FNDA:0,Microsoft.Extensions.Logging.ILogger OpenCollar.Extensions.SqlClient.ConnectionProxy::get_Logger()
+DA:92,0
+FN:111,System.Threading.Tasks.Task`1<System.Int32> OpenCollar.Extensions.SqlClient.ConnectionProxy::ExecuteNonQueryAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<System.Int32> OpenCollar.Extensions.SqlClient.ConnectionProxy::ExecuteNonQueryAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable`1<System.Threading.CancellationToken>)
+DA:112,0
+DA:114,0
+DA:115,0
+DA:117,0
+DA:119,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+BRDA:114,46,0,0
+BRDA:114,46,1,0
+FN:143,System.Threading.Tasks.Task`1<Microsoft.Data.SqlClient.SqlDataReader> OpenCollar.Extensions.SqlClient.ConnectionProxy::ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<Microsoft.Data.SqlClient.SqlDataReader> OpenCollar.Extensions.SqlClient.ConnectionProxy::ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable`1<System.Threading.CancellationToken>)
+DA:144,0
+DA:146,0
+DA:147,0
+DA:149,0
+DA:151,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+BRDA:146,46,0,0
+BRDA:146,46,1,0
+FN:179,System.Threading.Tasks.Task`1<Microsoft.Data.SqlClient.SqlDataReader> OpenCollar.Extensions.SqlClient.ConnectionProxy::ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Data.CommandBehavior,System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<Microsoft.Data.SqlClient.SqlDataReader> OpenCollar.Extensions.SqlClient.ConnectionProxy::ExecuteReaderAsync(Microsoft.Data.SqlClient.SqlCommand,System.Data.CommandBehavior,System.Nullable`1<System.Threading.CancellationToken>)
+DA:180,0
+DA:182,0
+DA:183,0
+DA:185,0
+DA:187,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+BRDA:182,46,0,0
+BRDA:182,46,1,0
+FN:211,System.Threading.Tasks.Task`1<System.Object> OpenCollar.Extensions.SqlClient.ConnectionProxy::ExecuteScalarAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<System.Object> OpenCollar.Extensions.SqlClient.ConnectionProxy::ExecuteScalarAsync(Microsoft.Data.SqlClient.SqlCommand,System.Nullable`1<System.Threading.CancellationToken>)
+DA:212,0
+DA:214,0
+DA:215,0
+DA:217,0
+DA:219,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+BRDA:214,46,0,0
+BRDA:214,46,1,0
+FN:238,System.Void OpenCollar.Extensions.SqlClient.ConnectionProxy::Dispose(System.Boolean)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionProxy::Dispose(System.Boolean)
+DA:239,0
+DA:241,0
+DA:244,0
+DA:245,0
+BRDA:239,1,0,0
+BRDA:239,1,1,0
+FN:260,System.Void OpenCollar.Extensions.SqlClient.ConnectionProxy::CompleteExecution(Microsoft.Data.SqlClient.SqlCommand,System.DateTime,OpenCollar.Extensions.Logging.ITransientContextualInformationScope)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionProxy::CompleteExecution(Microsoft.Data.SqlClient.SqlCommand,System.DateTime,OpenCollar.Extensions.Logging.ITransientContextualInformationScope)
+DA:261,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:268,0
+DA:269,0
+DA:271,0
+DA:273,0
+DA:277,0
+DA:280,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+BRDA:269,121,0,0
+BRDA:271,126,0,0
+BRDA:271,126,1,0
+BRDA:269,121,1,0
+FN:289,OpenCollar.Extensions.Logging.ITransientContextualInformationScope OpenCollar.Extensions.SqlClient.ConnectionProxy::InitializeLogging(Microsoft.Data.SqlClient.SqlCommand)
+FNDA:0,OpenCollar.Extensions.Logging.ITransientContextualInformationScope OpenCollar.Extensions.SqlClient.ConnectionProxy::InitializeLogging(Microsoft.Data.SqlClient.SqlCommand)
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+FN:53,System.Void OpenCollar.Extensions.SqlClient.ConnectionProxy::.ctor(OpenCollar.Extensions.SqlClient.Connection,Microsoft.Extensions.Logging.ILogger)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ConnectionProxy::.ctor(OpenCollar.Extensions.SqlClient.Connection,Microsoft.Extensions.Logging.ILogger)
+DA:54,0
+DA:56,0
+DA:57,0
+DA:58,0
+LF:76
+LH:0
+BRF:14
+BRH:0
+FNF:12
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/ConnectionProxyExtensions.cs
+FN:52,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions::QueryProcedure(OpenCollar.Extensions.SqlClient.ConnectionProxy,OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:0,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions::QueryProcedure(OpenCollar.Extensions.SqlClient.ConnectionProxy,OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:53,0
+DA:54,0
+DA:56,0
+FN:83,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions::QuerySql(OpenCollar.Extensions.SqlClient.ConnectionProxy,System.String)
+FNDA:0,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.ConnectionProxyExtensions::QuerySql(OpenCollar.Extensions.SqlClient.ConnectionProxy,System.String)
+DA:84,0
+DA:85,0
+DA:87,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/DatabaseException.cs
+FN:117,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:118,0
+DA:119,0
+FN:47,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::.ctor(System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::.ctor(System.String)
+DA:48,0
+DA:50,0
+FN:66,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::.ctor(System.String,System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::.ctor(System.String,System.String)
+DA:67,0
+DA:69,0
+FN:89,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::.ctor(System.String,System.String,System.Exception)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::.ctor(System.String,System.String,System.Exception)
+DA:90,0
+DA:92,0
+FN:102,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DatabaseException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:103,0
+DA:105,0
+LF:10
+LH:0
+BRF:0
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/DbException.cs
+FN:108,System.String OpenCollar.Extensions.SqlClient.DbException::get_Details()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.DbException::get_Details()
+DA:109,0
+FN:126,System.Void OpenCollar.Extensions.SqlClient.DbException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DbException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:127,0
+DA:129,0
+DA:131,0
+DA:132,0
+FN:43,System.Void OpenCollar.Extensions.SqlClient.DbException::.ctor(System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DbException::.ctor(System.String)
+DA:44,0
+DA:46,0
+DA:47,0
+FN:57,System.Void OpenCollar.Extensions.SqlClient.DbException::.ctor(System.String,System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DbException::.ctor(System.String,System.String)
+DA:58,0
+DA:60,0
+DA:61,0
+FN:76,System.Void OpenCollar.Extensions.SqlClient.DbException::.ctor(System.String,System.String,System.Exception)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DbException::.ctor(System.String,System.String,System.Exception)
+DA:77,0
+DA:79,0
+DA:80,0
+FN:97,System.Void OpenCollar.Extensions.SqlClient.DbException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.DbException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:98,0
+DA:100,0
+DA:101,0
+LF:17
+LH:0
+BRF:0
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/ParseException.cs
+FN:108,System.Int32 OpenCollar.Extensions.SqlClient.ParseException::get_CharacterPosition()
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.ParseException::get_CharacterPosition()
+DA:109,0
+FN:126,System.Void OpenCollar.Extensions.SqlClient.ParseException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ParseException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:127,0
+DA:129,0
+DA:130,0
+DA:131,0
+FN:46,System.Void OpenCollar.Extensions.SqlClient.ParseException::.ctor(System.Int32,System.String)
+FNDA:14,System.Void OpenCollar.Extensions.SqlClient.ParseException::.ctor(System.Int32,System.String)
+DA:47,14
+DA:49,14
+DA:50,14
+FN:65,System.Void OpenCollar.Extensions.SqlClient.ParseException::.ctor(System.Int32,System.String,System.Exception)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ParseException::.ctor(System.Int32,System.String,System.Exception)
+DA:66,0
+DA:68,0
+DA:69,0
+FN:76,System.Void OpenCollar.Extensions.SqlClient.ParseException::.ctor(System.Int32)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ParseException::.ctor(System.Int32)
+DA:77,0
+DA:79,0
+DA:80,0
+FN:97,System.Void OpenCollar.Extensions.SqlClient.ParseException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.ParseException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:98,0
+DA:100,0
+DA:101,0
+LF:17
+LH:3
+BRF:0
+BRH:0
+FNF:6
+FNH:1
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/QueryBuilder.cs
+FN:81,Microsoft.Extensions.Logging.ILogger OpenCollar.Extensions.SqlClient.QueryBuilder::get_Logger()
+FNDA:0,Microsoft.Extensions.Logging.ILogger OpenCollar.Extensions.SqlClient.QueryBuilder::get_Logger()
+DA:82,0
+FN:89,System.String OpenCollar.Extensions.SqlClient.QueryBuilder::get_CommandText()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.QueryBuilder::get_CommandText()
+DA:90,0
+FN:98,System.Data.CommandType OpenCollar.Extensions.SqlClient.QueryBuilder::get_CommandType()
+FNDA:0,System.Data.CommandType OpenCollar.Extensions.SqlClient.QueryBuilder::get_CommandType()
+DA:99,0
+FN:106,OpenCollar.Extensions.SqlClient.ConnectionProxy OpenCollar.Extensions.SqlClient.QueryBuilder::get_Connection()
+FNDA:0,OpenCollar.Extensions.SqlClient.ConnectionProxy OpenCollar.Extensions.SqlClient.QueryBuilder::get_Connection()
+DA:107,0
+FN:123,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::WithParameter(OpenCollar.Extensions.SqlClient.Model.ParameterName,System.Object)
+FNDA:0,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::WithParameter(OpenCollar.Extensions.SqlClient.Model.ParameterName,System.Object)
+DA:124,0
+DA:126,0
+DA:128,0
+FN:184,System.Threading.Tasks.Task OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteNonQueryCoreAsync(System.Threading.CancellationToken)
+FNDA:0,System.Threading.Tasks.Task OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteNonQueryCoreAsync(System.Threading.CancellationToken)
+DA:185,0
+DA:187,0
+DA:191,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+BRDA:185,17,0,0
+BRDA:185,17,1,0
+FN:211,Microsoft.Data.SqlClient.SqlCommand OpenCollar.Extensions.SqlClient.QueryBuilder::InitializeCommand()
+FNDA:0,Microsoft.Data.SqlClient.SqlCommand OpenCollar.Extensions.SqlClient.QueryBuilder::InitializeCommand()
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:221,0
+DA:223,0
+DA:226,0
+DA:229,0
+DA:231,0
+DA:234,0
+BRDA:221,78,1,0
+BRDA:221,78,0,0
+BRDA:229,129,0,0
+BRDA:229,129,1,0
+FN:252,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::WithRetries(System.Nullable`1<System.Int32>)
+FNDA:0,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::WithRetries(System.Nullable`1<System.Int32>)
+DA:253,0
+DA:255,0
+DA:256,0
+DA:259,0
+DA:262,0
+BRDA:253,7,0,0
+BRDA:253,7,1,0
+FN:309,System.Threading.Tasks.Task`1<System.Collections.Generic.IReadOnlyList`1<System.Object>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryCoreAsync(System.Threading.CancellationToken)
+FNDA:0,System.Threading.Tasks.Task`1<System.Collections.Generic.IReadOnlyList`1<System.Object>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryCoreAsync(System.Threading.CancellationToken)
+DA:310,0
+DA:313,0
+DA:314,0
+DA:316,0
+DA:318,0
+DA:319,0
+DA:321,0
+DA:324,0
+DA:325,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:333,0
+DA:334,0
+DA:335,0
+DA:336,0
+DA:337,0
+DA:338,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:344,0
+DA:345,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:354,0
+DA:358,0
+DA:359,0
+DA:360,0
+DA:361,0
+DA:362,0
+DA:363,0
+BRDA:319,240,1,0
+BRDA:321,136,0,0
+BRDA:321,136,1,0
+BRDA:319,240,0,0
+BRDA:327,13,0,0
+BRDA:329,26,0,0
+BRDA:329,26,1,0
+BRDA:327,13,1,0
+FN:388,Microsoft.Data.SqlClient.SqlDataReader OpenCollar.Extensions.SqlClient.QueryBuilder::ProcessReader(Microsoft.Data.SqlClient.SqlDataReader,System.Collections.Generic.List`1<System.Object>,System.Int32,OpenCollar.Extensions.SqlClient.Reader)
+FNDA:0,Microsoft.Data.SqlClient.SqlDataReader OpenCollar.Extensions.SqlClient.QueryBuilder::ProcessReader(Microsoft.Data.SqlClient.SqlDataReader,System.Collections.Generic.List`1<System.Object>,System.Int32,OpenCollar.Extensions.SqlClient.Reader)
+DA:389,0
+DA:391,0
+DA:392,0
+DA:395,0
+DA:397,0
+DA:401,0
+DA:405,0
+BRDA:389,6,0,0
+BRDA:389,6,1,0
+BRDA:395,31,0,0
+BRDA:395,31,1,0
+FN:418,System.Object OpenCollar.Extensions.SqlClient.QueryBuilder::GetDefaultValue(System.Type)
+FNDA:11,System.Object OpenCollar.Extensions.SqlClient.QueryBuilder::GetDefaultValue(System.Type)
+DA:419,11
+DA:421,3
+DA:424,8
+DA:426,2
+DA:427,2
+DA:428,2
+DA:431,6
+DA:433,1
+DA:434,1
+DA:435,1
+DA:438,5
+DA:440,1
+DA:443,4
+DA:445,1
+DA:446,1
+DA:447,1
+DA:450,3
+DA:452,1
+DA:455,2
+BRDA:419,6,0,3
+BRDA:419,6,1,8
+BRDA:424,21,0,2
+BRDA:424,21,1,6
+BRDA:431,83,0,2
+BRDA:431,106,0,1
+BRDA:431,83,1,5
+BRDA:431,106,1,5
+BRDA:438,173,0,4
+BRDA:438,191,0,1
+BRDA:438,173,1,4
+BRDA:438,191,1,4
+BRDA:443,205,0,1
+BRDA:443,228,0,1
+BRDA:443,205,1,3
+BRDA:443,228,1,3
+BRDA:450,295,0,3
+BRDA:450,313,0,1
+BRDA:450,295,1,2
+BRDA:450,313,1,2
+FN:474,System.Threading.Tasks.Task`1<T1> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<T1> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:475,0
+DA:477,0
+DA:480,0
+DA:482,0
+DA:483,0
+DA:484,0
+DA:485,0
+BRDA:475,12,0,0
+BRDA:475,12,1,0
+BRDA:480,77,0,0
+BRDA:480,77,1,0
+BRDA:482,112,0,0
+BRDA:482,112,1,0
+FN:507,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`2<T1,T2>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`2<T1,T2>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:508,0
+DA:510,0
+DA:513,0
+DA:515,0
+BRDA:508,12,0,0
+BRDA:508,12,1,0
+BRDA:513,77,0,0
+BRDA:513,77,1,0
+BRDA:515,107,0,0
+BRDA:515,107,1,0
+FN:541,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`3<T1,T2,T3>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`3<T1,T2,T3>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:542,0
+DA:544,0
+DA:547,0
+DA:549,0
+BRDA:542,12,0,0
+BRDA:542,12,1,0
+BRDA:547,77,0,0
+BRDA:547,77,1,0
+BRDA:549,107,0,0
+BRDA:549,107,1,0
+FN:578,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`4<T1,T2,T3,T4>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`4<T1,T2,T3,T4>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:579,0
+DA:581,0
+DA:584,0
+DA:586,0
+BRDA:579,12,0,0
+BRDA:579,12,1,0
+BRDA:584,77,0,0
+BRDA:584,77,1,0
+BRDA:586,107,0,0
+BRDA:586,107,1,0
+FN:618,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`5<T1,T2,T3,T4,T5>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`5<T1,T2,T3,T4,T5>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:619,0
+DA:621,0
+DA:624,0
+DA:626,0
+BRDA:619,12,0,0
+BRDA:619,12,1,0
+BRDA:624,77,0,0
+BRDA:624,77,1,0
+BRDA:626,107,0,0
+BRDA:626,107,1,0
+FN:661,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`6<T1,T2,T3,T4,T5,T6>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`6<T1,T2,T3,T4,T5,T6>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:662,0
+DA:664,0
+DA:667,0
+DA:669,0
+BRDA:662,12,0,0
+BRDA:662,12,1,0
+BRDA:667,77,0,0
+BRDA:667,77,1,0
+BRDA:669,107,0,0
+BRDA:669,107,1,0
+FN:707,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`7<T1,T2,T3,T4,T5,T6,T7>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`7<T1,T2,T3,T4,T5,T6,T7>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:708,0
+DA:710,0
+DA:713,0
+DA:715,0
+BRDA:708,12,0,0
+BRDA:708,12,1,0
+BRDA:713,77,0,0
+BRDA:713,77,1,0
+BRDA:715,107,0,0
+BRDA:715,107,1,0
+FN:756,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`8<T1,T2,T3,T4,T5,T6,T7,T8>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`8<T1,T2,T3,T4,T5,T6,T7,T8>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:757,0
+DA:759,0
+DA:762,0
+DA:764,0
+BRDA:757,12,0,0
+BRDA:757,12,1,0
+BRDA:762,77,0,0
+BRDA:762,77,1,0
+BRDA:764,107,0,0
+BRDA:764,107,1,0
+FN:808,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:809,0
+DA:811,0
+DA:814,0
+DA:816,0
+BRDA:809,13,0,0
+BRDA:809,13,1,0
+BRDA:814,78,0,0
+BRDA:814,78,1,0
+BRDA:816,108,0,0
+BRDA:816,108,1,0
+FN:863,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+FNDA:0,System.Threading.Tasks.Task`1<OpenCollar.Extensions.SqlClient.QueryResults`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>> OpenCollar.Extensions.SqlClient.QueryBuilder::ExecuteQueryAsync(System.Nullable`1<System.Threading.CancellationToken>)
+DA:864,0
+DA:866,0
+DA:869,0
+DA:871,0
+BRDA:864,13,0,0
+BRDA:864,13,1,0
+BRDA:869,78,0,0
+BRDA:869,78,1,0
+BRDA:871,108,0,0
+BRDA:871,108,1,0
+FN:890,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::Read(System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,T>,System.Boolean)
+FNDA:0,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::Read(System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,T>,System.Boolean)
+DA:891,0
+DA:893,0
+FN:913,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::ReadEach(System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,T>,System.Boolean)
+FNDA:0,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::ReadEach(System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,T>,System.Boolean)
+DA:914,0
+DA:915,0
+DA:916,0
+DA:917,0
+DA:918,0
+DA:919,0
+DA:920,0
+DA:921,0
+DA:922,0
+DA:924,0
+BRDA:917,32,1,0
+BRDA:917,32,0,0
+FN:932,System.TimeSpan OpenCollar.Extensions.SqlClient.QueryBuilder::get_Timeout()
+FNDA:0,System.TimeSpan OpenCollar.Extensions.SqlClient.QueryBuilder::get_Timeout()
+DA:933,0
+FN:945,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::WithTimeout(System.TimeSpan)
+FNDA:0,OpenCollar.Extensions.SqlClient.QueryBuilder OpenCollar.Extensions.SqlClient.QueryBuilder::WithTimeout(System.TimeSpan)
+DA:946,0
+DA:947,0
+FN:48,System.Void OpenCollar.Extensions.SqlClient.QueryBuilder::.ctor(OpenCollar.Extensions.SqlClient.ConnectionProxy,System.Data.CommandType,System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.QueryBuilder::.ctor(OpenCollar.Extensions.SqlClient.ConnectionProxy,System.Data.CommandType,System.String)
+DA:49,0
+DA:55,0
+DA:69,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+FN:145,System.Void OpenCollar.Extensions.SqlClient.QueryBuilder/<ExecuteNonQueryAsync>d__18::MoveNext()
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.QueryBuilder/<ExecuteNonQueryAsync>d__18::MoveNext()
+DA:146,0
+DA:148,0
+DA:151,0
+DA:153,0
+DA:155,0
+DA:157,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:165,0
+DA:166,0
+DA:168,0
+BRDA:146,28,0,0
+BRDA:146,28,1,0
+BRDA:151,78,0,0
+BRDA:151,78,1,0
+BRDA:153,107,0,0
+BRDA:153,107,1,0
+BRDA:155,329,1,0
+BRDA:155,329,0,0
+FN:275,System.Void OpenCollar.Extensions.SqlClient.QueryBuilder/<ExecuteQueryAsync>d__23::MoveNext()
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.QueryBuilder/<ExecuteQueryAsync>d__23::MoveNext()
+DA:276,0
+DA:278,0
+DA:280,0
+DA:282,0
+DA:286,0
+DA:288,0
+DA:290,0
+DA:291,0
+DA:295,0
+DA:296,0
+BRDA:276,32,0,0
+BRDA:276,32,1,0
+BRDA:278,61,0,0
+BRDA:278,61,1,0
+BRDA:280,286,1,0
+BRDA:280,286,0,0
+LF:187
+LH:19
+BRF:116
+BRH:20
+FNF:28
+FNH:1
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/QueryException.cs
+FN:39,System.Boolean OpenCollar.Extensions.SqlClient.QueryException::get_CanRetry()
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.QueryException::get_CanRetry()
+DA:40,0
+FN:139,System.Void OpenCollar.Extensions.SqlClient.QueryException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.QueryException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:140,0
+DA:142,0
+DA:143,0
+FN:57,System.Void OpenCollar.Extensions.SqlClient.QueryException::.ctor(System.String,System.Boolean)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.QueryException::.ctor(System.String,System.Boolean)
+DA:58,0
+DA:60,0
+DA:61,0
+FN:81,System.Void OpenCollar.Extensions.SqlClient.QueryException::.ctor(System.String,System.String,System.Boolean)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.QueryException::.ctor(System.String,System.String,System.Boolean)
+DA:82,0
+DA:84,0
+DA:85,0
+FN:109,System.Void OpenCollar.Extensions.SqlClient.QueryException::.ctor(System.String,System.String,System.Exception,System.Boolean)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.QueryException::.ctor(System.String,System.String,System.Exception,System.Boolean)
+DA:110,0
+DA:112,0
+DA:113,0
+FN:123,System.Void OpenCollar.Extensions.SqlClient.QueryException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.QueryException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+DA:124,0
+DA:126,0
+DA:127,0
+LF:16
+LH:0
+BRF:0
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/QueryResults.cs
+FN:38,T1 OpenCollar.Extensions.SqlClient.QueryResults`1::get_Results1()
+FNDA:0,T1 OpenCollar.Extensions.SqlClient.QueryResults`1::get_Results1()
+DA:39,0
+FN:48,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`1::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`1::GetEnumerator()
+DA:49,0
+FN:59,System.Collections.IEnumerator OpenCollar.Extensions.SqlClient.QueryResults`1::System.Collections.IEnumerable.GetEnumerator()
+FNDA:0,System.Collections.IEnumerator OpenCollar.Extensions.SqlClient.QueryResults`1::System.Collections.IEnumerable.GetEnumerator()
+DA:60,0
+FN:80,T2 OpenCollar.Extensions.SqlClient.QueryResults`2::get_Results2()
+FNDA:0,T2 OpenCollar.Extensions.SqlClient.QueryResults`2::get_Results2()
+DA:81,0
+FN:90,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`2::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`2::GetEnumerator()
+DA:91,0
+FN:114,T3 OpenCollar.Extensions.SqlClient.QueryResults`3::get_Results3()
+FNDA:0,T3 OpenCollar.Extensions.SqlClient.QueryResults`3::get_Results3()
+DA:115,0
+FN:124,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`3::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`3::GetEnumerator()
+DA:125,0
+FN:151,T4 OpenCollar.Extensions.SqlClient.QueryResults`4::get_Results4()
+FNDA:0,T4 OpenCollar.Extensions.SqlClient.QueryResults`4::get_Results4()
+DA:152,0
+FN:161,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`4::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`4::GetEnumerator()
+DA:162,0
+FN:191,T5 OpenCollar.Extensions.SqlClient.QueryResults`5::get_Results5()
+FNDA:0,T5 OpenCollar.Extensions.SqlClient.QueryResults`5::get_Results5()
+DA:192,0
+FN:201,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`5::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`5::GetEnumerator()
+DA:202,0
+FN:234,T6 OpenCollar.Extensions.SqlClient.QueryResults`6::get_Results6()
+FNDA:0,T6 OpenCollar.Extensions.SqlClient.QueryResults`6::get_Results6()
+DA:235,0
+FN:244,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`6::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`6::GetEnumerator()
+DA:245,0
+FN:280,T7 OpenCollar.Extensions.SqlClient.QueryResults`7::get_Results7()
+FNDA:0,T7 OpenCollar.Extensions.SqlClient.QueryResults`7::get_Results7()
+DA:281,0
+FN:290,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`7::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`7::GetEnumerator()
+DA:291,0
+FN:329,T8 OpenCollar.Extensions.SqlClient.QueryResults`8::get_Results8()
+FNDA:0,T8 OpenCollar.Extensions.SqlClient.QueryResults`8::get_Results8()
+DA:330,0
+FN:339,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`8::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`8::GetEnumerator()
+DA:340,0
+FN:381,T9 OpenCollar.Extensions.SqlClient.QueryResults`9::get_Results9()
+FNDA:0,T9 OpenCollar.Extensions.SqlClient.QueryResults`9::get_Results9()
+DA:382,0
+FN:391,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`9::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`9::GetEnumerator()
+DA:392,0
+FN:436,T10 OpenCollar.Extensions.SqlClient.QueryResults`10::get_Results10()
+FNDA:0,T10 OpenCollar.Extensions.SqlClient.QueryResults`10::get_Results10()
+DA:437,0
+FN:446,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`10::GetEnumerator()
+FNDA:0,System.Collections.Generic.IEnumerator`1<System.Object> OpenCollar.Extensions.SqlClient.QueryResults`10::GetEnumerator()
+DA:447,0
+LF:21
+LH:0
+BRF:0
+BRH:0
+FNF:21
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/Reader.cs
+FN:57,System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,System.Object> OpenCollar.Extensions.SqlClient.Reader::get_Function()
+FNDA:0,System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,System.Object> OpenCollar.Extensions.SqlClient.Reader::get_Function()
+DA:58,0
+FN:65,System.Boolean OpenCollar.Extensions.SqlClient.Reader::get_IsMandatory()
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Reader::get_IsMandatory()
+DA:66,0
+FN:73,System.Type OpenCollar.Extensions.SqlClient.Reader::get_ReturnType()
+FNDA:0,System.Type OpenCollar.Extensions.SqlClient.Reader::get_ReturnType()
+DA:74,0
+FN:92,OpenCollar.Extensions.SqlClient.Reader OpenCollar.Extensions.SqlClient.Reader::GetReader(System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,T>,System.Boolean)
+FNDA:0,OpenCollar.Extensions.SqlClient.Reader OpenCollar.Extensions.SqlClient.Reader::GetReader(System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,T>,System.Boolean)
+DA:93,0
+DA:94,0
+DA:95,0
+FN:111,T OpenCollar.Extensions.SqlClient.Reader::Execute(Microsoft.Data.SqlClient.SqlDataReader)
+FNDA:0,T OpenCollar.Extensions.SqlClient.Reader::Execute(Microsoft.Data.SqlClient.SqlDataReader)
+DA:112,0
+DA:114,0
+DA:117,0
+BRDA:112,21,0,0
+BRDA:112,21,1,0
+FN:129,System.Object OpenCollar.Extensions.SqlClient.Reader::Execute(Microsoft.Data.SqlClient.SqlDataReader)
+FNDA:0,System.Object OpenCollar.Extensions.SqlClient.Reader::Execute(Microsoft.Data.SqlClient.SqlDataReader)
+DA:130,0
+DA:132,0
+DA:134,0
+DA:137,0
+BRDA:132,14,0,0
+BRDA:132,33,0,0
+BRDA:132,14,1,0
+BRDA:132,33,1,0
+FN:44,System.Void OpenCollar.Extensions.SqlClient.Reader::.ctor(System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,System.Object>,System.Type,System.Boolean)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Reader::.ctor(System.Func`2<Microsoft.Data.SqlClient.SqlDataReader,System.Object>,System.Type,System.Boolean)
+DA:45,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+LF:18
+LH:0
+BRF:6
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/ServiceCollectionExtensions.cs
+FN:51,Microsoft.Extensions.DependencyInjection.IServiceCollection OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions::AddConnectionFactory(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,Microsoft.Extensions.DependencyInjection.IServiceCollection OpenCollar.Extensions.SqlClient.ServiceCollectionExtensions::AddConnectionFactory(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:52,0
+DA:54,0
+DA:56,0
+DA:58,0
+DA:60,0
+LF:5
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/SqlReaderExtensions.cs
+FN:53,System.Nullable`1<System.DateTimeOffset> OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetDateTimeOffsetOrDefault(Microsoft.Data.SqlClient.SqlDataReader,System.Int32,System.Nullable`1<System.DateTimeOffset>)
+FNDA:0,System.Nullable`1<System.DateTimeOffset> OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetDateTimeOffsetOrDefault(Microsoft.Data.SqlClient.SqlDataReader,System.Int32,System.Nullable`1<System.DateTimeOffset>)
+DA:54,0
+DA:55,0
+DA:57,0
+DA:60,0
+DA:62,0
+DA:64,0
+DA:67,0
+DA:69,0
+DA:72,0
+BRDA:55,19,0,0
+BRDA:55,19,1,0
+BRDA:62,47,0,0
+BRDA:62,47,1,0
+BRDA:67,78,0,0
+BRDA:67,78,1,0
+FN:100,T OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetValueOrDefault(Microsoft.Data.SqlClient.SqlDataReader,System.Int32,T)
+FNDA:0,T OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetValueOrDefault(Microsoft.Data.SqlClient.SqlDataReader,System.Int32,T)
+DA:101,0
+DA:103,0
+DA:105,0
+DA:106,0
+DA:109,0
+DA:111,0
+DA:114,0
+BRDA:103,19,0,0
+BRDA:103,19,1,0
+BRDA:109,73,0,0
+BRDA:109,73,1,0
+FN:143,T OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetValueOrFail(Microsoft.Data.SqlClient.SqlDataReader,System.Int32)
+FNDA:0,T OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetValueOrFail(Microsoft.Data.SqlClient.SqlDataReader,System.Int32)
+DA:144,0
+DA:146,0
+DA:148,0
+DA:149,0
+DA:152,0
+DA:154,0
+DA:159,0
+DA:161,0
+DA:164,0
+DA:165,0
+DA:167,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:174,0
+BRDA:146,19,0,0
+BRDA:146,19,1,0
+BRDA:152,73,0,0
+BRDA:152,73,1,0
+BRDA:165,159,0,0
+BRDA:165,159,1,0
+FN:184,System.String OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetSql()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetSql()
+DA:185,0
+DA:186,0
+DA:188,0
+DA:191,0
+DA:192,0
+DA:194,0
+DA:197,0
+DA:198,0
+DA:200,0
+DA:203,0
+BRDA:186,7,0,0
+BRDA:186,7,1,0
+BRDA:192,23,0,0
+BRDA:192,23,1,0
+BRDA:198,44,0,0
+BRDA:198,44,1,0
+FN:222,T OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetStronglyTypeFieldValue(Microsoft.Data.SqlClient.SqlDataReader,System.Int32)
+FNDA:0,T OpenCollar.Extensions.SqlClient.SqlReaderExtensions::GetStronglyTypeFieldValue(Microsoft.Data.SqlClient.SqlDataReader,System.Int32)
+DA:223,0
+DA:225,0
+DA:228,0
+DA:231,0
+DA:234,0
+DA:237,0
+DA:240,0
+DA:243,0
+DA:246,0
+DA:249,0
+DA:252,0
+DA:255,0
+DA:258,0
+DA:261,0
+DA:264,0
+DA:267,0
+DA:270,0
+DA:272,0
+DA:275,0
+DA:277,0
+DA:280,0
+DA:282,0
+DA:288,0
+BRDA:225,17,0,0
+BRDA:225,28,0,0
+BRDA:225,51,0,0
+BRDA:225,17,1,0
+BRDA:225,28,1,0
+BRDA:225,51,1,0
+BRDA:231,72,3,0
+BRDA:231,72,6,0
+BRDA:231,72,4,0
+BRDA:231,72,16,0
+BRDA:231,72,15,0
+BRDA:231,72,14,0
+BRDA:231,72,7,0
+BRDA:231,72,9,0
+BRDA:231,72,11,0
+BRDA:231,72,1,0
+BRDA:231,72,13,0
+BRDA:231,72,18,0
+BRDA:231,72,0,0
+BRDA:231,72,2,0
+BRDA:231,72,5,0
+BRDA:231,72,8,0
+BRDA:231,72,10,0
+BRDA:231,72,12,0
+BRDA:231,72,17,0
+BRDA:270,376,0,0
+BRDA:270,376,1,0
+BRDA:275,412,0,0
+BRDA:275,412,1,0
+BRDA:280,448,0,0
+BRDA:280,448,1,0
+LF:64
+LH:0
+BRF:53
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/Model/Identifier.cs
+FN:95,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::get_OriginalValue()
+FNDA:6,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::get_OriginalValue()
+DA:96,6
+FN:106,OpenCollar.Extensions.SqlClient.Model.Identifier OpenCollar.Extensions.SqlClient.Model.Identifier::op_Implicit(System.String)
+FNDA:3,OpenCollar.Extensions.SqlClient.Model.Identifier OpenCollar.Extensions.SqlClient.Model.Identifier::op_Implicit(System.String)
+DA:107,3
+BRDA:107,6,0,2
+BRDA:107,6,1,1
+FN:117,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::op_Implicit(OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:18,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::op_Implicit(OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:118,18
+BRDA:118,1,0,17
+BRDA:118,1,1,1
+FN:132,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_Inequality(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:24,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_Inequality(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:133,24
+FN:147,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_LessThan(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:2,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_LessThan(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:148,2
+FN:163,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:2,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:164,2
+FN:178,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_Equality(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:24,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_Equality(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:179,24
+FN:194,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_GreaterThan(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:2,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_GreaterThan(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:195,2
+FN:210,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:2,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.Identifier,OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:211,2
+FN:221,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::ToIdentifier(OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::ToIdentifier(OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:222,0
+BRDA:222,1,0,0
+BRDA:222,1,1,0
+FN:232,OpenCollar.Extensions.SqlClient.Model.Identifier OpenCollar.Extensions.SqlClient.Model.Identifier::ToString(System.String)
+FNDA:0,OpenCollar.Extensions.SqlClient.Model.Identifier OpenCollar.Extensions.SqlClient.Model.Identifier::ToString(System.String)
+DA:233,0
+BRDA:233,6,0,0
+BRDA:233,6,1,0
+FN:268,System.Int32 OpenCollar.Extensions.SqlClient.Model.Identifier::CompareTo(System.Object)
+FNDA:6,System.Int32 OpenCollar.Extensions.SqlClient.Model.Identifier::CompareTo(System.Object)
+DA:269,6
+DA:271,1
+DA:274,5
+DA:276,1
+DA:279,4
+BRDA:269,1,0,1
+BRDA:269,1,1,5
+BRDA:274,7,0,1
+BRDA:274,7,1,4
+BRDA:279,19,0,1
+BRDA:279,19,1,3
+FN:312,System.Int32 OpenCollar.Extensions.SqlClient.Model.Identifier::CompareTo(OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:16,System.Int32 OpenCollar.Extensions.SqlClient.Model.Identifier::CompareTo(OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:313,16
+DA:315,1
+DA:318,15
+DA:320,1
+DA:323,14
+BRDA:313,2,0,1
+BRDA:313,2,1,15
+BRDA:318,7,0,1
+BRDA:318,7,1,14
+FN:337,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::Equals(OpenCollar.Extensions.SqlClient.Model.Identifier)
+FNDA:80,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::Equals(OpenCollar.Extensions.SqlClient.Model.Identifier)
+DA:338,80
+DA:340,1
+DA:343,79
+DA:345,1
+DA:348,78
+BRDA:338,1,0,1
+BRDA:338,1,1,79
+BRDA:343,7,0,1
+BRDA:343,7,1,78
+FN:359,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::Equals(System.Object)
+FNDA:62,System.Boolean OpenCollar.Extensions.SqlClient.Model.Identifier::Equals(System.Object)
+DA:360,62
+BRDA:360,2,0,61
+BRDA:360,12,0,59
+BRDA:360,12,1,2
+BRDA:360,2,1,1
+FN:367,System.Int32 OpenCollar.Extensions.SqlClient.Model.Identifier::GetHashCode()
+FNDA:20,System.Int32 OpenCollar.Extensions.SqlClient.Model.Identifier::GetHashCode()
+DA:368,20
+FN:375,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::ToString()
+FNDA:23,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::ToString()
+DA:376,23
+FN:413,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::NormalizedValue(System.String)
+FNDA:173,System.String OpenCollar.Extensions.SqlClient.Model.Identifier::NormalizedValue(System.String)
+DA:414,173
+DA:416,173
+DA:418,1
+DA:421,172
+DA:423,1
+DA:426,2607
+DA:428,1136
+DA:431,164
+DA:433,159
+BRDA:416,15,0,1
+BRDA:416,15,1,172
+BRDA:421,45,0,1
+BRDA:421,45,1,171
+BRDA:426,98,1,1136
+BRDA:426,98,0,164
+FN:79,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier::.ctor(System.String)
+FNDA:176,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier::.ctor(System.String)
+DA:80,176
+DA:82,176
+DA:84,173
+DA:86,173
+DA:87,159
+FN:491,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::Complete()
+FNDA:164,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::Complete()
+DA:492,164
+DA:494,161
+DA:496,70
+DA:498,1
+DA:501,69
+DA:503,1
+DA:506,68
+DA:507,68
+DA:509,159
+BRDA:494,12,0,70
+BRDA:496,20,0,1
+BRDA:496,20,1,69
+BRDA:501,40,0,1
+BRDA:501,40,1,68
+BRDA:494,12,1,159
+FN:561,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::Parse(System.Char)
+FNDA:215,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::Parse(System.Char)
+DA:562,215
+DA:566,3
+DA:567,3
+DA:571,212
+DA:574,212
+DA:577,921
+DA:581,1129
+DA:582,1129
+BRDA:562,3,0,1054
+BRDA:562,8,0,989
+BRDA:562,3,1,215
+BRDA:562,8,1,215
+BRDA:562,13,0,215
+BRDA:562,26,0,3
+BRDA:562,26,1,212
+BRDA:562,13,1,921
+FN:589,System.String OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::ToString()
+FNDA:159,System.String OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::ToString()
+DA:590,159
+FN:610,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::ProcessNormal(System.Char)
+FNDA:924,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::ProcessNormal(System.Char)
+DA:611,924
+DA:616,26
+DA:618,1
+DA:619,1
+DA:622,25
+DA:623,25
+DA:626,4
+DA:627,4
+DA:630,21
+DA:632,13
+DA:633,13
+DA:634,13
+DA:635,13
+DA:636,13
+DA:641,8
+DA:642,8
+DA:646,8
+DA:651,3
+DA:654,3
+DA:655,3
+DA:656,3
+DA:659,889
+DA:660,889
+DA:663,90
+DA:664,90
+DA:667,889
+DA:670,889
+BRDA:611,9,0,27
+BRDA:611,14,0,26
+BRDA:611,9,1,891
+BRDA:611,32,0,891
+BRDA:611,22,1,26
+BRDA:616,56,0,1
+BRDA:616,56,1,25
+BRDA:623,104,0,17
+BRDA:623,112,0,15
+BRDA:623,112,1,4
+BRDA:623,120,0,4
+BRDA:623,104,1,21
+BRDA:623,120,1,21
+BRDA:630,143,0,13
+BRDA:630,143,1,8
+BRDA:611,14,1,3
+BRDA:611,32,1,3
+BRDA:611,40,1,3
+BRDA:611,22,0,889
+BRDA:611,40,0,889
+BRDA:660,253,0,90
+BRDA:660,253,1,889
+FN:681,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::ProcessStack(System.Char)
+FNDA:3,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::ProcessStack(System.Char)
+DA:682,3
+DA:683,3
+DA:684,3
+FN:702,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::ProcessStack()
+FNDA:1088,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::ProcessStack()
+DA:703,1088
+DA:705,879
+DA:709,209
+DA:712,65
+DA:714,3
+DA:715,3
+DA:718,62
+DA:719,62
+DA:720,62
+DA:721,62
+DA:722,62
+DA:725,80
+DA:727,41
+DA:729,3
+DA:730,3
+DA:733,38
+DA:734,38
+DA:735,38
+DA:736,38
+DA:739,39
+DA:740,39
+DA:741,39
+DA:744,77
+DA:745,77
+DA:748,64
+DA:750,3
+DA:751,3
+DA:754,61
+DA:755,61
+DA:756,61
+DA:757,61
+DA:761,200
+DA:762,200
+BRDA:703,11,0,879
+BRDA:703,11,1,209
+BRDA:709,28,0,209
+BRDA:709,44,0,129
+BRDA:709,49,0,64
+BRDA:709,49,1,65
+BRDA:712,70,0,3
+BRDA:712,70,1,62
+BRDA:709,44,1,80
+BRDA:725,151,0,41
+BRDA:727,159,0,3
+BRDA:727,159,1,38
+BRDA:725,151,1,39
+BRDA:709,54,1,64
+BRDA:748,267,0,3
+BRDA:748,267,1,61
+BRDA:709,28,1,200
+BRDA:709,54,0,200
+FN:443,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::.ctor()
+FNDA:173,System.Void OpenCollar.Extensions.SqlClient.Model.Identifier/IdentifierTokenizer::.ctor()
+DA:444,173
+LF:125
+LH:123
+BRF:86
+BRH:82
+FNF:26
+FNH:24
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/Model/ParameterName.cs
+FN:70,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::get_OriginalValue()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::get_OriginalValue()
+DA:71,0
+FN:81,OpenCollar.Extensions.SqlClient.Model.ParameterName OpenCollar.Extensions.SqlClient.Model.ParameterName::op_Implicit(System.String)
+FNDA:0,OpenCollar.Extensions.SqlClient.Model.ParameterName OpenCollar.Extensions.SqlClient.Model.ParameterName::op_Implicit(System.String)
+DA:82,0
+BRDA:82,6,0,0
+BRDA:82,6,1,0
+FN:92,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::op_Implicit(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::op_Implicit(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:93,0
+BRDA:93,1,0,0
+BRDA:93,1,1,0
+FN:107,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_Inequality(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_Inequality(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:108,0
+FN:122,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_LessThan(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_LessThan(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:123,0
+FN:138,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_LessThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:139,0
+FN:153,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_Equality(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_Equality(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:154,0
+FN:169,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_GreaterThan(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_GreaterThan(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:170,0
+FN:185,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::op_GreaterThanOrEqual(OpenCollar.Extensions.SqlClient.Model.ParameterName,OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:186,0
+FN:196,OpenCollar.Extensions.SqlClient.Model.ParameterName OpenCollar.Extensions.SqlClient.Model.ParameterName::ToParameterName(System.String)
+FNDA:0,OpenCollar.Extensions.SqlClient.Model.ParameterName OpenCollar.Extensions.SqlClient.Model.ParameterName::ToParameterName(System.String)
+DA:197,0
+BRDA:197,6,0,0
+BRDA:197,6,1,0
+FN:207,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::ToString(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::ToString(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:208,0
+BRDA:208,1,0,0
+BRDA:208,1,1,0
+FN:243,System.Int32 OpenCollar.Extensions.SqlClient.Model.ParameterName::CompareTo(System.Object)
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.Model.ParameterName::CompareTo(System.Object)
+DA:244,0
+DA:246,0
+DA:249,0
+DA:251,0
+DA:254,0
+BRDA:244,1,0,0
+BRDA:244,1,1,0
+BRDA:249,7,0,0
+BRDA:249,7,1,0
+BRDA:254,19,0,0
+BRDA:254,19,1,0
+FN:287,System.Int32 OpenCollar.Extensions.SqlClient.Model.ParameterName::CompareTo(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.Model.ParameterName::CompareTo(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:288,0
+DA:290,0
+DA:293,0
+DA:295,0
+DA:298,0
+BRDA:288,2,0,0
+BRDA:288,2,1,0
+BRDA:293,7,0,0
+BRDA:293,7,1,0
+FN:312,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::Equals(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::Equals(OpenCollar.Extensions.SqlClient.Model.ParameterName)
+DA:313,0
+DA:315,0
+DA:318,0
+DA:320,0
+DA:323,0
+BRDA:313,1,0,0
+BRDA:313,1,1,0
+BRDA:318,7,0,0
+BRDA:318,7,1,0
+FN:334,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::Equals(System.Object)
+FNDA:0,System.Boolean OpenCollar.Extensions.SqlClient.Model.ParameterName::Equals(System.Object)
+DA:335,0
+BRDA:335,2,0,0
+BRDA:335,12,0,0
+BRDA:335,12,1,0
+BRDA:335,2,1,0
+FN:342,System.Int32 OpenCollar.Extensions.SqlClient.Model.ParameterName::GetHashCode()
+FNDA:0,System.Int32 OpenCollar.Extensions.SqlClient.Model.ParameterName::GetHashCode()
+DA:343,0
+FN:350,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::ToString()
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::ToString()
+DA:351,0
+FN:364,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::NormalizedValue(System.String)
+FNDA:0,System.String OpenCollar.Extensions.SqlClient.Model.ParameterName::NormalizedValue(System.String)
+DA:365,0
+DA:367,0
+DA:370,0
+BRDA:365,12,0,0
+BRDA:365,12,1,0
+FN:54,System.Void OpenCollar.Extensions.SqlClient.Model.ParameterName::.ctor(System.String)
+FNDA:0,System.Void OpenCollar.Extensions.SqlClient.Model.ParameterName::.ctor(System.String)
+DA:55,0
+DA:57,0
+DA:59,0
+DA:61,0
+DA:62,0
+LF:37
+LH:0
+BRF:28
+BRH:0
+FNF:19
+FNH:0
+end_of_record
+SF:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/src/OpenCollar.Extensions.SqlClient/LoggingContext/LoggingContextExtensions.cs
+FN:42,OpenCollar.Extensions.Logging.LoggingContext OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions::AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+FNDA:0,OpenCollar.Extensions.Logging.LoggingContext OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions::AddDatabaseConnection(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+DA:43,0
+DA:46,0
+DA:49,0
+DA:51,0
+BRDA:43,1,0,0
+BRDA:43,1,1,0
+FN:67,OpenCollar.Extensions.Logging.LoggingContext OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions::AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+FNDA:0,OpenCollar.Extensions.Logging.LoggingContext OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions::AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,System.String)
+DA:68,0
+DA:71,0
+DA:74,0
+DA:76,0
+BRDA:68,1,0,0
+BRDA:68,1,1,0
+FN:92,OpenCollar.Extensions.Logging.LoggingContext OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions::AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,Microsoft.Data.SqlClient.SqlCommand)
+FNDA:0,OpenCollar.Extensions.Logging.LoggingContext OpenCollar.Extensions.SqlClient.LoggingContext.LoggingContextExtensions::AddStoredProcedure(OpenCollar.Extensions.Logging.LoggingContext,Microsoft.Data.SqlClient.SqlCommand)
+DA:93,0
+BRDA:93,2,0,0
+BRDA:93,2,1,0
+LF:9
+LH:0
+BRF:6
+BRH:0
+FNF:3
+FNH:0
+end_of_record
