@@ -18,7 +18,7 @@ jobs:
       if: github.event_name != 'pull_request'
       shell: bash
       run: |
-        echo "DOCFX_SOURCE_BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | tr / -)" >> $GITHUB_ENV        
+        echo "DOCFX_SOURCE_BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | tr / -)" >> $GITHUB_ENV
         echo "Branch: $DOCFX_SOURCE_BRANCH_NAME"
 
     - name: Get branch name (pull request)
@@ -29,10 +29,10 @@ jobs:
         echo "Branch: $DOCFX_SOURCE_BRANCH_NAME"
 
     - name: Generate revision number
-      uses: einaregilsson/build-number@v3 
+      uses: einaregilsson/build-number@v3
       with:
         token: ${{secrets.github_token}}
-    
+
     - name: Generate version number
       run: |
         VERSION_REVISION=$BUILD_NUMBER
@@ -60,20 +60,21 @@ jobs:
     - name: Test
       run: |
         dotnet test --configuration Release -p:Version="$VERSION" -p:CollectCoverage=true -p:CoverletOutput=/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/coverage/ -p:CoverletOutputFormat=lcov -p:ExcludeByFile="**/*.designer.cs"
-
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: /home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/coverage/coverage.info
+        dotnet ~/.nuget/packages/reportgenerator/4.8.12/tools/net5.0/ReportGenerator.dll "-reports:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/coverage/coverage.info" "-targetdir:coverage" -reporttypes:Html;Badges "-filefilters:-Excluded="**/*.designer.cs"
+        cp "/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/coverage/" "/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/docs/"
+#    - name: Coveralls
+#      uses: coverallsapp/github-action@master
+#      with:
+#        github-token: ${{ secrets.GITHUB_TOKEN }}
+#        path-to-lcov: /home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/coverage/coverage.info
 
     - name: Set documentation version number
       run: |
-        echo "Setting documentation version: $VERSION"        
+        echo "Setting documentation version: $VERSION"
         cd docs
         git grep -lz 'BUILD_VERSION' | xargs -0 sed -i -e "s/BUILD_VERSION/$VERSION/g"
         cd ..
-      
+
     - name: Commit changes (documentation)
       if: github.ref == 'refs/heads/master'
       run: |
@@ -81,13 +82,13 @@ jobs:
         git config --local user.name "Jonathan Evans"
         git add -- ./docs
         git commit -m "Published documentation from build $VERSION."
-      
+
     - name: Push changes (documentation)
       uses: ad-m/github-push-action@v0.5.0
       if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-      
+
     - name: Publish
       if: github.ref == 'refs/heads/master'
       run: |
