@@ -60,7 +60,7 @@ jobs:
     - name: Test
       run: |
         dotnet test --configuration Release -p:Version="$VERSION" -p:CollectCoverage=true -p:CoverletOutput=/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/coverage/ -p:CoverletOutputFormat=lcov -p:ExcludeByFile="**/*.designer.cs"
-        dotnet ~/.nuget/packages/reportgenerator/4.8.12/tools/net5.0/ReportGenerator.dll "-reports:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/coverage/coverage.info" "-targetdir:coverage" -reporttypes:Html;Badges "-filefilters:-Excluded="**/*.designer.cs"
+        dotnet ~/.nuget/packages/reportgenerator/4.8.12/tools/net5.0/ReportGenerator.dll "-reports:/home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/coverage/coverage.info" "-targetdir:coverage" -reporttypes:Html;Badges -filefilters:-Excluded="**/*.designer.cs"
         cp -r /home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/coverage /home/runner/work/OpenCollar.Extensions.SqlClient/OpenCollar.Extensions.SqlClient/docs
 
 #    - name: Coveralls
